@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+.container-fluid >.navbar-brand{
+    color: #718C59;
+    font-size: 26px;
+    font-weight: 700;
+}
+ul li a{
+    color: black;
+    font-weight: 100;
+    font-size: 18px;
+}
+ul li a img{
+    width: 16px;
+    height: 16px;
+}
+
+span{
+    color: #718C59;
+    font-weight: bold;
+}
+hr{
+    padding-bottom: 15px;
+}
+.btn2{
+    width: 120px;
+    height: 38px;
+    border:1px solid #ddd;
+    color: #718C59;
+    font-size: 17px;
+    font-size: 400;
+}
+.btn1{
+    background-color: #718C59;
+    width: 120px;
+    height: 38px;
+    border:1px solid #ddd;
+    color: #ffff;
+    font-size: 17px;
+    font-size: 400;
+}
+.butns{
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 1280px) {
+    .card {
+        width: 73%;
+    }
+}
