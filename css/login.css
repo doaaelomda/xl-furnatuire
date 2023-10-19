@@ -1,0 +1,221 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins/Poppins-Regular.ttf');
+  }
+*{
+    font-family: 'Poppins', sans-serif;
+    cursor: context-menu;
+}
+
+.back {
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+.center-card {
+    position: relative;
+    top: 150px;
+    margin: auto;
+
+    background: rgba(0, 0, 0, 0.30);
+}
+.center-card h5{
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 500;
+    padding:20px;
+}
+.center-card p{
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 25px;
+    
+}
+.form-control{
+    border-radius: none;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+}
+.form-inp::placeholder{
+    font-size: 12px;
+}
+.background{
+    height: 100vh;
+    background-size: 100% 100%;
+    background-image: url(../assets/images/Authentacation/sign-up/Rectangle\ 24.png)
+}
+.head{
+   display: flex; 
+   align-items: center;
+}
+.signup{
+    display: flex;
+    justify-content: space-around;
+}
+.sign{
+    background: rgba(140, 161, 122, 0.05);
+}
+.confirmdiv{
+    display: flex;
+    justify-content: space-around;
+}
+.form-label{
+    color: rgba(0, 0, 0, 0.70);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+input::placeholder{
+    color: rgba(199, 187, 187, 0.2);
+    font-size: 16px;
+    font-weight: 400;
+}
+form h3{
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 22px;
+    font-weight: 500;
+
+}
+.form-check-label{
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 14px;
+    font-weight: 400;
+}
+.create{
+    width: 100%;
+    background:  #8CA17A;
+    border: none;
+    color: white;
+    padding-bottom: 8px;
+    padding-top: 15px;
+    margin-top: 60px;
+
+}
+.foot-getcode{
+    text-align: center;
+}
+.verify{
+    width: 80%;
+
+    background: #8CA17A;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 0;
+}
+.account{
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+     margin: auto;
+}
+.account a {
+    color: rgba(0, 0, 0, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration-line: underline;
+}
+.account a :hover{
+    cursor: pointer;
+}
+.hr-before-after::before,.hr-before-after::after {
+  content: "";
+  display: inline-block;
+  width: 45%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.35);
+  margin-bottom: 3px
+}
+.hr-before-after {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+}
+.foot img:hover{
+    /* background-color: #8CA17A; */
+    cursor: pointer;
+}
+#basic-addon1{
+    border-radius: 0;border: 1px solid rgba(0, 0, 0, 0.10);
+}
+#exampleInputEmail1{
+    border-radius: 0;
+    background: none;
+}
+.foot img{
+    width: 28px;
+    height: 28px;
+}
+.confirm{
+    color: rgba(0, 0, 0, 0.40);
+    font-size: 13px;
+    font-weight: 400;
+
+}
+#exampleInputEmail{
+    height: 42px;
+    border-radius: 4px;
+background:  rgba(140, 161, 122, 0.20);
+
+}
+.create a,.verify a{
+    text-decoration: none;
+    color: #FFF;
+}
+.succe input{
+    background-color: lightgray 50%;
+    /* border: 1px solid lightgray; */
+    border-radius: 0;
+}
+.get{
+    color: #000;
+    font-size: 18px;
+    font-weight: bold
+
+}
+.foot-login{
+    text-align: center;
+}
+.enter{
+    color: rgba(0, 0, 0, 0.56);
+    font-size: 16px;
+    font-weight: 400;
+}
+.resend{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+}
+.forget{
+    color: rgba(0, 0, 0, 0.30);
+    font-size: 12px;
+    text-decoration: none;
+}
+.success{
+    color: rgba(0, 0, 0, 0.80);
+    margin-left: 120px;
+font-size: 16px;
+
+font-weight: 400;
+
+}
+#exampleInputPassword1{
+    background: none;
+    border-radius: 0;
+    background: none;
+}
+a:hover{
+    cursor: pointer;
+}
+.verifycode input{
+    background-color: rgba(0,0,0,0.05);
+    border-radius: 0;
+}

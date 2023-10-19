@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins/Poppins-Regular.ttf');
+  }
+*{
+    font-family: 'Poppins', sans-serif;
+    cursor: context-menu;
+}
+.profile-page{
+    text-align: center;
+    
+}
+.profile-page >p{
+    margin: auto;
+    width: 60%;
+    color: #000;
+    font-size: 25px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+   
+}
+.profile-list{
+    padding-left: 115px;
+}
+ul li {
+    list-style-type: none;
+    padding: 25px;
+}
+ul li a{
+    display: flex;
+    padding-bottom: 0px;
+
+    flex-shrink: 0;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+ul li:nth-child(5){
+    border-bottom: 1px solid #ddd;
+}
