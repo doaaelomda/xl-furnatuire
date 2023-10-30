@@ -1,4 +1,15 @@
-
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: 'Poppins', sans-serif;
+  src: url('../assets/fonts/Poppins/Poppins-Regular.ttf');
+}
+*{
+  font-family: 'Montserrat', sans-serif;
+  cursor: context-menu;
+}
 
 .container-fluid >.navbar-brand{
   color: #718C59;
@@ -6,8 +17,21 @@
   font-weight: 700;
   line-height: 58px; 
 }
+.nav-home{
+  position: fixed;
+  top: -10px;
+  width: 100%;
+ }
 .container-fluid >.navbar-brand:hover{
   color: #718C59;
+}
+#input-foot::placeholder{
+  color: rgba(0, 0, 0, 0.35);
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 ul li {
   color: rgba(0, 0, 0, 0.70);

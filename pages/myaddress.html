@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Address</title>
+    <link rel="stylesheet" href="../css/profile-person.css">
+    
+    <link rel="stylesheet" href="../assets/libraries/bootstrap/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid mt-0 nav-home px-5 py-2" style="background-color: #fff;">
+          <h1 class="logo navbar-brand px-5 mx-4">Logo</h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="list-one navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="../pages/shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/Inspiration.html">Inspiration</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="../pages/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/contact.html">Contact</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto mx-5">
+              <li class="nav-item">
+                <a class="nav-link">
+                  <img src="../assets/images/pages/icons_Nav/searchicon.png" alt="">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">
+                  <img src="../assets/images/pages/icons_Nav/humanicon.png" alt="">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">
+                  <img src="../assets/images/pages/icons_Nav/shoppingicon.png" alt="">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class=" py-4 container">
+        <div class="mt-4 pt-3 ">
+          <a href="../index.html" class="home">Home  </a>
+          <a href="" class=" home cart active"> | Profile </a>
+    
+        </div>
+      </div>
+      <div class="container py-4">
+        <div class="row gx-5">
+            <div class="col-3 setting-profile py-3">
+                <h3 class="pt-4">My Profile</h3>
+                <div class="pt-5  w-100 ">
+                  <div class="d-flex justify-content-around">
+                    <span class="px-4 mx-2"  onclick="toggleCheckboxes(this)">My Account</span>
+                    <img class="px-3" src="../assets/images/pages/sofa/arrow-down-svgrepo-com 5.png"
+                     onclick="toggleCheckboxes(this)">
+                  </div>
+                    <div style="display: none;" class="setings px-5 py-2">
+                   <p><a  href="../pages/profile-person.html">_ Profile</a></p>
+                   <p><a href="../pages/security.html">_ Security</a></p>
+                  <p><a href="../pages/manageAccount.html">_ Manage Account</a></p>
+                  </div>
+                </div>
+                <div class="pt-5 w-100 add-settings active-settings ">
+                  <div class="d-flex justify-content-around">
+                  <span class="px-4 mx-2"  onclick="addresssetting(this)" >Address</span>
+                  <img class="px-3" onclick="addresssetting(this)" src="../assets/images/pages/sofa/arrow-down-svgrepo-com 5.png">
+                  </div>
+                  <div style="display: none;" class="setings-address px-5 py-2">
+                 <p><a class="active" href="../pages/myaddress.html">_ My Address</a></p>
+                <p><a href="">_ Add New Address</a></p>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="pt-5 w-100 ">
+                    <div class="d-flex justify-content-around">
+                    <span class="px-4 mx-2" >My Orders</span>
+                    <img class="px-3" src="../assets/images/pages/sofa/arrow-down-svgrepo-com 5.png">
+                    </div>
+                    <div style="display: none;" class="setings px-5 py-2">
+                   <p><a class="active" href="../pages/profile-person.html">_ Profile</a></p>
+                   <p><a href="">_ Security</a></p>
+                  <p><a href="">_ Manage Account</a></p>
+                  </div>
+                </div>
+                <div class="pt-5 px-5 w-100 ">
+                    <div class="">
+                    <span  >Returns</span>
+                    </div>
+                </div>
+                <div class="pt-5 px-5 w-100 ">
+                    <div class="">
+                    <span >My Wishlist</span>
+                    </div>
+                </div>
+                <div class="pt-5 px-5 w-100 ">
+                    <div class="">
+                    <span  >My Wallet</span>
+                    </div>
+                </div>
+                <div class="pt-5 px-5 w-100 ">
+                    <div class="">
+                    <span >Payment</span>
+                    </div>
+                </div>
+                <div class="pt-5 px-5 w-100 ">
+                    <div class="">
+                        <img class="" src="../assets/images/pages/profile/logout-svgrepo-com 1.png" alt="">
+                        <span class="" >Log Out</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="information w-100 my-5">
+                    <img src="../assets/images/pages/profile/Ellipse 23.png" alt="">
+                    <label for="image">
+                      <img class="image-edite" src="../assets/images/pages/profile/camera.png" alt="">
+                      <input id="image" type="file" hidden>
+                    </label>
+                    <div>
+                        <p>Jean Windler</p>
+                        <h6>Egypt , Cairo </h6>
+                    </div>
+                    <div class="container location">
+                      <p class="px-5" style="    margin-left: 39px;" >Choose Your Location</p>
+                      <div class="loaction-place w-75 p-2 ">
+                        <input type="radio" class="m-2" name="location" value="home">
+                        <span>At Home</span>
+                        <div class="d-flex justify-content-end" >
+                          <div class="d-flex" >
+                          <img src="../assets/images/pages/profile/delete-2-svgrepo-com (1) 1.png" alt="">
+                          <span class="delete">Delete</span>
+                        </div>
+      
+                        <div class="d-flex " >
+                          <img src="../assets/images/pages/profile/edit-02-svgrepo-com 1.png" alt="">
+                          <span class="edit">edit</span>
+                        </div>
+                      </div>
+                        <p class="w-75 px-5">
+                          Lorem ipsum dolor sit amet consectetur. Lacus ipsum ut nascetur nec 
+                        </p>
+                      </div>
+                      <div class="loaction-place w-75 p-2 my-5">
+                        <input type="radio" class="m-2" name="location" value="work">
+                        <span>At Work</span>
+                        <div class="d-flex justify-content-end" >
+                          <div class="d-flex" >
+                          <img src="../assets/images/pages/profile/delete-2-svgrepo-com (1) 1.png" alt="">
+                          <span class="delete">Delete</span>
+                        </div>
+      
+                        <div class="d-flex " >
+                          <img src="../assets/images/pages/profile/edit-02-svgrepo-com 1.png" alt="">
+                          <span class="edit">edit</span>
+                        </div>
+                      </div>
+                        <p class="w-75 px-5">
+                          Lorem ipsum dolor sit amet consectetur. Lacus ipsum ut nascetur nec 
+                        </p>
+                      </div>
+                      <div class="loaction-place w-75 p-2 my-5">
+                        <input type="radio" class="m-2" name="location" value="office">
+                        <span>At Office</span>
+                        <div class="d-flex justify-content-end" >
+                        <div class="d-flex" >
+                        <img src="../assets/images/pages/profile/delete-2-svgrepo-com (1) 1.png" alt="">
+                        <span class="delete">Delete</span>
+                      </div>
+    
+                      <div class="d-flex " >
+                        <img src="../assets/images/pages/profile/edit-02-svgrepo-com 1.png" alt="">
+                        <span class="edit">edit</span>
+                      </div>
+                    </div>
+                        <p class="w-75 px-5">
+                          Lorem ipsum dolor sit amet consectetur. Lacus ipsum ut nascetur nec 
+                        </p>
+                      </div>
+                      <div class="loaction-place  p-3 my-5 addnew" >
+                        <a href="">
+                        <span>+</span>
+                          <h7>Add New Address</h7>
+                        </a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="footer-home" >
+        <div class="container py-3">
+          <div class="row pt-5">
+            <div class="col-md-3">
+              <h4 class="px-5">Logo</h4>
+              <span class="foot-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ipsam expedita!</span>
+              <h4 class="pt-5">Follow Us</h4>
+              <div>
+                <img src="../assets/images/pages/footer/facebook-svgrepo-com 3.png" alt="">
+                <img src="../assets/images/pages/footer/twitter-svgrepo-com (1) 2.png" alt="">
+                <img src="../assets/images/pages/footer/call-communication-device-svgrepo-com 2.png" alt="">
+                <img src="../assets/images/pages/footer/instagram-svgrepo-com 2.png" alt="">
+              </div>
+            </div>
+            <div class="col-md-2">
+              <h4 class="cs">Customer Services</h4>
+              <h6 class="later">Help & Contact Us</h6>
+              <h6 class="later">Online Store</h6>
+              <h6 class="later">Terms & Conditions</h6>
+            </div>
+            <div class="col-md-2">
+              <h4 class="cs">Quick lines</h4>
+              <h6 class="later">Home</h6>
+              <h6 class="later">Projects</h6>
+              <h6 class="later">About us</h6>
+              <h6 class="later">Reviews</h6>
+              <h6 class="later">Services</h6>
+            </div>
+            <div class="col-md-2">
+              <h4 class="cs">Products</h4>
+              <h6 class="later">Furniture</h6>
+              <h6 class="later">Home decor</h6>
+              <h6 class="later">Lamps</h6>
+              <h6 class="later">Lounge chair</h6>
+            </div>
+            <div class="col-md-3">
+              <h4 class="cs">Subscribe us</h4>
+              <span class="foot-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ipsam expedita!</span>
+              <div class="input-group flex-nowrap mt-3">
+                <input type="text" class="form-control" id="input-foot" placeholder="Enter your email" aria-label="Username" aria-describedby="addon-wrapping">
+                <span class="input-group-text" id="addon-wrapping">
+                  <img src="../assets/images/pages/footer/send-svgrepo-com (2) 1.png" alt="">
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p id="end" class="pt-3">
+            &copy; All Right reserved  2022
+        </p>
+    
+      </div>
+</body>
+<script src="../js/profile.js"> </script>
+</html>

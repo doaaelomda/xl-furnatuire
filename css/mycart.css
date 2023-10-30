@@ -38,7 +38,7 @@ font-weight: 400;
 }
 .right-cart{
     position: absolute;
-    right: 10px;
+    right: 0px;
 }
 .cart-item,.cart-item3{
     padding: 10px;
@@ -58,3 +58,11 @@ font-weight: 400;
     color: white;
 
 }
+#input-foot::placeholder{
+    color: rgba(0, 0, 0, 0.35);
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }

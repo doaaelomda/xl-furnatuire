@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+  }
+  @font-face {
+    font-family: 'Poppines';
+    src: url('../assets/fonts/Poppins/Poppins-Regular.ttf');
+  }
+  *{
+    font-family: 'Montserrat', sans-serif;
+    cursor: context-menu;
+  }
+.filters span{
+    color: #2E5F04;
+font-size: 22px;
+font-weight: 500;
+text-transform: capitalize;
+}
+.file-item {
+    border: 1px solid #ddd;
+}
+.img-card a {
+  text-decoration: none;
+  color: #000;
+}
+#input-foot::placeholder{
+  color: rgba(0, 0, 0, 0.35);
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.sofa-nav{
+    display: flex;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.40);
+box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.08);
+}
+.sofa-nav h5{
+    color: #2E5F04;
+font-family: Poppins;
+font-size: 23px;
+font-weight: 400;
+
+}
+.sofa-nav .p-found{
+    color: rgba(0, 0, 0, 0.60);
+font-family: Poppins;
+font-size: 23px;
+font-weight: 400;
+}
+.sofa-nav select{
+    border: none;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.60);
+    box-shadow: 0px 4px 33px 0px rgba(0, 0, 0, 0.06);
+}
+.img-card{
+    background: rgba(140, 161, 122, 0.08);
+}
+.img-card img:hover{
+    transform: scale(1.3);
+    transition: all 600ms ease-out;
+}
+.img-card .img-scall:hover{
+  transform: scale(0);
+  
+}
+.img-card h3{
+    color: rgba(0, 0, 0, 0.80);
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 500;
+}
+.img-card span{
+    color: rgba(113, 140, 89, 0.80);
+font-family: Poppins;
+font-size: 20px;
+font-weight: 500;
+}
+.cs{
+    padding-bottom: 15px;
+      color:  rgba(113, 140, 89, 0.75);
+      font-size: 16px;
+      font-weight: 600;
+  
+  }
+  .later{
+      color: #000;
+      font-size: 16px;
+      font-weight: 300;
+      padding-top: 7px;
+   
+  
+  }
+  .footer-home{
+  
+    font-family: 'Poppines', sans-serif;
+    background: rgba(140, 161, 122, 0.03);
+  }
+  #input-foot{
+      border-radius: 6px;
+  background: rgba(113, 140, 89, 0.10);
+  }
+  #addon-wrapping{
+      background-color: rgba(113, 140, 89, 0.75);
+  }
+  #end{
+    text-align: center;
+      color: rgba(0, 0, 0, 0.50);
+      font-size: 12px;
+      font-weight: 400;
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+  } 
+  .pang .box{
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    width: 30px;
+    height: 30px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px
+  }
+  .box:nth-child(1),.box:nth-child(6){
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    width: 30px;
+    height: 30px;
+    color: #718C59;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .pang {
+    text-align: center;
+    display: flex;
+    justify-content: start;
+  }
+ .box.active{
+    background-color: #718C59;
+    color:#fff
+  }
+  .hover-item {
+    transition: 1.5s;
+  }
+  .hover-item:hover {
+    transform: translate(0, -30px);
+  }
+  .c-pang{
+    bottom: 34px;
+    position: relative;
+  margin-left: 300px;
+}
+
+.file-item div:not(.checks){
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+}
+.file-item a{
+  text-decoration: none;
+  color: #000;
+}
+.file-item div:nth-child(1), .file-item div:nth-last-child(1){
+    border-bottom: 0;
+}
+.file-item button{
+    display: flex;
+    justify-content: space-between;
+    border: 0;
+    background-color: #fff;
+}
+.colors , .checks{
+    color: rgba(0, 0, 0, 0.70);
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: capitalize;
+
+}
+input:checked{
+    width: 18px;
+height: 18px;
+}
+.seat-checks input{
+    border: #2E5F04;
+    display: block;
+}
+.seat-checks sh6pan{
+    color: rgba(0, 0, 0, 0.30);
+font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
+text-transform: capitalize;
+}
+.seats{
+    color: rgba(0, 0, 0, 0.70);
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: capitalize;
+}
+.shapes img{
+  width: 21px;
+  padding: 1px;
+}
+

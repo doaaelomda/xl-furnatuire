@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+  }
+  @font-face {
+    font-family: 'Poppines';
+    src: url('../assets/fonts/Poppins/Poppins-Regular.ttf');
+  }
+*{
+    font-family: 'Montserrat', sans-serif;
+    cursor: context-menu;
+  }
+  .navbar{
+    z-index: 100;
+  }
+  .home-inst a{
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .container-fluid >.navbar-brand{
+    color: #718C59;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 58px; 
+  }
+  #input-foot::placeholder{
+    color: rgba(0, 0, 0, 0.35);
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+  .nav-home{
+    position: fixed;
+    top: -10px;
+    width: 100%;
+   }
+  .container-fluid >.navbar-brand:hover{
+    color: #718C59;
+  }
+  ul li {
+    color: rgba(0, 0, 0, 0.70);
+    font-size: 13px;
+    font-weight: 500;
+  }
+  ul li a img{
+    width: 16px;
+    height: 16px;
+  }
+  nav ul li a:hover {
+    cursor: pointer;
+  }
+  ul li {
+    cursor: pointer;
+  }
+  nav > div >h1{
+    cursor: context-menu;
+  }
+  nav > div >h1:hover{
+    color: #718C59;
+  }
+  .home{
+    color: rgba(0, 0, 0, 0.30);
+    font-size: 14px;
+    font-weight: 400;
+}
+.cart.active{
+    color:#000;;
+}
+.desc{
+    color: rgba(0, 0, 0, 0.60);
+    font-size: 15px;
+    font-weight: 400;
+}
+.nav-link.active{
+    font-weight: bold;
+  }
+.cs{
+    padding-bottom: 15px;
+      color:  rgba(113, 140, 89, 0.75);
+      font-size: 16px;
+      font-weight: 600;
+  
+  }
+  .later{
+      color: #000;
+      font-size: 16px;
+      font-weight: 300;
+      padding-top: 7px;
+   
+  
+  }
+  .footer-home{
+    margin-top: 80px;
+    font-family: 'Poppines', sans-serif;
+    background: rgba(140, 161, 122, 0.03);
+  }
+  #input-foot{
+      border-radius: 6px;
+  background: rgba(113, 140, 89, 0.10);
+  }
+  #addon-wrapping{
+      background-color: rgba(113, 140, 89, 0.75);
+  }
+  #end{
+    text-align: center;
+      color: rgba(0, 0, 0, 0.50);
+      font-size: 12px;
+      font-weight: 400;
+      border-top: 1px solid rgba(0, 0, 0, 0.08);
+  }  
+  p{
+    color: #000;
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+  }
+  .products-img > img{
+    transition: all .3s ease-out;
+    width: 100%;
+    
+  }
+  .products-card:hover .products-img > img{
+    transform: scale(1.1);
+  }
+  .Inspiration-Bedroom {
+    background-image: url(../assets/images/pages/Inspiration/v748-toon-103\ 1.png);
+  }
+  .Inspiration-Bedroom >p {
+    padding-left: 40px;
+  }
+  .Inspiration-Bedroom >span{
+    padding: 40px;
+  }
+  .furnature p{
+    font-size: 18px;
+  }
+  .furnature >.desc{
+    font-size: 13px;
+  }
+  .furnature span{
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+  }

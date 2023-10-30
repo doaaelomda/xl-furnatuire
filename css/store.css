@@ -1,0 +1,318 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
+  }
+  @font-face {
+    font-family: 'Poppines';
+    src: url('../assets/fonts/Poppins/Poppins-Regular.ttf');
+  }
+  *{
+    font-family: 'Montserrat', sans-serif;
+    cursor: context-menu;
+  }
+  .navbar{
+    z-index: 100;
+  }
+  .container-fluid >.navbar-brand{
+    color: #718C59;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 58px; 
+  }
+  .nav-home{
+    position: fixed;
+    top: -10px;
+    width: 100%;
+   }
+  .container-fluid >.navbar-brand:hover{
+    color: #718C59;
+  }
+  nav ul li {
+    color: rgba(0, 0, 0, 0.70);
+    font-size: 13px;
+    font-weight: 500;
+  }
+  ul li a img{
+    width: 16px;
+    height: 16px;
+  }
+  nav ul li a:hover {
+    cursor: pointer;
+  }
+  ul li {
+    cursor: pointer;
+  }
+  nav > div >h1{
+    cursor: context-menu;
+  }
+  nav > div >h1:hover{
+    color: #718C59;
+  }
+  .home{
+    color: rgba(0, 0, 0, 0.30);
+    font-size: 14px;
+    font-weight: 400;
+}
+.cart{
+    color:#000;;
+} 
+  .home  a{
+    padding: 5px;
+    text-decoration: underline;
+  }
+  .home a:nth-last-child(1){
+    font-weight: 500;
+  }
+  .living-card:nth-child(1){
+    border-radius: 4px;
+border: 1px solid rgba(149, 111, 77, 0.30);
+  }
+  .living-card:nth-child(1) img{
+    padding: 3px;
+  }
+  .description{
+    position: relative;
+    right: 120px; 
+  }
+  .description h6{
+    color: #000;
+font-size: 18px;
+font-weight: 500;
+  }
+  .description p{
+    color: #8CA17A;
+font-size: 12px;
+font-weight: 500;
+  }
+  .description div {
+    color: #000;
+font-size: 15px;
+font-weight: 500;
+  }
+  .description div del{
+    color: rgba(0, 0, 0, 0.60);
+    font-size: 16px;
+  }
+  .discount{
+    color:  #718C59;
+font-size: 12px;
+font-weight: 500;
+    border-radius: 2px;
+background: rgba(140, 161, 122, 0.20);
+  }
+  .cash-time{
+    border: 1px solid  #8CA17A;
+  }
+  .cash-time span{
+    color: rgba(0, 0, 0, 0.50);
+font-size: 12px;
+font-weight: 500;
+  }
+  .color p{
+    color: #000;
+font-size: 14px;
+font-weight: 500;
+  }
+  .color button{
+    background: rgba(140, 161, 122, 0.80);
+    border: 0;
+    color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+text-transform: capitalize;
+  }
+  .color select{
+    border-radius: 4px;
+    background: rgba(149, 111, 77, 0.05);
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    border: 0;
+  }
+  .nav-item a{
+    color: #000;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+
+  }
+  ul li {
+    list-style-type: none;
+    padding-right: 30px;
+  }
+  ul{
+    display: flex;
+    justify-content: start;
+  }
+  .pro-in>ul>li> a:active{
+    color: #718C59;
+    font-size: 600;
+
+  }
+  #pills-tab,
+  .pro-in ul ,.pro-in,.pro  {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.10);;
+  }
+  .p2{
+    color: rgba(0, 0, 0, 0.50);
+font-size: 16px;
+font-weight: 400;
+  }
+  .p1{
+    color: #000;
+font-size: 16px;
+font-weight: 500;
+  }
+  .Products img{
+    width: 95%;
+  }
+.might h6{
+    color: rgba(0, 0, 0, 0.50);
+
+font-size: 15px;
+font-weight: 500;
+}
+.foot-span{
+    color: rgba(0, 0, 0, 0.42);
+    font-size: 16px;
+    font-weight: 400;
+}
+h4{
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 13px;
+
+}
+.cs{
+  padding-bottom: 15px;
+    color:  rgba(113, 140, 89, 0.75);
+    font-size: 16px;
+    font-weight: 600;
+
+}
+.later{
+    color: #000;
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 7px;
+ 
+
+}
+#input-foot{
+    border-radius: 6px;
+background: rgba(113, 140, 89, 0.10);
+}
+#addon-wrapping{
+    background-color: rgba(113, 140, 89, 0.75);
+}
+#end{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.50);
+    font-size: 12px;
+    font-weight: 400;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+.nav-underline .nav-link  {
+    font-weight: 700;
+    color:#718C59 ;
+    border-bottom-color: #718C59;
+}
+.over-rate p ,span{
+  color: #000;
+font-size: 18px;
+font-weight: 600;
+}
+.over-rate h6{
+  color: rgba(0, 0, 0, 0.43);
+font-size: 12px;
+font-weight: 400;
+}
+.rate-over{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);;
+}
+.revie h6{
+  color: #000;
+font-size: 18px;
+font-weight: 600;
+}
+.revie p{
+  color: rgba(0, 0, 0, 0.45);
+font-size: 14px;
+font-weight: 500;
+}
+.add-review p{
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+}
+.add-review .enter-review{
+  border-radius: 0;
+}
+.enter-review::placeholder{
+  color: rgba(0, 0, 0, 0.20);
+/* font-family: Poppins; */
+font-size: 14px;
+font-weight: 400;
+text-transform: capitalize;
+}
+
+.img-review{
+  position: relative;
+  top: 7px;
+  right: 35px;
+  width:30px;
+  height: 30px;
+}
+.rate img{
+  width: 25px;
+  height: 25px;
+}
+.rate span{
+  color: #000;
+font-size: 16px;
+font-weight: 400;
+}
+.cust-rev> img{
+  width: 50px;
+  height: 50px;
+}
+.cust-rev h6{
+  color: #000;
+font-size: 14px;
+font-weight: 500;
+}
+.cust-rev p{
+  color: rgba(0, 0, 0, 0.43);
+font-size: 12px;
+font-weight: 400;
+}
+.p3{
+  color: #000;
+font-size: 18px;
+font-weight: 600;
+}
+.p5{
+  color: rgba(0, 0, 0, 0.78);
+font-size: 12px;
+font-weight: 500;
+
+}
+.review-human{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.review-human h5 ,.showmore h5{
+  text-align: center;
+  font-size: 16px;
+}
+#input-foot::placeholder{
+  color: rgba(0, 0, 0, 0.35);
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
