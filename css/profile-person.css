@@ -57,16 +57,23 @@
 .cart.active{
     color:#000;;
 }
-.setings a.active,.setings-address a.active{
+.setings a.active,.orders a.active,.setings-address a.active{
     color: #000;}
 
-.setings a , .setings-address a{
+.setings a , .setings-address a , .orders a{
     color: rgba(0, 0, 0, 0.50);
 font-size: 12px;
 font-weight: 500;
 text-transform: capitalize;
 text-decoration: none;
 cursor: pointer;
+}
+.return a,.wishlist a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.80);
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 500;
 }
 .setting-profile{
     height: 890px;
@@ -79,7 +86,7 @@ font-weight: 500;
 }
 .active-settings span{
     color: #000;
-    font-size: 16px;
+    font-size: 20px;
 font-weight: 500;
 }
 
@@ -89,6 +96,62 @@ font-weight: 500;
     background-color: #FFF;
 box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.10);
 }
+.my-orders{
+  margin-top: 85px;
+  background-color: #FFF;
+box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.10);
+}
+.returnhidden{
+  margin-top: 85px;
+  background-color: #FFF;
+box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.10);
+}
+.returnhidden p{
+  left: 27px;
+  top: 13px;
+  position: relative;
+  color: #000;
+font-size: 22px;
+font-weight: 700;
+}
+.returncard h5{
+  color: #000;
+font-family: Poppins;
+font-size: 20px;
+font-weight: 500;
+}
+.returncard h5 >span{
+  color: rgba(0, 0, 0, 0.80);
+font-size: 17px;
+font-weight: 400;
+}
+.returncard p{
+  color: rgba(0, 0, 0, 0.25);
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+position: relative;
+left: 0;
+}
+.returncard h4{
+  font-size: 18px;
+  text-align: end;
+}
+.returncard >span{
+  color: rgba(0, 0, 0, 0.80);
+font-family: Poppins;
+font-size: 14px;
+font-weight: 500;
+}
+.returnhidden .card{
+  border-radius: 8px;
+background: rgba(140, 161, 122, 0.08);
+width: 93%;
+
+}
+
 .information img{
     position: relative;
     bottom: 40px;
@@ -179,7 +242,7 @@ text-transform: capitalize;
       border-top: 1px solid rgba(0, 0, 0, 0.08);
   }  
   .informat label{
-    right: 116px;
+    right: 135px;
     position: relative;
     top: 25px;
     color: rgba(0, 0, 0, 0.30);
@@ -339,7 +402,7 @@ bottom: 26px;
   .loaction-place a> h7,span{
     color: rgba(0, 0, 0, 0.80);
 font-family: Poppins;
-font-size: 20px;
+font-size: 18px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
@@ -367,3 +430,290 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
   }
+  .my-orders button{
+    color: rgba(0, 0, 0, 0.65);
+font-size: 14px;
+font-weight: 400;
+
+  }
+  .my-orders{
+    font-family: Poppins;
+    padding-bottom: 50px;
+    height: 85%;
+  }
+  .my-orders p{
+    left: 27px;
+    top: 13px;
+    position: relative;
+    color: #000;
+font-size: 22px;
+font-weight: 700;
+  }
+  .my-orders ul li{
+    padding: 14px;
+   
+  }
+  .my-orders table tr th{
+    color: rgba(0, 0, 0, 0.50);
+font-family: Poppins;
+font-size: 14px;
+font-weight: 400;
+padding: 14px;
+
+  }
+  .my-orders tbody tr td {
+    background-color: rgba(221, 64, 51, 0.08);
+    padding: 14px;
+    color: rgba(0, 0, 0, 0.80);
+font-family: Poppins;
+font-size: 14px;
+font-weight: 400;
+  }
+  .my-orders table thead {
+    border: #fff;
+   
+  }
+  .my-orders tbody tr td button{
+    border: 0;
+font-family: Poppins;
+font-size: 14px;
+font-weight: 400;
+background-color:  rgba(248, 186, 186, 0.50);
+color: var(--red, #DD4033);
+  }
+
+    .my-orders tbody tr:nth-child(2) td button{
+      background: var(--baby-mint-green, #D8DFD1);
+      color: var(--green, #718C59);
+      
+
+    }
+    .my-orders tbody:nth-child(1) tr:nth-child(2){
+      background: rgba(140, 161, 122, 0.10);
+
+      ;
+    }
+    .my-orders tbody tr:nth-child(3){
+      background: rgba(253, 241, 219, 0.70);
+      ;
+    }
+   .trow10{
+    background: rgba(253, 241, 219, 0.70);
+   }
+    .my-orders tbody tr:nth-child(4){
+      background:  rgba(221, 64, 51, 0.08);
+    }
+    .my-orders tbody tr:nth-child(5){
+      background:  rgba(221, 64, 51, 0.08);
+    }
+    .my-orders tbody tr:nth-child(3) td button{
+      background: var(--baby-orange, rgba(254, 199, 92, 0.50));
+      color: var(--dark-orange, #BE8022);
+
+    }
+.my-orders table img{
+  height: 54px;
+  width: 75%;
+}
+.tab-pane {
+  padding: 12px;
+}
+table thead tr {
+  border-bottom: 1px solid  rgba(0, 0, 0, 0.10);;
+}
+table  tr{
+  border:white;
+}
+table tbody .trow1{
+  position: relative;
+  top: 10px;
+}
+.trow2{
+  position: relative;
+  top: 20px;
+}
+.trow3{
+  position: relative;
+  top: 30px;
+}
+.trow4{
+  position: relative;
+  top: 40px;
+}
+.trow5{
+  position: relative;
+  top: 50px;
+}
+table  td  .drop{
+  width: 30px;
+  height: 30px;
+}
+ .my-orders .nav-underline .nav-link.active 
+ {
+  border-bottom-color: #8CA17A;
+}
+.details-confirm{
+  top: 53px;
+    display: block;
+    position: absolute;
+    left: 10px;
+  
+ 
+}
+.itemdetails-confirm {
+  color: rgba(0, 0, 0, 0.50);
+font-family: Poppins;
+font-size: 14px;
+font-weight: 400;
+border-bottom: 1px solid  rgba(0, 0, 0, 0.08);;
+}
+
+.unpaid-table tbody tr:nth-child(2) td button{
+  background: var(--baby-orange, rgba(254, 199, 92, 0.50));
+      color: var(--dark-orange, #BE8022);
+  
+
+}
+.my-orders .return-img{
+  margin: auto;
+  display: block;
+}
+.my-orders figcaption{
+  text-align: center;
+  color: rgba(0, 0, 0, 0.30);
+font-family: Poppins;
+font-size: 16px;
+
+font-weight: 500;
+}
+.my-orders h6{
+  text-align: center;
+  color: rgba(0, 0, 0, 0.80);
+
+font-family: Poppins;
+font-size: 18px;
+
+font-weight: 500;
+
+}
+.modal-body h6{
+  color: rgba(18, 20, 24, 0.80);
+font-variant-numeric: lining-nums proportional-nums;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 20px;
+text-transform: capitalize;
+}
+.modal-body p{
+  color: rgba(0, 0, 0, 0.30);
+font-variant-numeric: lining-nums proportional-nums;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 125% */
+text-transform: capitalize;
+position: relative;
+left: 0;
+}
+
+.modal-footer button{
+  background-color: rgba(113, 140, 89, 0.75);
+  border: none;
+}
+.setting-profile {
+  cursor: pointer;
+}
+.mywish h3{
+  color: #000;
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 500;
+}
+.mywish h3:nth-last-child(1){
+  color: rgba(0, 0, 0, 0.30);
+font-family: Poppins;
+font-size: 18px;
+font-weight: 400;
+}
+.wish-card> h5:nth-child(1){
+  color: #000;
+font-family: Poppins;
+font-size: 18px;
+font-weight: 400;
+text-transform: capitalize;
+}
+.wish-card> h6{
+  color: var(--baby-green, #718C59);
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-align: left;
+}
+.wish-card >span{
+  color: rgba(0, 0, 0, 0.50);
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 400;
+}
+.wish-card h4{
+  color: #000;
+font-family: Poppins;
+font-size: 20px;
+font-weight: 400;
+
+text-transform: capitalize;
+}
+.wish-card h4 >del{
+  color: rgba(0, 0, 0, 0.50);
+font-family: Poppins;
+font-size: 14px;
+font-weight: 400;
+line-height: 33px; 
+text-decoration-line: strikethrough;
+text-transform: capitalize;
+}
+.cas{
+  color: rgba(0, 0, 0, 0.50);
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 33px; /* 183.333% */
+text-transform: capitalize;
+}
+ .disc{
+  color: var(--red, #DD4033);
+font-size: 18px;
+
+}
+.miniwar-card{
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.10);;
+}
+.img-delete{
+  direction: rtl;
+}
+.right-img{
+  width: 3%;     right: -100%;
+      position: relative;
+      width: 3%;
+      top: -130px;
+}
+.left-img{
+     right: 38px;
+     position: relative;
+     width: 3%;
+     top: 140px;
+ 
+}
+.love{
+  left: 115px;
+
+  position: relative;
+  top: 40px;
+}
+

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Security Profile</title>
+    <title>Add New Address</title>
     <link rel="stylesheet" href="../css/profile-person.css">
     
     <link rel="stylesheet" href="../assets/libraries/bootstrap/css/bootstrap.min.css">
@@ -66,40 +66,47 @@
         <div class="row gx-5">
             <div class="col-3 setting-profile py-3">
                 <h3 class="pt-4">My Profile</h3>
-                <div class="pt-5  w-100 active-settings">
-                    <div class="d-flex justify-content-betwwen">
-                      <span class="px-4 mx-2"  onclick="toggleCheckboxes(this)">My Account</span>
-                      <img class="px-3" src="../assets/images/pages/sofa/arrow-down-svgrepo-com 5.png" onclick="toggleCheckboxes(this)">
-                    </div>
-                      <div style="display: none;" class="setings px-5 py-2">
-                     <p><a  href="../pages/profile-person.html">_ Profile</a></p>
-                     <p><a class="active" href="../pages/security.html">_ Security</a></p>
-                    <p><a href="../pages/manageAccount.html">_ Manage Account</a></p>
-                    </div>
+                <div class="pt-5  w-100 ">
+                  <div class="d-flex justify-content-between">
+                    <span class="px-4 mx-2"  onclick="toggleCheckboxes(this)">My Account</span>
+                    <img class="px-3" src="../assets/images/pages/sofa/arrow-down-svgrepo-com 5.png"
+                     onclick="toggleCheckboxes(this)">
                   </div>
-                  <div class="pt-5 w-100 add-settings ">
-                    <div class="d-flex justify-content-between">
-                    <span class="px-4 mx-2"  onclick="addresssetting(this)" >Address</span>
-                    <img class="px-3" onclick="addresssetting(this)" src="../assets/images/pages/sofa/arrow-down-svgrepo-com 5.png">
-                    </div>
-                    <div style="display: none;" class="setings-address px-5 py-2">
-                   <p><a  href="../pages/myaddress.html">_ My Address</a></p>
-                  <p><a href="../pages/addaddress.html">_ Add New Address</a></p>
+                    <div style="display: none;" class="setings px-5 py-2">
+                   <p><a  href="../pages/profile-person.html">_ Profile</a></p>
+                   <p><a href="../pages/security.html">_ Security</a></p>
+                  <p><a href="../pages/manageAccount.html">_ Manage Account</a></p>
                   </div>
                 </div>
-
-                <div class="pt-5 w-100  orders-settings">
-                  <div  onclick="addorders(this)" class="d-flex justify-content-between">
-                  <span  class="px-4 mx-2" >My Orders</span>
-                  <img class="px-3" src="../assets/images/pages/sofa/arrow-down-svgrepo-com 5.png">
+                <div class="pt-5 w-100 add-settings active-settings ">
+                  <div class="d-flex justify-content-between">
+                  <span class="px-4 mx-2"  onclick="addresssetting(this)" >Address</span>
+                  <img class="px-3" onclick="addresssetting(this)" src="../assets/images/pages/sofa/arrow-down-svgrepo-com 5.png">
                   </div>
-                  <div style="display: none;" class="orders px-5 py-2">
-                 <p><a class="" href="../pages/allorders.html">_ All Orders</a></p>
-                 <p><a href="">_ Unpaid</a></p>
-                <p><a href="">_ Processing</a></p>
-                <p><a href="">_ Shipped</a></p>
+                  <div style="display: none;" class="setings-address px-5 py-2">
+                 <p><a  href="../pages/myaddress.html">_ My Address</a></p>
+                <p><a  href="../pages/addaddress.html">_ Add New Address</a></p>
                 </div>
               </div>
+
+
+              <div class="pt-5 w-100  orders-settings">
+                <div  onclick="addorders(this)" class="d-flex justify-content-between">
+                <span  class="px-4 mx-2" >My Orders</span>
+                <img class="px-3" src="../assets/images/pages/sofa/arrow-down-svgrepo-com 5.png">
+                </div>
+                <div style="display: none;" class="orders px-5 py-2">
+               <p><a class="" href="../pages/allorders.html">_ All Orders</a></p>
+               <p><a href="">_ Unpaid</a></p>
+              <p><a href="">_ Processing</a></p>
+              <p><a href="">_ Shipped</a></p>
+              </div>
+            </div>
+
+
+
+
+
                  <div class="pt-5 px-3 mx-3 w-100 return "     >
                   <div onclick="Returns(this)"   >
                     <a href="../pages/Returns.html" >    Returns</a>
@@ -127,9 +134,9 @@
                     </div>
                 </div>
             </div>
-
             <div class="col-9">
-                <div class="information w-100 my-5 ">
+                <div class="information w-100 my-5">
+
                     <img src="../assets/images/pages/profile/Ellipse 23.png" alt="">
                     <label for="image">
                       <img class="image-edite" src="../assets/images/pages/profile/camera.png" alt="">
@@ -139,35 +146,59 @@
                         <p>Jean Windler</p>
                         <h6>Egypt , Cairo </h6>
                     </div>
-                    <div class="password-confirm container py-3">
-                     <label for="inputPassword5" class="form-label">Current Password</label>
-                    <input type="password"  placeholder="Enter Current password"
-                    id="inputPassword5" class="form-control w-75 p-2" aria-describedby="passwordHelpBlock">
+                    <div class=" gx-5 gy-1 row p-5 informat manage">
+                        <div class="col-6">
+                            <p for="Name ">Location</p>
+                            <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                                <option selected disabled value="">Enter Your Location</option>
+                            </select>
+                        </div>
+                        <div class="col-6">
+                            <p for="Name ">City</p>
+                            <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                            </select>
+                        </div>
+                        <div class="col-6">
+                            <p for="Name ">Street Address</p>
+                            <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                                <option selected disabled value="">Enter Your Email</option>
+                            </select>
+                        </div>
+                        <div class="col-6">
+                            <p for="Name ">Phone Number</p>
+                            <input type="text" class="py-2 form-control " id="exampleFormControlInput1" placeholder="+02 | "
+                                style="border-radius: 0;">
+                        </div>
+                        <div class="col-6">
+                            <p for="Name ">Building name / Flat no.</p>
+                            <input type="text" class="py-2 form-control " id="exampleFormControlInput1" style="border-radius: 0;">
+                        </div>
+                        <div class="col-6">
+                            <p for="Name ">Address label</p>
+                            <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                        
+                            </select>
+                        </div>
+
+                           
+                            <div class="password-confirm container pt-5">
+                                <button class=" py-4"  style="width: 96%;">
+                                 <a href=""> Save Changes</a>
+                                
+                               
+                               </button>
+                                </div>
+                                <div class="Cancel container pt-2  ">
+                                 <button class=" py-4" style="width: 96%;">
+                                  <a href=""> Cancel</a>
+                                 
+                                
+                                </button>
+                                 </div>
+                            
+
                     </div>
-                    <div class="password-confirm container py-3">
-                      <label for="inputPassword5" class="form-label">New Password</label>
-                     <input type="password"  placeholder="Enter New password"
-                     id="inputPassword5" class="form-control w-75 p-2" aria-describedby="passwordHelpBlock">
-                     </div>
-                     <div class="password-confirm container py-3">
-                      <label for="inputPassword5" class="form-label">Confirm Password</label>
-                     <input type="password"  placeholder="Enter New password"
-                     id="inputPassword5" class="form-control w-75 p-2" aria-describedby="passwordHelpBlock">
-                     </div>
-                     <div class="password-confirm container py-3">
-                     <button class="w-75 py-4">
-                      <a href=""> Save Changes</a>
-                     
-                    
-                    </button>
-                     </div>
-                     <div class="Cancel container  ">
-                      <button class="w-75 py-4">
-                       <a href=""> Cancel</a>
-                      
-                     
-                     </button>
-                      </div>
+
                 </div>
             </div>
         </div>
@@ -226,4 +257,5 @@
       </div>
 </body>
 <script src="../js/profile.js"> </script>
+<script src="../js/myaddress.js"> </script>
 </html>

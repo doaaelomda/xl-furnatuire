@@ -67,7 +67,7 @@
             <div class="col-3 setting-profile py-3">
                 <h3 class="pt-4">My Profile</h3>
                 <div class="pt-5  w-100 ">
-                  <div class="d-flex justify-content-around">
+                  <div class="d-flex justify-content-between">
                     <span class="px-4 mx-2"  onclick="toggleCheckboxes(this)">My Account</span>
                     <img class="px-3" src="../assets/images/pages/sofa/arrow-down-svgrepo-com 5.png"
                      onclick="toggleCheckboxes(this)">
@@ -79,68 +79,56 @@
                   </div>
                 </div>
                 <div class="pt-5 w-100 add-settings active-settings ">
-                  <div class="d-flex justify-content-around">
+                  <div class="d-flex justify-content-between">
                   <span class="px-4 mx-2"  onclick="addresssetting(this)" >Address</span>
                   <img class="px-3" onclick="addresssetting(this)" src="../assets/images/pages/sofa/arrow-down-svgrepo-com 5.png">
                   </div>
                   <div style="display: none;" class="setings-address px-5 py-2">
                  <p><a class="active" href="../pages/myaddress.html">_ My Address</a></p>
-                <p><a href="">_ Add New Address</a></p>
+                <p><a href="../pages/addaddress.html">_ Add New Address</a></p>
                 </div>
               </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <div class="pt-5 w-100 ">
-                    <div class="d-flex justify-content-around">
-                    <span class="px-4 mx-2" >My Orders</span>
-                    <img class="px-3" src="../assets/images/pages/sofa/arrow-down-svgrepo-com 5.png">
-                    </div>
-                    <div style="display: none;" class="setings px-5 py-2">
-                   <p><a class="active" href="../pages/profile-person.html">_ Profile</a></p>
-                   <p><a href="">_ Security</a></p>
-                  <p><a href="">_ Manage Account</a></p>
+              <div class="pt-5 w-100  orders-settings">
+                <div  onclick="addorders(this)" class="d-flex justify-content-between">
+                <span  class="px-4 mx-2" >My Orders</span>
+                <img class="px-3" src="../assets/images/pages/sofa/arrow-down-svgrepo-com 5.png">
+                </div>
+                <div style="display: none;" class="orders px-5 py-2">
+               <p><a class="" href="../pages/allorders.html">_ All Orders</a></p>
+               <p><a href="">_ Unpaid</a></p>
+              <p><a href="">_ Processing</a></p>
+              <p><a href="">_ Shipped</a></p>
+              </div>
+            </div>
+                 <div class="pt-5 px-3 mx-3 w-100 return "     >
+                  <div onclick="Returns(this)"   >
+                    <a href="../pages/Returns.html" >    Returns</a>
                   </div>
-                </div>
-                <div class="pt-5 px-5 w-100 ">
-                    <div class="">
-                    <span  >Returns</span>
-                    </div>
-                </div>
-                <div class="pt-5 px-5 w-100 ">
+              </div>
+                <div class="pt-5 px-3 mx-3 w-100 ">
                     <div class="">
                     <span >My Wishlist</span>
                     </div>
                 </div>
-                <div class="pt-5 px-5 w-100 ">
+                <div class="pt-5 px-3 mx-3 w-100 ">
                     <div class="">
                     <span  >My Wallet</span>
                     </div>
                 </div>
-                <div class="pt-5 px-5 w-100 ">
+                <div class="pt-5 px-3 mx-3 w-100 ">
                     <div class="">
                     <span >Payment</span>
                     </div>
                 </div>
-                <div class="pt-5 px-5 w-100 ">
+                <div class="pt-5 px-3 mx-3 w-100 ">
                     <div class="">
                         <img class="" src="../assets/images/pages/profile/logout-svgrepo-com 1.png" alt="">
                         <span class="" >Log Out</span>
                     </div>
                 </div>
             </div>
-            <div class="col-8">
+            <div class="col-9">
                 <div class="information w-100 my-5">
                     <img src="../assets/images/pages/profile/Ellipse 23.png" alt="">
                     <label for="image">
@@ -208,7 +196,7 @@
                         </p>
                       </div>
                       <div class="loaction-place  p-3 my-5 addnew" >
-                        <a href="">
+                        <a href="../pages/addaddress.html">
                         <span>+</span>
                           <h7>Add New Address</h7>
                         </a>
@@ -272,4 +260,5 @@
       </div>
 </body>
 <script src="../js/profile.js"> </script>
+<script src="../js/myaddress.js"> </script>
 </html>
