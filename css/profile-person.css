@@ -68,7 +68,7 @@ text-transform: capitalize;
 text-decoration: none;
 cursor: pointer;
 }
-.return a,.wishlist a {
+.return a,.wishlist a,.wallest a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.80);
   font-family: Poppins;
@@ -97,6 +97,11 @@ font-weight: 500;
 box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.10);
 }
 .my-orders{
+  margin-top: 85px;
+  background-color: #FFF;
+box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.10);
+}
+.my-wallest{
   margin-top: 85px;
   background-color: #FFF;
 box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.10);
@@ -226,6 +231,10 @@ text-transform: capitalize;
     margin-top: 100px;
     font-family: 'Poppines', sans-serif;
     background: rgba(140, 161, 122, 0.03);
+  }
+  .footer-wellest {
+    margin-top: 150px;
+
   }
   #input-foot{
       border-radius: 6px;
@@ -632,6 +641,80 @@ left: 0;
   font-size: 22px;
   font-weight: 500;
 }
+.mywallet{
+      top: 50px;
+    position: relative;
+    left: 60px;
+}
+.mywallet .card{
+  background: rgba(140, 161, 122, 0.05);
+  border: none;
+  border-radius: 0;
+}
+.mywallet .card h5{
+  color: rgba(0, 0, 0, 0.80);
+font-family: Poppins;
+font-size: 16px;
+font-weight: 400;
+}
+.mywallet .card h6{
+  color: #000;
+font-family: Poppins;
+font-size: 30px;
+
+font-weight: 500;}
+.mywallet h3{
+  color: #000;
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 500;
+
+}
+.body-table > tr td{
+  color: rgba(0, 0, 0, 0.70);
+font-size: 16px;
+font-weight: 400;
+}
+.head-table > tr th{
+  color: rgba(0, 0, 0, 0.80);
+font-size: 18px;
+font-weight: 400;
+position: relative;
+left: 3px;
+
+
+}
+.bord{
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+  position: relative;
+  left: 30px;
+}
+.my-wallest table {
+  border-collapse: collapse;
+  line-height: 30px;
+  width: 80%;
+}
+.my-wallest tbody td{
+  padding: 20px;
+}
+.my-wallest    tbody td:not(:last-child) {
+  border-right: 1px solid rgba(0, 0, 0, 0.10);;
+  
+}
+.my-wallest tbody .quant{
+  color: rgba(154, 0, 0, 0.70);
+  
+  
+}
+.my-wallest tbody .quant1{
+  color: var(--green, #718C59);
+  
+  
+}
+.mywallet > table{
+  position: relative;
+  right: 21px;
+}
 .mywish h3:nth-last-child(1){
   color: rgba(0, 0, 0, 0.30);
 font-family: Poppins;
@@ -717,3 +800,16 @@ font-size: 18px;
   top: 40px;
 }
 
+.gotoshop{
+  background-color: #8CA17A;
+  width: 50%;
+  border-radius: 0;
+  border: 0;
+}
+.gotoshop a{
+  color: #FFF;
+font-family: Poppins;
+font-size: 18px;
+font-weight: 400;
+text-decoration: none;
+}

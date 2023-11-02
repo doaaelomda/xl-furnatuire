@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manage Account</title>
+    <title>Wallest</title>
     <link rel="stylesheet" href="../css/profile-person.css">
     
     <link rel="stylesheet" href="../assets/libraries/bootstrap/css/bootstrap.min.css">
@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid mt-0 nav-home px-5 py-2" style="background-color: #fff;">
-          <h1 class="logo navbar-brand px-5 mx-4">Logo</h1>
+          <h1 class="logo navbar-brand px-3 mx-4">Logo</h1>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -55,26 +55,27 @@
           </div>
         </div>
       </nav>
-      <div class=" py-4 container">
+      <div class=" py-4 container" style="    margin-left: 81px;">
         <div class="mt-4 pt-3 ">
           <a href="../index.html" class="home">Home  </a>
           <a href="" class=" home cart active"> | Profile </a>
     
         </div>
       </div>
-      <div class="container py-4">
+      <div class="container py-4" style="margin-bottom: -110px;">
         <div class="row gx-5">
             <div class="col-3 setting-profile py-3">
                 <h3 class="pt-4">My Profile</h3>
-                <div class="pt-5 w-100 active-settings">
+                <div class="pt-5  w-100 active-settings">
                     <div class="d-flex justify-content-between">
                       <span class="px-4 mx-2"  onclick="toggleCheckboxes(this)">My Account</span>
-                      <img class="px-3" src="../assets/images/pages/sofa/arrow-down-svgrepo-com 5.png" onclick="toggleCheckboxes(this)">
+                      <img class="px-3" src="../assets/images/pages/sofa/arrow-down-svgrepo-com 5.png"
+                       onclick="toggleCheckboxes(this)">
                     </div>
                       <div style="display: none;" class="setings px-5 py-2">
                      <p><a  href="../pages/profile-person.html">_ Profile</a></p>
                      <p><a href="../pages/security.html">_ Security</a></p>
-                    <p><a class="active" href="../pages/manageAccount.html">_ Manage Account</a></p>
+                    <p><a href="../pages/manageAccount.html">_ Manage Account</a></p>
                     </div>
                   </div>
                   <div class="pt-5 w-100 add-settings ">
@@ -89,19 +90,20 @@
                 </div>
 
                 <div class="pt-5 w-100  orders-settings">
-                  <div  onclick="addorders(this)" class="d-flex justify-content-between">
-                  <span  class="px-4 mx-2" >My Orders</span>
-                  <img class="px-3" src="../assets/images/pages/sofa/arrow-down-svgrepo-com 5.png">
+                    <div  onclick="addorders(this)" class="d-flex justify-content-between">
+                    <span  class="px-4 mx-2" >My Orders</span>
+                    <img class="px-3" src="../assets/images/pages/sofa/arrow-down-svgrepo-com 5.png">
+                    </div>
+                    <div style="display: none;" class="orders px-5 py-2">
+                   <p><a  href="../pages/allorders.html">_ All Orders</a></p>
+                   <p><a href="" >_ Unpaid</a></p>
+                  <p><a href="">_ Processing</a></p>
+                  <p><a href="">_ Shipped</a></p>
                   </div>
-                  <div style="display: none;" class="orders px-5 py-2">
-                 <p><a class="" href="../pages/allorders.html">_ All Orders</a></p>
-                 <p><a href="">_ Unpaid</a></p>
-                <p><a href="">_ Processing</a></p>
-                <p><a href="">_ Shipped</a></p>
                 </div>
-              </div>
-                 <div class="pt-5 px-3 mx-3 w-100 return "     >
-                  <div onclick="Returns(this)"   >
+
+                <div class="my-5 px-3 mx-3 w-100 return "     >
+                  <div    >
                     <a href="../pages/Returns.html" >    Returns</a>
                   </div>
               </div>
@@ -110,8 +112,8 @@
                   <a href="../pages/wish.html" > My Wishlist</a>
                 </div>
             </div>
-            <div class="mt-5 px-3 mx-3 w-100 wallest "     >
-              <div  >
+            <div class="mt-5 px-3 mx-3 w-100 wallest " onclick="wallet(this)"    >
+              <div   >
                 <a href="../pages/wallest.html" > My Wallet</a>
               </div>
           </div>
@@ -128,116 +130,77 @@
                 </div>
             </div>
             <div class="col-9">
-                <div class="information w-100 my-5">
-
-                    <img src="../assets/images/pages/profile/Ellipse 23.png" alt="">
-                    <label for="image">
-                      <img class="image-edite" src="../assets/images/pages/profile/camera.png" alt="">
-                      <input id="image" type="file" hidden>
-                    </label>
-                    <div>
-                        <p>Jean Windler</p>
-                        <h6>Egypt , Cairo </h6>
-                    </div>
-                    <div class=" gx-5 gy-1 row p-5 informat manage">
-                            <div class="col-6">
-                                <p for="Name ">First Name</p>
-                              <input type="email" class="py-2 form-control "
-                               id="exampleFormControlInput1"
-                                placeholder="Enter Your First Name" 
-                                style="border-radius: 0;">
-                            </div>
-                            <div class="col-6">
-                                <p for="Name ">Last Name</p>
-                              <input type="email" class="py-2 form-control "
-                               id="exampleFormControlInput1"
-                                placeholder="Enter Your Last Name" 
-                                style="border-radius: 0;">
-                            </div>
-                            <div class="col-6">
-                                <p for="Name ">Email Address</p>
-                              <input type="email" class="py-2 form-control "
-                               id="exampleFormControlInput1"
-                                placeholder="Enter Your Email Address" 
-                                style="border-radius: 0;">
-                            </div>
-                            <div class="col-6">
-                                <p for="Name ">Phone Number</p>
-                              <input type="email" class="py-2 form-control "
-                               id="exampleFormControlInput1"
-                                placeholder="+02 | " 
-                                style="border-radius: 0;">
-                            </div>
-                            <div class="col-6">
-                                <p for="Name ">Gender</p>
-                                <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback" required>
-                                    <option selected disabled value="">Gender</option>
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                  </select>
-                            </div>
-                            <div class="col-6">
-                                <p for="Name ">Birthday</p>
-                                <div class="row gx-2">
-                                    <div class="col-3">
-                                        <select class="  form-select "  required>
-                                            <option selected disabled value="">dd</option>
-                                            <option>Male</option>
-                                            <option>Female</option>
-                                          </select>
-                                    </div>
-                                    <div class="col-3">
-                                        <select class="form-select "  required>
-                                            <option selected disabled value="">M</option>
-                                          </select>
-                                    </div>
-                                    <div class="col-6">
-                                        <select class="form-select "  required>
-                                            <option selected disabled value="">Years</option>
-
-                                          </select>
-                                    </div>
-                            
-                                
+                <div class="my-wallest   my-5 " style="height: 80%;" >
+                    <div class="p-4 mywallet">
+                        <h3>My Wallet</h3>
+                        <div class="card w-75 mt-4" >
+                            <div class="row p-4">
+                                <div class="col-4">
+                                    <h5>Balance</h5>
+                                    <h6>$ 500.000</h6>
+                                </div>
+                                <div class="col-2 bord"></div>
+                                <div class="col-6">
+                                    <h5>Available Withdraw Furniture Credit</h5>
+                                    <h6>$ 0.00</h6>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <p for="Name ">What Is Your Favourite Category ? </p>
-                                <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback" required>
-                                    <option selected disabled value=""></option>
-
-                                  </select>
-                            </div>
-                            <div class="col-6">
-                                <p for="Name ">What Is Your Favourite Color ? </p>
-                                <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback" required>
-                                    <option selected disabled value=""></option>
-
-                                  </select>
-                            </div>
-                            <div class="password-confirm container pt-5">
-                                <button class=" py-4"  style="width: 96%;">
-                                 <a href=""> Save Changes</a>
-                                
-                               
-                               </button>
-                                </div>
-                                <div class="Cancel container pt-2  ">
-                                 <button class=" py-4" style="width: 96%;">
-                                  <a href=""> Cancel</a>
-                                 
-                                
-                                </button>
-                                 </div>
                             
-
+                          </div>
                     </div>
+                    <table class="table my-5 container ">
+                        <thead class="head-table">
+                          <tr>
+                            <th scope="col">Created</th>
+                            <th scope="col">Type</th>
+                            <th scope="col">Order No.</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Balance</th>
+                            
+                          </tr>
+                        </thead>
+                        <tbody class="body-table">
+                          <tr>
+                            <td >18 Jan , 2022</td>
+                            <td>Order Fee</td>
+                            <td>#252</td>
+                            <td class="quant">-201.00 $</td>
+                            <td>129.00 $</td>
+                          </tr>
+                          <tr>
+                            <td >20 Jun , 2022</td>
+                            <td>Order Return</td>
+                            <td>#652</td>
+                            <td class="quant1">330.00 $</td>
+                            <td>330.00 $</td>
+                          </tr>
+                          <tr>
+                            <td >18 Jan , 2022</td>
+                            <td>Order Fee</td>
+                            <td>#252</td>
+                            <td class="quant1">-201.00 $</td>
+                            <td>129.00 $</td>
+                          </tr>
+                          <tr>
+                            <td >18 Jan , 2022</td>
+                            <td>Order Fee</td>
+                            <td>#252</td>
+                            <td class="quant">-201.00 $</td>
+                            <td>129.00 $</td>
+                          </tr>
 
-                </div>
+                         
+                        </tbody>
+                      </table>
             </div>
+ 
         </div>
+    
+
+        </div>
+      
       </div>
-      <div class="footer-home" >
+      <div class="footer-home footer-wellest " >
         <div class="container py-3">
           <div class="row pt-5">
             <div class="col-md-3">
@@ -289,7 +252,7 @@
         </p>
     
       </div>
-
 </body>
-<script src="../js/profile.js"> </script>
+<script src="../js/wallest.js"></script>
+<script src="../assets/libraries/bootstrap/js/bootstrap.min.js"></script>
 </html>
