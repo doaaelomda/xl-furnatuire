@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Person</title>
+    <title>Payment Methods</title>
     <link rel="stylesheet" href="../css/profile-person.css">
     
     <link rel="stylesheet" href="../assets/libraries/bootstrap/css/bootstrap.min.css">
@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid mt-0 nav-home px-5 py-2" style="background-color: #fff;">
-         <h1 class="logo navbar-brand px-4 mx-2">Logo</h1>
+          <h1 class="logo navbar-brand px-3 mx-4">Logo</h1>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -134,7 +134,7 @@
       </button>
     </div>
     </div>
-      <div class=" py-4 container">
+      <div class=" py-4 container" style="    margin-left: 81px;">
         <div class="mt-4 pt-3 ">
           <a href="../index.html" class="home">Home  </a>
           <a href="" class=" home cart active"> | Profile </a>
@@ -152,7 +152,7 @@
                        onclick="toggleCheckboxes(this)">
                     </div>
                       <div style="display: none;" class="setings px-5 py-2">
-                     <p><a class="active" href="../pages/profile-person.html">_ Profile</a></p>
+                     <p><a  href="../pages/profile-person.html">_ Profile</a></p>
                      <p><a href="../pages/security.html">_ Security</a></p>
                     <p><a href="../pages/manageAccount.html">_ Manage Account</a></p>
                     </div>
@@ -174,30 +174,30 @@
                     <img class="px-3" src="../assets/images/pages/sofa/arrow-down-svgrepo-com 5.png">
                     </div>
                     <div style="display: none;" class="orders px-5 py-2">
-                   <p><a class="" href="../pages/allorders.html">_ All Orders</a></p>
+                   <p><a  href="../pages/allorders.html">_ All Orders</a></p>
                    <p><a href="../pages/unpaid.html" >_ Unpaid</a></p>
                   <p><a href="">_ Processing</a></p>
                   <p><a href="">_ Shipped</a></p>
                   </div>
                 </div>
 
-                 <div class="pt-5 px-3 mx-3 w-100 return "     >
+                <div class="mt-5 px-3 mx-3 w-100 return "     >
                   <div onclick="Returns(this)"   >
                     <a href="../pages/Returns.html" >    Returns</a>
                   </div>
               </div>
               <div class="mt-5 px-3 mx-3 w-100 wishlist "     >
-                <div onclick="wishlist(this)"   >
+                <div    >
                   <a href="../pages/wish.html" > My Wishlist</a>
                 </div>
             </div>
             <div class="mt-5 px-3 mx-3 w-100 wallest "     >
-              <div >
+              <div  >
                 <a href="../pages/wallest.html" > My Wallet</a>
               </div>
           </div>
-          <div class="pt-5 px-3 mx-3 w-100 payment ">
-            <div >
+          <div class="mt-5 px-3 mx-3 w-100 payment ">
+            <div onclick="payment(this)" >
                 <a href="../pages/payment.html" > Payment</a>
             </div>
         </div>
@@ -209,85 +209,31 @@
                 </div>
             </div>
             <div class="col-9">
-                <div class="information w-100 my-5">
-                    <img src="../assets/images/pages/profile/Ellipse 23.png" alt="">
-                    <label for="image">
-                      <img class="image-edite" src="../assets/images/pages/profile/camera.png" alt="">
-                      <input id="image" type="file" hidden>
-                    </label>
-                    <div>
-                        <p>Jean Windler</p>
-                        <h6>Egypt , Cairo </h6>
+              <div class="p-4 my-payment ">
+                <div class="mywallet">
+                <h3>My Wallet</h3>
+                <div class=" location">
+                
+                  <div class="loaction-place payment m-0 w-75 p-2  " >
+                   <img src="../assets/images/pages/profile/credit-card-svgrepo-com (1) 1.png" alt="">
+                   <span>Credit Card</span> 
+                   <div class="d-flex justify-content-end" >  
+                    <div class="d-flex " >
+                      <img src="../assets/images/pages/profile/edit-02-svgrepo-com 1.png" alt="">
+                      <span class="edit">Change</span>
                     </div>
-                    <div class=" gx-5 gy-3 row p-5 informat">
-                            <div class="col-6">
-                                <label for="Name ">Name</label>
-                              <input type="email" class="py-3 form-control "
-                               id="exampleFormControlInput1"
-                                placeholder="Jean Windear" 
-                                style="border-radius: 0;">
-                            </div>
-                            <div class="col-6">
-                                <label for="Name ">Email</label>
-                              <input type="email" class="py-3 form-control "
-                               id="exampleFormControlInput1"
-                                placeholder="Jean Windler@gmail.com" 
-                                style="border-radius: 0;">
-                            </div>
-                            <div class="col-6">
-                                <label for="Name " >Address</label>
-                              <input type="email" class="py-3 form-control "
-                               id="exampleFormControlInput1"
-                                placeholder="Zagazig , El Sharqia , Egypt" 
-                                style="border-radius: 0;">
-                            </div>
-                            <div class="col-6">
-                                <label for="Name " class="ph" style="left: -160px;">Phone Number</label>
-                              <input type="email" class="py-3 form-control "
-                               id="exampleFormControlInput1"
-                                placeholder="+02 | 152425254212" 
-                                style="border-radius: 0;">
-                            </div>
+                  </div>
+                    <p class="w-75 px-5">
+                      Visa xxxxx-xxxx-xxxx-7456 
+                    </p>
+                  </div>
+               
+              </div>
 
-                    </div>
-                    <div class="container category px-4">
-                        <p class="px-4">Your Favourite Category :</p>
-                        <div class="row w-75 px-4">
-                            <div class="col-3">
-                                <button type="button" class="btn">Sofa</button>
-                            </div>
-                            <div class="col-3">
-                                <button type="button" class="btn ">Chair</button>
-                            </div>
-                            <div class="col-3">
-                                <button type="button" class="btn ">Decor</button>
-                            </div>
-                            <div class="col-3">
-                                <button type="button" class="btn ">Lamps</button>
-                            </div>
-                            <div class="col-3">
-                                <button type="button" class="btn ">Plante</button>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="container category px-4 pb-5">
-                        <p class="px-4">Your Favourite Color :</p>
-                        <div class="row w-75  px-4">
-                            <div class="col-4">
-                                <button type="button" class="btn">White</button>
-                            </div>
-                            <div class="col-4">
-                                <button type="button" class="btn ">Beige</button>
-                            </div>
-                            <div class="col-4">
-                                <button type="button" class="btn ">Black</button>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
             </div>
+
+        </div>
+      </div>
         </div>
       </div>
       <div class="footer-home" >
@@ -343,6 +289,7 @@
     
       </div>
 </body>
-<script src="../js/profile.js"> </script>
+<script src="../js/payment.js"></script>
 <script src="../index.js"></script>
+<script src="../assets/libraries/bootstrap/js/bootstrap.min.js"></script>
 </html>

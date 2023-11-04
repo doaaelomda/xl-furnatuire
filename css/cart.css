@@ -295,3 +295,125 @@ line-height: normal;
 .coponcode{
   background-color: #F2F4EF;
 }
+
+.profile-page {
+  display: none;
+  ;
+  background-color: #fff;
+  padding: 10px;
+
+}
+
+.profile-list,.cart-content {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+
+  right: 0;
+  background-color: #fff;
+  padding: 10px;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 191px;
+
+  position: absolute;
+  top: 66px;
+  display: grid;
+  justify-content: space-between;
+}
+
+.profile-list ul {
+
+  padding: 0;
+}
+
+.profile-list li {
+  margin: 5px 0;
+  list-style: none;
+}
+
+.profile-list li a {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  font-size: 10px;
+
+
+}
+
+.profile-list p {
+  border-bottom: 1px solid #ddd;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 11px;
+  font-weight: 500;
+
+}
+.profile-list li:nth-last-child(1) {
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-content header{
+    display: flex;
+    justify-content: space-between;
+   
+    border-bottom: 1px solid #ddd;
+}
+.cart-content header img{
+    width: 21px;
+    height: 21px;
+}
+.cart-content p{
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.cart-content button a{
+    text-decoration: none;
+    color: #fff;
+}
+.cart-content section span p{
+    color: rgba(0, 0, 0, 0.80);
+font-size: 16px;
+
+font-weight: 400;
+}
+.cart-content .qty{
+    color: rgba(0, 0, 0, 0.50);
+font-size: 14px;
+font-weight: 400;
+/* padding-top: 10px; */
+}
+.right-cart{
+    position: absolute;
+    right: 0px;
+}
+.cart-item,.cart-item3{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.cart-item img,.cart-item3 img{
+  width: 36%;
+}
+.cart-item3{
+    padding-bottom: 100px;
+}
+.cart-content .foot-cart{
+    display: flex;
+    justify-content: space-between;
+}
+.cart-content .create{
+    width: 100%;
+    background:  #8CA17A;
+    border: none;
+    color: white;
+
+}
+.cart-content #input-foot::placeholder{
+    color: rgba(0, 0, 0, 0.35);
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+
+

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us</title>
+  <title>Shop</title>
   <link rel="stylesheet" href="../css/shop.css">
   <link rel="stylesheet" href="../assets/libraries/bootstrap/css/bootstrap.min.css">
 
@@ -13,8 +13,8 @@
 
 <body>
   <nav class="navbar navbar-expand-lg ">
-    <div class="container-fluid mt-0 nav-home px-5 py-2" style="background-color: #fff;">
-      <h1 class="logo navbar-brand px-5 mx-4">Logo</h1>
+    <div class="container-fluid mt-0 nav-home  py-3" >
+      <h1 class="logo navbar-brand px-4 mx-2">Logo</h1>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -37,33 +37,111 @@
             <a class="nav-link" href="../pages/contact.html">Contact</a>
           </li>
         </ul>
-        <ul class="navbar-nav ml-auto mx-5">
-          <li class="nav-item">
-            <a class="nav-link">
+        <ul class="navbar-nav ml-auto mx-5"> 
+          <div id="searchWindow" class="search-window" style="display: none;">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    
+            </form>
+          </div>
+          <li class="nav-item" onclick="searchapper()">
+            <a class="nav-link" id="openSearchModal" >
               <img src="../assets/images/pages/icons_Nav/searchicon.png" alt="">
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" onclick="profileset()">
             <a class="nav-link">
               <img src="../assets/images/pages/icons_Nav/humanicon.png" alt="">
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link">
+          <li class="nav-item" onclick="cart()">
+            <a class="nav-link" >
               <img src="../assets/images/pages/icons_Nav/shoppingicon.png" alt="">
             </a>
           </li>
         </ul>
+        
       </div>
     </div>
   </nav>
-  <div class=" py-5 container home-inst">
-    <div class="mt-4 p-3">
+    <div class="profile-page w-75"   >
+      <ul class="py-4 profile-list">
+        <p class="mt-5 ">
+          Jazmyne_Hahn@hotmail.com
+      </p>
+      <li><a href="../pages/profile-person.html">My Profile</a></li>
+      <li><a href="../pages/allorders.html">My Orders</a></li>
+      <li><a href="../pages/security.html">Security</a></li>
+      <li><a href="../pages/wish.html">My Wishlist</a></li>
+      <li><a href="../pages/wallest.html">My Wallet</a></li>
+          <li><a href="">Sign Out</a></li>
+      </ul>
+  </div>
+  <div id="cartContent" class="cart-content " style="display: none; width: 444px;">
+    <header class="container my-4">
+      <p>My Cart</p>
+      <img id="closeCart" src="../assets/images/pages/mycart/close-x-svgrepo-com (2) 1.png" alt="">
+</header>
+<section class="container">
+  <div class="row cart-item">
+      <img class="col-1" src="../assets/images/pages/mycart/Rectangle 357.png" alt="">
+      <span class="col-2">
+      <p >Item Name</p>
+      <p class="qty px-4">Qty : 2</p>
+  </span>
+  <span class="col-2 right-cart">
+      <p >25 $</p>
+      <p class="col-1">
+          <img src="../assets/images/pages/mycart/Vector.png" alt="">
+      </p> 
+  </span> 
+  </div>
+  <div class="row cart-item">
+      <img class="col-1" src="../assets/images/pages/mycart/Rectangle 358.png" alt="">
+      <span class="col-2">
+      <p >Item Name</p>
+      <p class="qty ">Qty : 2</p>
+  </span>
+  <span class="col-2 right-cart">
+      <p >25 $</p>
+      <p class="col-1">
+          <img src="../assets/images/pages/mycart/Vector.png" alt="">
+      </p> 
+  </span> 
+  </div>
+  <div class="row cart-item3 ">
+      <img class="col-1" src="../assets/images/pages/mycart/Rectangle 359.png" alt="">
+      <span class="col-2">
+      <p >Item Name</p>
+      <p class="qty ">Qty : 2</p>
+  </span>
+  <span class="col-2 right-cart">
+      <p >25 $</p>
+      <p class="col-1">
+          <img src="../assets/images/pages/mycart/Vector.png" alt="">
+      </p> 
+  </span> 
+  </div>
+
+</section>
+<div class="container">
+  <div class="foot-cart py-2">
+      <p>SubTotal </p>
+      <p>185 $</p>
+  </div>
+  <button class="create py-3">
+      <a href="pages/cart.html">View Cart</a>
+  </button>
+</div>
+</div>
+  <div class=" p-5  home-inst container-fluid" >
+    <div class="">
+    <div class="mt-4 py-3">
       <a href="../index.html" class="home">Home |</a>
       <a href="../pages/shop.html" class="cart active home">Shop</a>
       <p class="pt-4">Shop</p>
   </div>
-    <div class="container">
+    <div class=""   >
       <section class="row g-4 align-items-start" class="producats">
         <div class="col-6 col-lg-4" class="">
           <div class="product-card">
@@ -155,10 +233,10 @@
         </div>
       </section>
     </div>
-  
+  </div>
   </div>
   <div class="mt-5 footer-home" >
-    <div class="container py-3">
+    <div class="container-fluid py-3 px-5">
       <div class="row pt-5">
         <div class="col-md-3">
           <h4 class="px-5">Logo</h4>
@@ -211,4 +289,5 @@
   </div>
 </body>
 <script src="../assets/libraries/bootstrap/js/bootstrap.min.js"></script>
+<script src="../index.js"></script>
 </html>

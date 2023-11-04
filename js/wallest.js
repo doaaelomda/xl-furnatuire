@@ -36,3 +36,5 @@ function addresssetting() {
  
 
   }
+  window.onload = wallet;
+  document.getElementById('wallest').addEventListener('click', wallet);

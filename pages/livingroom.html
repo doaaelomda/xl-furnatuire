@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us</title>
+  <title>Living Room</title>
   <link rel="stylesheet" href="../css/livingroom.css">
   <link rel="stylesheet" href="../assets/libraries/bootstrap/css/bootstrap.min.css">
 
@@ -13,8 +13,8 @@
 
 <body>
   <nav class="navbar navbar-expand-lg ">
-    <div class="container-fluid mt-0 nav-home px-5 py-2" style="background-color: #fff;">
-      <h1 class="logo navbar-brand px-5 mx-4">Logo</h1>
+    <div class="container-fluid mt-0 nav-home  py-3" >
+      <h1 class="logo navbar-brand px-5 mx-2">Logo</h1>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -37,70 +37,152 @@
             <a class="nav-link" href="../pages/contact.html">Contact</a>
           </li>
         </ul>
-        <ul class="navbar-nav ml-auto mx-5">
-          <li class="nav-item">
-            <a class="nav-link">
+        <ul class="navbar-nav ml-auto mx-5"> 
+          <div id="searchWindow" class="search-window" style="display: none;">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    
+            </form>
+          </div>
+          <li class="nav-item" onclick="searchapper()">
+            <a class="nav-link" id="openSearchModal" >
               <img src="../assets/images/pages/icons_Nav/searchicon.png" alt="">
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" onclick="profileset()">
             <a class="nav-link">
               <img src="../assets/images/pages/icons_Nav/humanicon.png" alt="">
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link">
+          <li class="nav-item" onclick="cart()">
+            <a class="nav-link" >
               <img src="../assets/images/pages/icons_Nav/shoppingicon.png" alt="">
             </a>
           </li>
         </ul>
+        
       </div>
+      
+      
     </div>
   </nav>
-  <div class=" py-5 container home-inst">
+    <div class="profile-page w-75 my-5  "   >
+      <ul class="py-5 profile-list">
+        <p class="mt-5 ">
+          Jazmyne_Hahn@hotmail.com
+      </p>
+      <li><a href="../pages/profile-person.html">My Profile</a></li>
+      <li><a href="../pages/allorders.html">My Orders</a></li>
+      <li><a href="../pages/security.html">Security</a></li>
+      <li><a href="../pages/wish.html">My Wishlist</a></li>
+      <li><a href="../pages/wallest.html">My Wallet</a></li>
+          <li><a href="">Sign Out</a></li>
+      </ul>
+  </div>
+  <div id="cartContent" class="cart-content " style="display: none;width: 444px;">
+    <header class="container my-4">
+      <p>My Cart</p>
+      <img id="closeCart" src="../assets/images/pages/mycart/close-x-svgrepo-com (2) 1.png" alt="">
+</header>
+<section class="container">
+  <div class="row cart-item">
+      <img class="col-1" src="../assets/images/pages/mycart/Rectangle 357.png" alt="">
+      <span class="col-2">
+      <p >Item Name</p>
+      <p class="qty px-4">Qty : 2</p>
+  </span>
+  <span class="col-2 right-cart">
+      <p >25 $</p>
+      <p class="col-1">
+          <img src="../assets/images/pages/mycart/Vector.png" alt="">
+      </p> 
+  </span> 
+  </div>
+  <div class="row cart-item">
+      <img class="col-1" src="../assets/images/pages/mycart/Rectangle 358.png" alt="">
+      <span class="col-2">
+      <p >Item Name</p>
+      <p class="qty ">Qty : 2</p>
+  </span>
+  <span class="col-2 right-cart">
+      <p >25 $</p>
+      <p class="col-1">
+          <img src="../assets/images/pages/mycart/Vector.png" alt="">
+      </p> 
+  </span> 
+  </div>
+  <div class="row cart-item3 ">
+      <img class="col-1" src="../assets/images/pages/mycart/Rectangle 359.png" alt="">
+      <span class="col-2">
+      <p >Item Name</p>
+      <p class="qty ">Qty : 2</p>
+  </span>
+  <span class="col-2 right-cart">
+      <p >25 $</p>
+      <p class="col-1">
+          <img src="../assets/images/pages/mycart/Vector.png" alt="">
+      </p> 
+  </span> 
+  </div>
+
+</section>
+<div class="container">
+  <div class="foot-cart py-2">
+      <p>SubTotal </p>
+      <p>185 $</p>
+  </div>
+  <button class="create py-3">
+      <a href="pages/cart.html">View Cart</a>
+  </button>
+</div>
+</div>
+<div class=" p-5  home-inst container-fluid" >
+  <div class="">
     <div class="mt-4 p-3">
       <a href="../index.html" class="home">Home |</a>
       <a href="../pages/shop.html" class=" home">Shop |</a>
       <a href="../pages/livingroom.html" class="cart active home">Living Room</a>
       <p class="pt-4">Living Room</p>
-      <div class="arrow">
-        <img src="../assets/images/pages/living-room/arrow-forward-long-svgrepo-com (1) 4.png" alt="">
-        <img src="../assets/images/pages/living-room/arrow-forward-long-svgrepo-com (1) 6.png" alt="">
-      </div>
+      
     </div>
-    <div class="container sofas">
-        <div class="row">
+    <div class=" sofas"  >
+      <div class="arrow slider">
+        <img src="../assets/images/pages/living-room/arrow-forward-long-svgrepo-com (1) 4.png" alt="Previous" id="prevButton">
+        <img src="../assets/images/pages/living-room/arrow-forward-long-svgrepo-com (1) 6.png" alt="Next" id="nextButton">
+      </div>
+        <div class="row  ">
             <div class="col-2">
                 <a href="../pages/sofa.html">
-                <img class="w-75 hover-item" src="../assets/images/pages/living-room/Rectangle 395.png" alt="">
+                <img class="w-100 hover1-item" src="../assets/images/pages/living-room/Rectangle 395.png" alt=""> </a>
                 <a href="">Sofas</a>
-            </a>
             </div>
             <div class="col-2">
-                <img  class="w-75 hover-item" src="../assets/images/pages/living-room/Rectangle 396.png" alt="">
+                <img  class="w-100 hover-item" src="../assets/images/pages/living-room/Rectangle 396.png" alt="">
                 <a href="">Chairs</a>
             </div>
             <div class="col-2">
-                <img class="w-75 hover-item" src="../assets/images/pages/living-room/Rectangle 397.png" alt="">
+                <img class="w-100 hover1-item" src="../assets/images/pages/living-room/Rectangle 397.png" alt="">
                 <a href="">Mirrors</a>
             </div>
             <div class="col-2">
-                <img class="w-75 hover-item" src="../assets/images/pages/living-room/Rectangle 398.png" alt="">
+                <img class="w-100 hover-item" src="../assets/images/pages/living-room/Rectangle 398.png" alt="">
                 <a href="">Tables</a>
             </div>
             <div class="col-2">
-                <img class="w-75 hover-item" src="../assets/images/pages/living-room/Rectangle 399.png" alt="">
+                <img class="w-100 hover-item" src="../assets/images/pages/living-room/Rectangle 399.png" alt="">
                 <a href="">Sofas</a>
             </div>
             <div class="col-2">
-                <img  class="w-75 hover-item" src="../assets/images/pages/living-room/Rectangle 406.png" alt="">
+                <img  class="w-100 hover-item" src="../assets/images/pages/living-room/Rectangle 406.png" alt="">
                 <a href="">Lamps</a>
             </div>
+            
         
         </div>
+      
     </div>
-    <div class="py-5 container mt-5">
-        <div class="row">
+    <div class="py-5  mt-5 ">
+        <div class="row gx-0">
             <div class="col-5 p-5 off">
                 <div class="px-5 pt-5">
                 <p>70 % Off </p>
@@ -115,7 +197,7 @@
             </div>
         </div>
     </div>
-    <div class="py-5 container">
+    <div class="py-5 ">
         <section class="row g-4 align-items-start" >
             <div class="col-6 col-lg-3" class="producats">
               <div class="product-card">
@@ -269,21 +351,31 @@
            
           </section>
     </div>
-    <div class=" container">
-        <div class="pang row">
-            <div class="col-2 box"><</div>
-            <div class="col-2 box active">1</div>
-            <div class="col-2 box">2</div>
-            <div class="col-2 box">3</div>
-            <div class="col-2 box">4</div>
-            <div class="col-2 box">></div>
-
-        </div>
-    </div>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="#" id="per" aria-label="Previous">
+            <span aria-hidden="true"><</span>
+          </a>
+        </li>
+        <li class="page-item "><a class="page-link " href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li>....</li>
+        <li class="page-item">
+          <a class="page-link" id="next" href="#" aria-label="Next">
+            <span aria-hidden="true">></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
   </div>
+  </div>
+</div>
   <div class="mt-5 footer-home" >
-    <div class="container py-3">
+    <div class="container-fluid py-3 px-5">
       <div class="row pt-5">
         <div class="col-md-3">
           <h4 class="px-5">Logo</h4>
@@ -335,5 +427,6 @@
 
   </div>
 </body>
-<script src="assets/libraries/bootstrap/js/bootstrap.min.js"></script>
+<script src="../index.js"></script>
+<script src="../assets/libraries/bootstrap/js/bootstrap.min.js"></script>
 </html>

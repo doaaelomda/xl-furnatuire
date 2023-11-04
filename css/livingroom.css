@@ -88,10 +88,11 @@ font-weight: 500;
     text-align: center;
 }
 .off{
+  margin-left: -57px;
     bottom: 62px;
-    left: 16px;
+    left: 19px;
     position: relative;
-    height: 62vh;
+    height: 70vh;
     background-image: url(../assets/images/pages/living-room/Rectangle\ 413.png);
 }
 .off p:nth-child(1){
@@ -112,6 +113,9 @@ font-family: Poppins;
 font-size: 14px;
 font-weight: 400;
 
+}
+.nav-home{
+  background-color: #fff;
 }
 .shop{
     background: rgba(140, 161, 122, 0.80);
@@ -181,6 +185,19 @@ font-weight: 400;
   .arrow {
     text-align: right;
   }
+  .arrow img:nth-child(2):hover {
+    -webkit-transform: translateX(20px); /* تحريك الصورة 20 بيكسل إلى اليمين عند تمرير المؤشر عليها */
+    transform: translateX(20px);
+    -webkit-transition: transform 2s; /* تأثير التدرج على خاصية التحول (transform) لمدة 2 ثانية (يمكنك تعديل المدة حسب الرغبة) */
+    transition: transform 2s;
+  }
+  .arrow img:nth-child(1):hover {
+    -webkit-transform: translateX(-20px); /* تحريك الصورة 20 بيكسل إلى اليمين عند تمرير المؤشر عليها */
+    transform: translateX(-20px);
+    -webkit-transition: transform 2s; /* تأثير التدرج على خاصية التحول (transform) لمدة 2 ثانية (يمكنك تعديل المدة حسب الرغبة) */
+    transition: transform 2s;
+  }
+    
   .home-inst div > a{
     text-decoration: none;
     cursor: pointer;
@@ -219,28 +236,34 @@ font-weight: 400;
       font-weight: 400;
       border-top: 1px solid rgba(0, 0, 0, 0.08);
   } 
-  .pang .box{
-    border: 1px solid rgba(0, 0, 0, 0.10);
-    width: 30px;
-    height: 30px;
+  .page-item .page-link{
     color: #000;
     font-family: Poppins;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 400;
-    margin: 10px
+ 
   }
-  .box:nth-child(1),.box:nth-child(6){
+  .page-item:nth-child(2) .page-link{
+    background-color: #718C59;
+    color: #FFF;
+  }
+  .page-item{
+    margin: 10px;
+  }
+  #per,#next{
     border: 1px solid rgba(0, 0, 0, 0.10);
-    width: 30px;
-    height: 30px;
     color: #718C59;
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 17px;
+    font-weight: 400;
+    border-radius: 0;
   }
-  .pang {
-    text-align: center;
+  .pagination {
+    align-items: center;
     display: flex;
     justify-content: center;
+  }
+  .Page{
+    border-radius: 0;
   }
  .box.active{
     background-color: #718C59;
@@ -252,3 +275,128 @@ font-weight: 400;
   .hover-item:hover {
     transform: translate(0, -30px);
   }
+  .hover1-item:hover  {
+    opacity: 0; 
+  -webkit-transition: opacity 1s; 
+  transition: opacity 0.5s;
+  }
+
+  .profile-page {
+    display: none;
+    ;
+    background-color: #fff;
+    padding: 10px;  
+  }
+  
+  .profile-list,.cart-content {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  
+    right: 0;
+    background-color: #fff;
+    padding: 10px;
+  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 191px;
+  
+    position: absolute;
+    top: 66px;
+    display: grid;
+    justify-content: space-between;
+  }
+  
+  .profile-list ul {
+  
+    padding: 0;
+  }
+  
+  .profile-list li {
+    margin: 5px 0;
+    list-style: none;
+  }
+  
+  .profile-list li a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    font-size: 10px;
+  
+  
+  }
+  
+  .profile-list p {
+    border-bottom: 1px solid #ddd;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 11px;
+    font-weight: 500;
+  
+  }
+  .profile-list li:nth-last-child(1) {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cart-content header{
+      display: flex;
+      justify-content: space-between;
+     
+      border-bottom: 1px solid #ddd;
+  }
+  .cart-content header img{
+      width: 21px;
+      height: 21px;
+  }
+  .cart-content p{
+      color: #000;
+      font-size: 20px;
+      font-weight: 500;
+      text-transform: capitalize;
+  }
+  .cart-content button a{
+      text-decoration: none;
+      color: #fff;
+  }
+  .cart-content section span p{
+      color: rgba(0, 0, 0, 0.80);
+  font-size: 16px;
+  
+  font-weight: 400;
+  }
+  .cart-content .qty{
+      color: rgba(0, 0, 0, 0.50);
+  font-size: 14px;
+  font-weight: 400;
+  /* padding-top: 10px; */
+  }
+  .right-cart{
+      position: absolute;
+      right: 0px;
+  }
+  .cart-item,.cart-item3{
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+  }
+  .cart-item img,.cart-item3 img{
+    width: 36%;
+  }
+  .cart-item3{
+      padding-bottom: 100px;
+  }
+  .cart-content .foot-cart{
+      display: flex;
+      justify-content: space-between;
+  }
+  .cart-content .create{
+      width: 100%;
+      background:  #8CA17A;
+      border: none;
+      color: white;
+  
+  }
+  .cart-content #input-foot::placeholder{
+      color: rgba(0, 0, 0, 0.35);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+    }
+  

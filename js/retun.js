@@ -1,8 +1,7 @@
+//open the orders option
 function addorders() {
     var orders = document.querySelector('.orders');
     orders.style.display = orders.style.display === 'block' ? 'none' : 'block';
-    var activesettings = document.querySelector('.orders-settings');
-    activesettings.style.backgroundColor = activesettings.style.backgroundColor === 'rgba(113, 140, 89, 0.12)' ? 'none' : 'rgba(113, 140, 89, 0.12)';
   }
 //open the addressing option
 function addresssetting() {
@@ -12,6 +11,8 @@ function addresssetting() {
 
 //open the return option and open the empty page return
 function Returns() {
+  var Returns = document.querySelector('.return');
+  Returns.style.backgroundColor = Returns.style.backgroundColor === 'rgba(113, 140, 89, 0.12)' ? 'none' : 'rgba(113, 140, 89, 0.12)';
 var returnhidden=document.querySelector('.returnhidden')
 returnhidden.style.display = returnhidden.style.display === 'block' ? 'none' : 'block';
 var myorders=document.querySelector('.my-orders');
@@ -26,9 +27,8 @@ function wishlist() {
 }
 
 // to get the address option alwayes open when going to pages
-window.onload = addorders;
-document.getElementById('allorders').addEventListener('click', addorders);
-document.getElementById('unpaid').addEventListener('click', addorders);
+window.onload = Returns;
+document.getElementById('returns').addEventListener('click', Returns);
 
 //open the togglecheches option
 function toggleCheckboxes() {
