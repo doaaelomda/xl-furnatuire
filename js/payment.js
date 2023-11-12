@@ -36,3 +36,5 @@ function addresssetting() {
  
 
   }
+  window.onload = payment;
+  document.getElementById('payment-card').addEventListener('click', payment);

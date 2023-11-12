@@ -260,7 +260,7 @@ text-transform: capitalize;
     
     position: relative;
     top: 25px;
-    left: -190px;
+    right: 150px;;
     color: rgba(0, 0, 0, 0.30);
 font-family: Poppins;
 font-size: 16px;
@@ -278,7 +278,7 @@ text-transform: capitalize;
   }
   .password-confirm label{
     display: flex;
-    margin-left: 125px;
+    margin-left: 107px;
     color: rgba(0, 0, 0, 0.70);
 font-size: 16px;
 font-weight: 400;
@@ -365,7 +365,7 @@ font-size: 22px;
 font-weight: 500;
   }
   .loaction-place{
-    margin: auto;
+    /* margin: auto; */
     font-family: Poppins;
     text-align: left;
     border: 1px solid rgba(0, 0, 0, 0.30);
@@ -428,6 +428,16 @@ line-height: normal;
     cursor: pointer;
     display: flex;
     justify-content: space-around;
+  }
+  .addnewcard{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .addnewcard span, .addnewcard >h6{
+    color:#718C59;
+    font-size: 22px;
+    font-weight: 500;
   }
   .loaction-place a{
     text-decoration: none;
@@ -677,8 +687,8 @@ font-weight: 500;}
 .mywallet h3{
   color: #000;
   font-family: Poppins;
-  font-size: 22px;
-  font-weight: 500;
+  font-size: 25px;
+  font-weight: 600;
 
 }
 .body-table > tr td{
@@ -694,6 +704,14 @@ position: relative;
 left: 3px;
 
 
+}
+.loaction-place>h6{
+  color: rgba(0, 0, 0, 0.80);
+  font-family: Poppins;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 .bord{
   border-left: 1px solid rgba(0, 0, 0, 0.15);
