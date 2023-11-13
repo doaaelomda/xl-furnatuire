@@ -18,7 +18,8 @@ function addresssetting() {
   var myorders=document.querySelector('.my-orders');
   myorders.style.display=myorders.style.display === 'none' ? 'block' : 'none';
   var alsolike=document.querySelector('.alsolike');
-  alsolike.style.display=alsolike.style.display === 'none' ? 'block' : 'none';  
+  alsolike.style.display=alsolike.style.display === 'none' ? 'block' : 'none'; 
+  wishlist.style.padding="20px" 
 }
   function toggleCheckboxes() {
     var checkboxes = document.querySelector('.setings');

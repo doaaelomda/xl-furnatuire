@@ -434,6 +434,9 @@ line-height: normal;
     display: flex;
     justify-content: center;
   }
+  .addnewcard:hover{
+    cursor: pointer;
+  }
   .addnewcard span, .addnewcard >h6{
     color:#718C59;
     font-size: 22px;

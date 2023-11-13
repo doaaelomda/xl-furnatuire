@@ -4,6 +4,7 @@ function toggleCheckboxes() {
 
   var activesettings = document.querySelector('.active-settings');
   activesettings.style.backgroundColor = activesettings.style.backgroundColor === 'rgba(113, 140, 89, 0.12)' ? 'none' : 'rgba(113, 140, 89, 0.12)';
+
 }
 
 // Call the function when the page loads

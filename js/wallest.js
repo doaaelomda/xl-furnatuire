@@ -32,7 +32,7 @@ function addresssetting() {
   function wallet(){
     var  wallest = document.querySelector('.wallest');
     wallest.style.backgroundColor =  wallest.style.backgroundColor === 'rgba(113, 140, 89, 0.12)' ? 'none' : 'rgba(113, 140, 89, 0.12)';
- 
+    wallest.style.padding="20px"
  
 
   }

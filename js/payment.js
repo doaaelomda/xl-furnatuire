@@ -32,7 +32,7 @@ function addresssetting() {
   function payment(){
     var  payment = document.querySelector('.payment');
     payment.style.backgroundColor =  payment.style.backgroundColor === 'rgba(113, 140, 89, 0.12)' ? 'none' : 'rgba(113, 140, 89, 0.12)';
- 
+    payment.style.padding="20px"
  
 
   }

@@ -3,6 +3,7 @@ function addorders() {
     orders.style.display = orders.style.display === 'block' ? 'none' : 'block';
     var activesettings = document.querySelector('.orders-settings');
     activesettings.style.backgroundColor = activesettings.style.backgroundColor === 'rgba(113, 140, 89, 0.12)' ? 'none' : 'rgba(113, 140, 89, 0.12)';
+    
   }
 //open the addressing option
 function addresssetting() {

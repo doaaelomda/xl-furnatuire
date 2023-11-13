@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckBox</title>
+    <link rel="stylesheet" href="../../css/cart.css">
+    <link rel="stylesheet" href="../../css/checkbox.css">
+    <link rel="stylesheet" href="../../assets/libraries/bootstrap/css/bootstrap.min.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid mt-0 nav-home" style="background-color: #fff;">
+     <h1 class="logo navbar-brand px-4">Logo</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="list-one navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/shop.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/Inspiration.html">Inspiration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../../pages/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/contact.html">Contact</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto mx-5"> 
+          <div id="searchWindow" class="search-window" style="display: none;">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    
+            </form>
+          </div>
+          <li class="nav-item" onclick="searchapper()">
+            <a class="nav-link" id="openSearchModal" >
+              <img src="../../assets/images/pages/icons_Nav/searchicon.png" alt="">
+            </a>
+          </li>
+          <li class="nav-item" onclick="profileset()">
+            <a class="nav-link">
+              <img src="../../assets/images/pages/icons_Nav/humanicon.png" alt="">
+            </a>
+          </li>
+          <li class="nav-item" onclick="cart()">
+            <a class="nav-link" >
+              <img src="../../assets/images/pages/icons_Nav/shoppingicon.png" alt="">
+            </a>
+          </li>
+        </ul>
+        
+      </div>
+      
+      
+    </div>
+  </nav>
+    <div class="profile-page w-75"   >
+      <ul class="py-4 profile-list">
+        <p class="mt-5 ">
+          Jazmyne_Hahn@hotmail.com
+      </p>
+      <li><a href="../../pages/profile-person.html">My Profile</a></li>
+      <li><a href="../../pages/allorders.html">My Orders</a></li>
+      <li><a href="../../pages/security.html">Security</a></li>
+      <li><a href="../../pages/wish.html">My Wishlist</a></li>
+      <li><a href="../../pages/wallest.html">My Wallet</a></li>
+          <li><a href="">Sign Out</a></li>
+      </ul>
+  </div>
+  <div id="cartContent" class="cart-content " style="display: none;width: 444px;">
+    <header class="container my-4">
+      <p>My Cart</p>
+      <img id="closeCart" src="../../assets/images/pages/mycart/close-x-svgrepo-com (2) 1.png" alt="">
+</header>
+<section class="container">
+  <div class="row cart-item">
+      <img class="col-1" src="../../assets/images/pages/mycart/Rectangle 357.png" alt="">
+      <span class="col-2">
+      <p >Item Name</p>
+      <p class="qty px-4">Qty : 2</p>
+  </span>
+  <span class="col-2 right-cart">
+      <p >25 $</p>
+      <p class="col-1">
+          <img src="../../assets/images/pages/mycart/Vector.png" alt="">
+      </p> 
+  </span> 
+  </div>
+  <div class="row cart-item">
+      <img class="col-1" src="../../assets/images/pages/mycart/Rectangle 358.png" alt="">
+      <span class="col-2">
+      <p >Item Name</p>
+      <p class="qty ">Qty : 2</p>
+  </span>
+  <span class="col-2 right-cart">
+      <p >25 $</p>
+      <p class="col-1">
+          <img src="../../assets/images/pages/mycart/Vector.png" alt="">
+      </p> 
+  </span> 
+  </div>
+  <div class="row cart-item3 ">
+      <img class="col-1" src="../../assets/images/pages/mycart/Rectangle 359.png" alt="">
+      <span class="col-2">
+      <p >Item Name</p>
+      <p class="qty ">Qty : 2</p>
+  </span>
+  <span class="col-2 right-cart">
+      <p >25 $</p>
+      <p class="col-1">
+          <img src="../../assets/images/pages/mycart/Vector.png" alt="">
+      </p> 
+  </span> 
+  </div>
+
+</section>
+<div class="container">
+  <div class="foot-cart py-2">
+      <p>SubTotal </p>
+      <p>185 $</p>
+  </div>
+  <button class="create py-3">
+      <a href="cart.html">View Cart</a>
+  </button>
+</div>
+</div>
+<div class=" p-5  home-inst container-fluid" >
+  <div class="">
+    <div class="mt-4 p-3 home-checkbox">
+    <span class="home">Home |</span>
+    <span class="home">Cart </span>
+    <span class="cart active"> | Checkbox </span>
+    </div>
+  </div> 
+  <div class="container-fluid">
+  <div class="w-75" style="margin: auto;">
+    <div class="progress-container">
+        <div class="progress" id="progress"></div>
+        <div class="circle active">
+            <img src="../../assets/images/pages/checkbox/shipping-fast-solid-svgrepo-com (1) 1.png" alt="">
+             
+          </div>
+          
+        <div class="circle">
+            <img src="../../assets/images/pages/checkbox/credit-card-payment-banking-business-finance-buy-svgrepo-com 1.png" alt="">
+        </div>
+        <div class="circle">
+            <img src="../../assets/images/pages/checkbox/report-file-svgrepo-com 1.png" alt="">
+        </div>
+        <div class="circle">
+            <img src="../../assets/images/pages/checkbox/goal-svgrepo-com (1) 1.png" alt="">
+        </div>
+    </div>
+    <div class="d-flex justify-content-between">
+      <h6>Shipping</h6>
+      <h6>Payment</h6>
+      <h6>Summary</h6>
+      <h6>Success</h6>
+    </div>
+   <section class="shapping">
+    <div class="info p-5">
+      <h3 class="px-5">Shopping Information</h3>
+
+      <div class=" gx-5 gy-1 row p-5 informat">
+        <div class="col-6">
+            <p >First Name</p>
+          <input type="text" class="py-2 form-control " id="exampleFormControlInput1" placeholder="Enter Your First Name" style="border-radius: 0;background-color: transparent;" fdprocessedid="iifqvh">
+        </div>
+        <div class="col-6">
+            <p >Last Name</p>
+          <input type="text" class="py-2 form-control " id="exampleFormControlInput1" placeholder="Enter Your Last Name" style="border-radius: 0;background-color: transparent;" fdprocessedid="91dyng">
+        </div>
+        <div class="col-6">
+            <p >Email Address</p>
+          <input type="text" class="py-2 form-control " id="exampleFormControlInput1" placeholder="Enter Your Email Address" style="border-radius: 0;background-color: transparent;" fdprocessedid="kki9a">
+        </div>
+        <div class="col-6">
+            <p >Phone Number</p>
+          <input type="number" class="py-2 form-control " id="exampleFormControlInput1" placeholder="+02 | " style="border-radius: 0;background-color: transparent;" fdprocessedid="0hvyif">
+        </div>
+      
+     
+
+        
+</div>
+
+<h3 class="px-5 pt-5">Shopping Address</h3>
+
+<div class=" gx-5 gy-1 row p-5 informat">
+  <div class="col-6">
+    <p for="Name ">Address</p>
+    <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback" required="" fdprocessedid="7d4onq">
+        <option selected="">Enter Your Location</option>
+
+      </select>
+</div>
+<div class="col-6">
+  <p for="Name ">City</p>
+  <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback" required="" fdprocessedid="7d4onq">
+      <option selected="" disabled="" value="">City Name</option>
+    </select>
+</div>
+  <div class="col-6">
+      <p >Street Address</p>
+    <input type="text" class="py-2 form-control " id="exampleFormControlInput1" placeholder="Street name , house num , suite .." style="border-radius: 0;background-color: transparent;" fdprocessedid="kki9a">
+  </div>
+  <div class="col-6">
+      <p >Building Number /Flat No.</p>
+    <input type="number" class="py-2 form-control " id="exampleFormControlInput1" placeholder="* " style="border-radius: 0;background-color: transparent;" fdprocessedid="0hvyif">
+  </div>
+
+
+
+  
+</div>
+
+<h3 class="px-5 pt-5">Delivary Methods</h3>
+
+<div  class="loaction-place w-75 p-2 py-3 m-5 ">
+  <input type="radio" class="m-2" name="location" value="home">
+  <span>Ship</span>
+</div>
+
+<div  class="loaction-place w-75 p-2 py-3 m-5 ">
+  <input type="radio" class="m-2" name="location" value="home">
+  <span>Pick Up</span>
+</div>
+<button onclick="hiddenshapping()" class="btn p-2 px-4" id="next">
+  <a  class="px-5">
+  Next Steps
+   &rarr;
+</a>
+</button>
+</div>
+    </section>
+
+    <section class="paymentchechbox">
+      <div class="info p-5">
+        <h3 class="px-5">Payment Methods</h3>
+        <div class=" px-5 d-flex justify-content-between ">
+          <div class="card py-4 active ">
+            <img src="../../assets/images/pages/checkbox/paynent-check/credit-card-svgrepo-com (1) 1.png" alt="">
+            <span class="px-3 active">Credit Cart</span>
+          </div>
+          <div class="card py-4  ">
+            <img src="../../assets/images/pages/checkbox/paynent-check/wallet-svgrepo-com (1) 1.png" alt="">
+            <span class="px-3">Wallet</span>
+          </div>
+          <div class="card py-4  ">
+            <img src="../../assets/images/pages/checkbox/paynent-check/paypal-svgrepo-com 1.png" alt="">
+            <span class="px-3">PayPal</span>
+          </div>
+         
+        </div>
+        
+
+
+        <div class="d-flex justify-content-between m-5 ">
+        <button onclick="hiddenshapping()" class="btn p-2 px-4" id="back">
+          <a  class="px-5">
+            &larr; Back
+        </a>
+        </button>
+      <button onclick="hiddenshapping()" class="btn p-2 px-4" id="next">
+    <a  class="px-5">
+    Next Steps
+     &rarr;
+  </a>
+     </button>
+    </div>
+  </div>
+    </section>
+</div> 
+</div>
+<div class="footer-home" >
+  <div class="container-fluid py-3 px-5">
+    <div class="row pt-5">
+      <div class="col-md-3">
+        <h4 class="px-5">Logo</h4>
+        <span class="foot-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ipsam expedita!</span>
+        <h4 class="pt-5">Follow Us</h4>
+        <div>
+          <img src="../../assets/images/pages/footer/facebook-svgrepo-com 3.png" alt="">
+          <img src="../../assets/images/pages/footer/twitter-svgrepo-com (1) 2.png" alt="">
+          <img src="../../assets/images/pages/footer/call-communication-device-svgrepo-com 2.png" alt="">
+          <img src="../../assets/images/pages/footer/instagram-svgrepo-com 2.png" alt="">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <h4 class="cs">Customer Services</h4>
+        <h6 class="later">Help & Contact Us</h6>
+        <h6 class="later">Online Store</h6>
+        <h6 class="later">Terms & Conditions</h6>
+      </div>
+      <div class="col-md-2">
+        <h4 class="cs">Quick lines</h4>
+        <h6 class="later">Home</h6>
+        <h6 class="later">Projects</h6>
+        <h6 class="later">About us</h6>
+        <h6 class="later">Reviews</h6>
+        <h6 class="later">Services</h6>
+      </div>
+      <div class="col-md-2">
+        <h4 class="cs">Products</h4>
+        <h6 class="later">Furniture</h6>
+        <h6 class="later">Home decor</h6>
+        <h6 class="later">Lamps</h6>
+        <h6 class="later">Lounge chair</h6>
+      </div>
+      <div class="col-md-3">
+        <h4 class="cs">Subscribe us</h4>
+        <span class="foot-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ipsam expedita!</span>
+        <div class="input-group flex-nowrap mt-3">
+          <input type="text" class="form-control" id="input-foot" placeholder="Enter your email" aria-label="Username" aria-describedby="addon-wrapping">
+          <span class="input-group-text" id="addon-wrapping">
+            <img src="../../assets/images/pages/footer/send-svgrepo-com (2) 1.png" alt="">
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+  <p id="end" class="pt-3">
+      &copy; All Right reserved  2022
+  </p>
+</body>
+<script src="../../js/chexkbox.js"></script>
+<script src="../../index.js"></script>
+</html>
