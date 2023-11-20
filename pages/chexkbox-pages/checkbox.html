@@ -2,21 +2,22 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CheckBox</title>
-    <link rel="stylesheet" href="../../css/cart.css">
-    <link rel="stylesheet" href="../../css/checkbox.css">
-    <link rel="stylesheet" href="../../assets/libraries/bootstrap/css/bootstrap.min.css">
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CheckBox</title>
+  <link rel="stylesheet" href="../../css/cart.css">
+  <link rel="stylesheet" href="../../css/checkbox.css">
+  <link rel="stylesheet" href="../../assets/libraries/bootstrap/css/bootstrap.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
   <nav class="navbar navbar-expand-lg ">
-    <div class="container-fluid mt-0 nav-home" style="background-color: #fff;">
-     <h1 class="logo navbar-brand px-4">Logo</h1>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container-fluid mt-0 nav-home" style="background-color: #fff;z-index: 100;">
+      <h1 class="logo navbar-brand px-4">Logo</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -37,15 +38,15 @@
             <a class="nav-link" href="../../pages/contact.html">Contact</a>
           </li>
         </ul>
-        <ul class="navbar-nav ml-auto mx-5"> 
+        <ul class="navbar-nav ml-auto mx-5">
           <div id="searchWindow" class="search-window" style="display: none;">
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-    
+
             </form>
           </div>
           <li class="nav-item" onclick="searchapper()">
-            <a class="nav-link" id="openSearchModal" >
+            <a class="nav-link" id="openSearchModal">
               <img src="../../assets/images/pages/icons_Nav/searchicon.png" alt="">
             </a>
           </li>
@@ -55,289 +56,490 @@
             </a>
           </li>
           <li class="nav-item" onclick="cart()">
-            <a class="nav-link" >
+            <a class="nav-link">
               <img src="../../assets/images/pages/icons_Nav/shoppingicon.png" alt="">
             </a>
           </li>
         </ul>
-        
+
       </div>
-      
-      
+
+
     </div>
   </nav>
-    <div class="profile-page w-75"   >
-      <ul class="py-4 profile-list">
-        <p class="mt-5 ">
-          Jazmyne_Hahn@hotmail.com
+  <div class="profile-page w-75">
+    <ul class="py-4 profile-list">
+      <p class="mt-5 ">
+        Jazmyne_Hahn@hotmail.com
       </p>
       <li><a href="../../pages/profile-person.html">My Profile</a></li>
       <li><a href="../../pages/allorders.html">My Orders</a></li>
       <li><a href="../../pages/security.html">Security</a></li>
       <li><a href="../../pages/wish.html">My Wishlist</a></li>
       <li><a href="../../pages/wallest.html">My Wallet</a></li>
-          <li><a href="">Sign Out</a></li>
-      </ul>
+      <li><a href="">Sign Out</a></li>
+    </ul>
   </div>
   <div id="cartContent" class="cart-content " style="display: none;width: 444px;">
     <header class="container my-4">
       <p>My Cart</p>
       <img id="closeCart" src="../../assets/images/pages/mycart/close-x-svgrepo-com (2) 1.png" alt="">
-</header>
-<section class="container">
-  <div class="row cart-item">
-      <img class="col-1" src="../../assets/images/pages/mycart/Rectangle 357.png" alt="">
-      <span class="col-2">
-      <p >Item Name</p>
-      <p class="qty px-4">Qty : 2</p>
-  </span>
-  <span class="col-2 right-cart">
-      <p >25 $</p>
-      <p class="col-1">
-          <img src="../../assets/images/pages/mycart/Vector.png" alt="">
-      </p> 
-  </span> 
-  </div>
-  <div class="row cart-item">
-      <img class="col-1" src="../../assets/images/pages/mycart/Rectangle 358.png" alt="">
-      <span class="col-2">
-      <p >Item Name</p>
-      <p class="qty ">Qty : 2</p>
-  </span>
-  <span class="col-2 right-cart">
-      <p >25 $</p>
-      <p class="col-1">
-          <img src="../../assets/images/pages/mycart/Vector.png" alt="">
-      </p> 
-  </span> 
-  </div>
-  <div class="row cart-item3 ">
-      <img class="col-1" src="../../assets/images/pages/mycart/Rectangle 359.png" alt="">
-      <span class="col-2">
-      <p >Item Name</p>
-      <p class="qty ">Qty : 2</p>
-  </span>
-  <span class="col-2 right-cart">
-      <p >25 $</p>
-      <p class="col-1">
-          <img src="../../assets/images/pages/mycart/Vector.png" alt="">
-      </p> 
-  </span> 
-  </div>
+    </header>
+    <section class="container">
+      <div class="row cart-item">
+        <img class="col-1" src="../../assets/images/pages/mycart/Rectangle 357.png" alt="">
+        <span class="col-2">
+          <p>Item Name</p>
+          <p class="qty px-4">Qty : 2</p>
+        </span>
+        <span class="col-2 right-cart">
+          <p>25 $</p>
+          <p class="col-1">
+            <img src="../../assets/images/pages/mycart/Vector.png" alt="">
+          </p>
+        </span>
+      </div>
+      <div class="row cart-item">
+        <img class="col-1" src="../../assets/images/pages/mycart/Rectangle 358.png" alt="">
+        <span class="col-2">
+          <p>Item Name</p>
+          <p class="qty ">Qty : 2</p>
+        </span>
+        <span class="col-2 right-cart">
+          <p>25 $</p>
+          <p class="col-1">
+            <img src="../../assets/images/pages/mycart/Vector.png" alt="">
+          </p>
+        </span>
+      </div>
+      <div class="row cart-item3 ">
+        <img class="col-1" src="../../assets/images/pages/mycart/Rectangle 359.png" alt="">
+        <span class="col-2">
+          <p>Item Name</p>
+          <p class="qty ">Qty : 2</p>
+        </span>
+        <span class="col-2 right-cart">
+          <p>25 $</p>
+          <p class="col-1">
+            <img src="../../assets/images/pages/mycart/Vector.png" alt="">
+          </p>
+        </span>
+      </div>
 
-</section>
-<div class="container">
-  <div class="foot-cart py-2">
-      <p>SubTotal </p>
-      <p>185 $</p>
-  </div>
-  <button class="create py-3">
-      <a href="cart.html">View Cart</a>
-  </button>
-</div>
-</div>
-<div class=" p-5  home-inst container-fluid" >
-  <div class="">
-    <div class="mt-4 p-3 home-checkbox">
-    <span class="home">Home |</span>
-    <span class="home">Cart </span>
-    <span class="cart active"> | Checkbox </span>
-    </div>
-  </div> 
-  <div class="container-fluid">
-  <div class="w-75" style="margin: auto;">
-    <div class="progress-container">
-        <div class="progress" id="progress"></div>
-        <div class="circle active">
-            <img src="../../assets/images/pages/checkbox/shipping-fast-solid-svgrepo-com (1) 1.png" alt="">
-             
-          </div>
-          
-        <div class="circle">
-            <img src="../../assets/images/pages/checkbox/credit-card-payment-banking-business-finance-buy-svgrepo-com 1.png" alt="">
-        </div>
-        <div class="circle">
-            <img src="../../assets/images/pages/checkbox/report-file-svgrepo-com 1.png" alt="">
-        </div>
-        <div class="circle">
-            <img src="../../assets/images/pages/checkbox/goal-svgrepo-com (1) 1.png" alt="">
-        </div>
-    </div>
-    <div class="d-flex justify-content-between">
-      <h6>Shipping</h6>
-      <h6>Payment</h6>
-      <h6>Summary</h6>
-      <h6>Success</h6>
-    </div>
-   <section class="shapping">
-    <div class="info p-5">
-      <h3 class="px-5">Shopping Information</h3>
-
-      <div class=" gx-5 gy-1 row p-5 informat">
-        <div class="col-6">
-            <p >First Name</p>
-          <input type="text" class="py-2 form-control " id="exampleFormControlInput1" placeholder="Enter Your First Name" style="border-radius: 0;background-color: transparent;" fdprocessedid="iifqvh">
-        </div>
-        <div class="col-6">
-            <p >Last Name</p>
-          <input type="text" class="py-2 form-control " id="exampleFormControlInput1" placeholder="Enter Your Last Name" style="border-radius: 0;background-color: transparent;" fdprocessedid="91dyng">
-        </div>
-        <div class="col-6">
-            <p >Email Address</p>
-          <input type="text" class="py-2 form-control " id="exampleFormControlInput1" placeholder="Enter Your Email Address" style="border-radius: 0;background-color: transparent;" fdprocessedid="kki9a">
-        </div>
-        <div class="col-6">
-            <p >Phone Number</p>
-          <input type="number" class="py-2 form-control " id="exampleFormControlInput1" placeholder="+02 | " style="border-radius: 0;background-color: transparent;" fdprocessedid="0hvyif">
-        </div>
-      
-     
-
-        
-</div>
-
-<h3 class="px-5 pt-5">Shopping Address</h3>
-
-<div class=" gx-5 gy-1 row p-5 informat">
-  <div class="col-6">
-    <p for="Name ">Address</p>
-    <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback" required="" fdprocessedid="7d4onq">
-        <option selected="">Enter Your Location</option>
-
-      </select>
-</div>
-<div class="col-6">
-  <p for="Name ">City</p>
-  <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback" required="" fdprocessedid="7d4onq">
-      <option selected="" disabled="" value="">City Name</option>
-    </select>
-</div>
-  <div class="col-6">
-      <p >Street Address</p>
-    <input type="text" class="py-2 form-control " id="exampleFormControlInput1" placeholder="Street name , house num , suite .." style="border-radius: 0;background-color: transparent;" fdprocessedid="kki9a">
-  </div>
-  <div class="col-6">
-      <p >Building Number /Flat No.</p>
-    <input type="number" class="py-2 form-control " id="exampleFormControlInput1" placeholder="* " style="border-radius: 0;background-color: transparent;" fdprocessedid="0hvyif">
-  </div>
-
-
-
-  
-</div>
-
-<h3 class="px-5 pt-5">Delivary Methods</h3>
-
-<div  class="loaction-place w-75 p-2 py-3 m-5 ">
-  <input type="radio" class="m-2" name="location" value="home">
-  <span>Ship</span>
-</div>
-
-<div  class="loaction-place w-75 p-2 py-3 m-5 ">
-  <input type="radio" class="m-2" name="location" value="home">
-  <span>Pick Up</span>
-</div>
-<button onclick="hiddenshapping()" class="btn p-2 px-4" id="next">
-  <a  class="px-5">
-  Next Steps
-   &rarr;
-</a>
-</button>
-</div>
     </section>
+    <div class="container">
+      <div class="foot-cart py-2">
+        <p>SubTotal </p>
+        <p>185 $</p>
+      </div>
+      <button class="create py-3">
+        <a href="cart.html">View Cart</a>
+      </button>
+    </div>
+  </div>
+  <div class=" p-5  home-inst container-fluid">
+    <div class="">
+      <div class="mt-4 p-3 home-checkbox">
+        <span class="home">Home |</span>
+        <span class="home">Cart </span>
+        <span class="cart active"> | Checkbox </span>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="w-75" style="margin: auto;">
+        <div class="progress-container">
+          <div class="progress" id="progress"></div>
+          <div class="circle active">
+            <img src="../../assets/images/pages/checkbox/shipping-fast-solid-svgrepo-com (1) 1.png" alt="">
 
-    <section class="paymentchechbox">
-      <div class="info p-5">
-        <h3 class="px-5">Payment Methods</h3>
-        <div class=" px-5 d-flex justify-content-between ">
-          <div class="card py-4 active ">
-            <img src="../../assets/images/pages/checkbox/paynent-check/credit-card-svgrepo-com (1) 1.png" alt="">
-            <span class="px-3 active">Credit Cart</span>
           </div>
-          <div class="card py-4  ">
-            <img src="../../assets/images/pages/checkbox/paynent-check/wallet-svgrepo-com (1) 1.png" alt="">
-            <span class="px-3">Wallet</span>
+
+          <div class="circle">
+            <img
+              src="../../assets/images/pages/checkbox/credit-card-payment-banking-business-finance-buy-svgrepo-com 1.png"
+              alt="">
           </div>
-          <div class="card py-4  ">
-            <img src="../../assets/images/pages/checkbox/paynent-check/paypal-svgrepo-com 1.png" alt="">
-            <span class="px-3">PayPal</span>
+          <div class="circle">
+            <img src="../../assets/images/pages/checkbox/report-file-svgrepo-com 1.png" alt="">
           </div>
-         
+          <div class="circle">
+            <img src="../../assets/images/pages/checkbox/goal-svgrepo-com (1) 1.png" alt="">
+          </div>
         </div>
-        
+        <div class="d-flex justify-content-between words-progress">
+          <h6>Shipping</h6>
+          <h6>Payment</h6>
+          <h6>Summary</h6>
+          <h6>Success</h6>
+        </div>
+        <section class="shapping py-5">
+          <div class="info p-5">
+            <h3 class="px-5">Shopping Information</h3>
+
+            <div class=" gx-5 gy-1 row p-5 informat">
+              <div class="col-6">
+                <p>First Name</p>
+                <input type="text" class="py-2 form-control " id="exampleFormControlInput1"
+                  placeholder="Enter Your First Name" style="border-radius: 0;background-color: transparent;"
+                  fdprocessedid="iifqvh">
+              </div>
+              <div class="col-6">
+                <p>Last Name</p>
+                <input type="text" class="py-2 form-control " id="exampleFormControlInput1"
+                  placeholder="Enter Your Last Name" style="border-radius: 0;background-color: transparent;"
+                  fdprocessedid="91dyng">
+              </div>
+              <div class="col-6">
+                <p>Email Address</p>
+                <input type="text" class="py-2 form-control " id="exampleFormControlInput1"
+                  placeholder="Enter Your Email Address" style="border-radius: 0;background-color: transparent;"
+                  fdprocessedid="kki9a">
+              </div>
+              <div class="col-6">
+                <p>Phone Number</p>
+                <input type="number" class="py-2 form-control " id="exampleFormControlInput1" placeholder="+02 | "
+                  style="border-radius: 0;background-color: transparent;" fdprocessedid="0hvyif">
+              </div>
 
 
-        <div class="d-flex justify-content-between m-5 ">
-        <button onclick="hiddenshapping()" class="btn p-2 px-4" id="back">
-          <a  class="px-5">
-            &larr; Back
-        </a>
-        </button>
-      <button onclick="hiddenshapping()" class="btn p-2 px-4" id="next">
-    <a  class="px-5">
-    Next Steps
-     &rarr;
+
+
+            </div>
+
+            <h3 class="px-5 pt-5">Shopping Address</h3>
+
+            <div class=" gx-5 gy-1 row p-5 informat">
+              <div class="col-6">
+                <p for="Name ">Address</p>
+                <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback"
+                  required="" fdprocessedid="7d4onq">
+                  <option selected="">Enter Your Location</option>
+
+                </select>
+              </div>
+              <div class="col-6">
+                <p for="Name ">City</p>
+                <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback"
+                  required="" fdprocessedid="7d4onq">
+                  <option selected="" disabled="" value="">City Name</option>
+                </select>
+              </div>
+              <div class="col-6">
+                <p>Street Address</p>
+                <input type="text" class="py-2 form-control " id="exampleFormControlInput1"
+                  placeholder="Street name , house num , suite .."
+                  style="border-radius: 0;background-color: transparent;" fdprocessedid="kki9a">
+              </div>
+              <div class="col-6">
+                <p>Building Number /Flat No.</p>
+                <input type="number" class="py-2 form-control " id="exampleFormControlInput1" placeholder="* "
+                  style="border-radius: 0;background-color: transparent;" fdprocessedid="0hvyif">
+              </div>
+
+
+
+
+            </div>
+
+            <h3 class="px-5 pt-5">Delivary Methods</h3>
+
+            <div class="loaction-place w-75 p-2 py-3 m-5 ">
+              <input type="radio" class="m-2" name="location" value="home">
+              <span>Ship</span>
+            </div>
+
+            <div class="loaction-place w-75 p-2 py-3 m-5 ">
+              <input type="radio" class="m-2" name="location" value="home">
+              <span>Pick Up</span>
+            </div>
+
+          </div>
+        </section>
+        <section class="paymentchechbox py-5">
+          <div class="info p-5">
+            <div class="content">
+              <h3 class="px-5 py-3">Payment Methods</h3>
+              <div class=" px-5 d-flex justify-content-between ">
+                <div class="card py-4 active ">
+                  <img src="../../assets/images/pages/checkbox/paynent-check/credit-card-svgrepo-com (1) 1.png" alt="">
+                  <span class="px-3 active">Credit Cart</span>
+                </div>
+                <div class="card py-4  ">
+                  <img src="../../assets/images/pages/checkbox/paynent-check/wallet-svgrepo-com (1) 1.png" alt="">
+                  <span class="px-3">Wallet</span>
+                </div>
+                <div class="card py-4  ">
+                  <img src="../../assets/images/pages/checkbox/paynent-check/paypal-svgrepo-com 1.png" alt="">
+                  <span class="px-3">PayPal</span>
+                </div>
+
+              </div>
+              <div class=" visa py-3 my-5 d-flex justify-content-around ">
+
+                <div class="d-flex">
+                  <input type="radio" name="" id="">
+                  <img class="mx-3" src="../../assets/images/pages/checkbox/paynent-check/Rectangle 228.png" alt="">
+                </div>
+                <div class="d-flex">
+                  <input type="radio" name="" id="">
+                  <img class="mx-3" src="../../assets/images/pages/checkbox/paynent-check/Rectangle 229.png" alt="">
+                </div>
+                <div class="d-flex">
+                  <input type="radio" name="" id="">
+                  <img class="mx-3" src="../../assets/images/pages/checkbox/paynent-check/Rectangle 230.png" alt="">
+                </div>
+                <div class="d-flex">
+                  <input type="radio" name="" id="">
+                  <img class="mx-3" src="../../assets/images/pages/checkbox/paynent-check/Rectangle 231.png" alt="">
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class=" gx-5 gy-1 row p-5 informat" style="border: none;">
+
+              <div class="col-6">
+                <p>Name Of Card</p>
+                <input type="text" class="py-2 form-control " id="exampleFormControlInput1"
+                  placeholder="enter your name" style="border-radius: 0;background-color: transparent;"
+                  fdprocessedid="kki9a">
+              </div>
+              <div class="col-6">
+                <p>Card Number</p>
+                <input type="number" class="py-2 form-control " id="exampleFormControlInput1"
+                  placeholder="0000-0000-0000-0000" style="border-radius: 0;background-color: transparent;"
+                  fdprocessedid="0hvyif">
+              </div>
+              <div class="col-6">
+                <p>Expiry Date</p>
+                <input type="text" class="py-2 form-control " id="exampleFormControlInput1" placeholder="MM//YY"
+                  style="border-radius: 0;background-color: transparent;" fdprocessedid="kki9a">
+              </div>
+              <div class="col-6">
+                <p>CVV</p>
+                <input type="number" class="py-2 form-control " id="exampleFormControlInput1" placeholder="# "
+                  style="border-radius: 0;background-color: transparent;" fdprocessedid="0hvyif">
+              </div>
+
+
+
+
+            </div>
+            <div class="d-flex justify-content-between">
+
+
+            </div>
+        </section>
+        <section class="summary py-5">
+          <div class=" p-5">
+            <div class="content">
+              <h3 class="px-5 py-3">Review Order</h3>
+              <div class="orders p-5 ">
+
+                <div class="d-flex justify-content-between px-5">
+                  <h6>Cart</h6>
+                  <p>
+                    <img src="../../assets/images/pages/checkbox/summary/edit-02-svgrepo-com 1.png" alt="">
+                    <span>Edit</span>
+                  </p>
+                </div>
+                <div class="container">
+                  <div class="row card-order px-5 py-3">
+                    <div class="col-2">
+                      <img src="../../assets/images/pages/checkbox/summary/Rectangle 172.png" alt="">
+                    </div>
+                    <div class="col-6">
+                      <h6>Item Name</h6>
+                      <h6>$60</h6>
+                    </div>
+                  </div>
+                  <div class="row card-order px-5 py-3">
+                    <div class="col-2">
+                      <img src="../../assets/images/pages/checkbox/summary/Rectangle 372.png" alt="">
+                    </div>
+                    <div class="col-6">
+                      <h6>Item Name</h6>
+                      <h6>$200</h6>
+                    </div>
+                  </div>
+                  <div class="row px-5 py-3">
+                    <div class="col-2">
+                      <img src="../../assets/images/pages/checkbox/summary/Rectangle 373.png" alt="">
+                    </div>
+                    <div class="col-6">
+                      <h6>Item Name</h6>
+                      <h6>$30</h6>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="card px-5 py-3 mt-4 information-card">
+                <div class="d-flex justify-content-between ">
+                  <h5 class="py-2">Your Information</h5>
+                  <p>
+                    <img src="../../assets/images/pages/checkbox/summary/edit-02-svgrepo-com 1.png" alt="">
+                    <span>Edit</span>
+                  </p>
+                </div>
+                <div class="row pt-2">
+                  <div class="col-3">
+                    <p>Address</p>
+                    <p>Phone Number</p>
+                    <p>Email</p>
+                  </div>
+                  <div class="col-1"></div>
+                  <div class="col-6">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>+02 | 1220550200</p>
+                    <p>Sarahany@gmail.com</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card px-5 py-2 mt-4 information-card">
+                <div class="d-flex justify-content-between ">
+                  <h5 class="py-2">Delivary Methods</h5>
+                  <p>
+                    <img src="../../assets/images/pages/checkbox/summary/edit-02-svgrepo-com 1.png" alt="">
+                    <span>Edit</span>
+                  </p>
+                </div>
+
+                <div class="loaction-place my-3 py-3 ">
+                  <input type="radio" class="m-2" name="location" value="home">
+                  <span>Ship</span>
+                </div>
+              </div>
+
+              <div class="card px-5 py-2 mt-4 information-card">
+                <div class="d-flex justify-content-between ">
+                  <h5 class="py-2">Payment</h5>
+                  <p>
+                    <img src="../../assets/images/pages/checkbox/summary/edit-02-svgrepo-com 1.png" alt="">
+                    <span>Edit</span>
+                  </p>
+                </div>
+                <div class="d-flex visa-card py-4">
+                  <img src="../../assets/images/pages/checkbox/paynent-check/credit-card-svgrepo-com (1) 1.png" alt="">
+                  <h6 class="px-3">Visa xxxxx-xxxx-xxxx-7456</h6>
+                </div>
+              </div>
+
+            </div>
+
+              <!--<button onclick="successshow()" class="next" class=" w-25 btn py-1" id="next">
+    <a  class="">
+    Confirm order
   </a>
      </button>
-    </div>
-  </div>
-    </section>
-</div> 
-</div>
-<div class="footer-home" >
-  <div class="container-fluid py-3 px-5">
-    <div class="row pt-5">
-      <div class="col-md-3">
-        <h4 class="px-5">Logo</h4>
-        <span class="foot-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ipsam expedita!</span>
-        <h4 class="pt-5">Follow Us</h4>
-        <div>
-          <img src="../../assets/images/pages/footer/facebook-svgrepo-com 3.png" alt="">
-          <img src="../../assets/images/pages/footer/twitter-svgrepo-com (1) 2.png" alt="">
-          <img src="../../assets/images/pages/footer/call-communication-device-svgrepo-com 2.png" alt="">
-          <img src="../../assets/images/pages/footer/instagram-svgrepo-com 2.png" alt="">
-        </div>
-      </div>
-      <div class="col-md-2">
-        <h4 class="cs">Customer Services</h4>
-        <h6 class="later">Help & Contact Us</h6>
-        <h6 class="later">Online Store</h6>
-        <h6 class="later">Terms & Conditions</h6>
-      </div>
-      <div class="col-md-2">
-        <h4 class="cs">Quick lines</h4>
-        <h6 class="later">Home</h6>
-        <h6 class="later">Projects</h6>
-        <h6 class="later">About us</h6>
-        <h6 class="later">Reviews</h6>
-        <h6 class="later">Services</h6>
-      </div>
-      <div class="col-md-2">
-        <h4 class="cs">Products</h4>
-        <h6 class="later">Furniture</h6>
-        <h6 class="later">Home decor</h6>
-        <h6 class="later">Lamps</h6>
-        <h6 class="later">Lounge chair</h6>
-      </div>
-      <div class="col-md-3">
-        <h4 class="cs">Subscribe us</h4>
-        <span class="foot-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ipsam expedita!</span>
-        <div class="input-group flex-nowrap mt-3">
-          <input type="text" class="form-control" id="input-foot" placeholder="Enter your email" aria-label="Username" aria-describedby="addon-wrapping">
-          <span class="input-group-text" id="addon-wrapping">
-            <img src="../../assets/images/pages/footer/send-svgrepo-com (2) 1.png" alt="">
-          </span>
+    </div> -->
+            </div>
+        </section>
+        <section class="sucess ">
+          <div class=" p-5 sucess-content">
+            <div class="content">
+
+              <svg viewBox="0 0 26 26" >
+                <g stroke="currentColor" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                  <path class="circle" d="M13 1C6.372583 1 1 6.372583 1 13s5.372583 12 12 12 12-5.372583 12-12S19.627417 1 13 1z"/>
+                  <path class="tick" d="M6.5 13.5L10 17 l8.808621-8.308621"/>
+                </g>
+              </svg>
+             <p>Your Order Placed Successfully </p>
+
+             <div class="d-flex justify-content-around">
+              <button class="btn py-3">Continue Shopping</button>
+              <!-- Track My order -->
+              <button class="btn py-3 track" style="background-color: #8CA17A;color: #fff;">Track My order</button>
+
+             </div>
+
+            </div>
+
+        </section>
+        <div class="d-flex justify-content-around   buttons  ">
+
+          <button  class=" back btn py-2 px-4" id="back">
+            <a class="">
+              &larr; Back
+            </a>
+          </button>
+          <button class=" nextofship btn py-2 px-4 next"  id="next">
+            <a class="">
+              Next Steps
+              &rarr;
+            </a>
+          </button>
         </div>
       </div>
     </div>
   </div>
+  <div class="footer-home">
+    <div class="container-fluid footer py-3 px-5">
+      <div class="row pt-5">
+        <div class="col-md-3">
+          <h4 class="px-5">Logo</h4>
+          <span class="foot-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ipsam
+            expedita!</span>
+          <h4 class="pt-5">Follow Us</h4>
+          <div>
+            <img src="../../assets/images/pages/footer/facebook-svgrepo-com 3.png" alt="">
+            <img src="../../assets/images/pages/footer/twitter-svgrepo-com (1) 2.png" alt="">
+            <img src="../../assets/images/pages/footer/call-communication-device-svgrepo-com 2.png" alt="">
+            <img src="../../assets/images/pages/footer/instagram-svgrepo-com 2.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <h4 class="cs">Customer Services</h4>
+          <h6 class="later">Help & Contact Us</h6>
+          <h6 class="later">Online Store</h6>
+          <h6 class="later">Terms & Conditions</h6>
+        </div>
+        <div class="col-md-2">
+          <h4 class="cs">Quick lines</h4>
+          <h6 class="later">Home</h6>
+          <h6 class="later">Projects</h6>
+          <h6 class="later">About us</h6>
+          <h6 class="later">Reviews</h6>
+          <h6 class="later">Services</h6>
+        </div>
+        <div class="col-md-2">
+          <h4 class="cs">Products</h4>
+          <h6 class="later">Furniture</h6>
+          <h6 class="later">Home decor</h6>
+          <h6 class="later">Lamps</h6>
+          <h6 class="later">Lounge chair</h6>
+        </div>
+        <div class="col-md-3">
+          <h4 class="cs">Subscribe us</h4>
+          <span class="foot-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ipsam
+            expedita!</span>
+          <div class="input-group flex-nowrap mt-3">
+            <input type="text" class="form-control" id="input-foot" placeholder="Enter your email" aria-label="Username"
+              aria-describedby="addon-wrapping">
+            <span class="input-group-text" id="addon-wrapping">
+              <img src="../../assets/images/pages/footer/send-svgrepo-com (2) 1.png" alt="">
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
-</div>
+  </div>
   <p id="end" class="pt-3">
-      &copy; All Right reserved  2022
+    &copy; All Right reserved 2022
   </p>
+
+
+
+
+
 </body>
 <script src="../../js/chexkbox.js"></script>
 <script src="../../index.js"></script>
+
 </html>

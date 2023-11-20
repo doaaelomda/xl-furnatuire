@@ -18,7 +18,7 @@ text-transform: capitalize;
 }
 .file-item {
     border: 1px solid #ddd;
-    height: 125vh;
+    /* height: 125vh; */
 }
 .img-card a {
   text-decoration: none;
@@ -350,10 +350,17 @@ line-height: normal;
     font-size: 16px;
   }
   .seats h6{
-    padding: 5px;
+    /* padding: 5px; */
   }
   .seats  input[type="checkbox"] {
     width: 20px;
     height: 15px;
 
+  }
+  .wandh{
+     display: flex;justify-content: space-between}
+
+
+.nav-home{
+  z-index: 100;
   }

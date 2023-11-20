@@ -447,3 +447,49 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
   }
+
+  #mainImage{
+    width: 75%;
+  }
+  .input-react  .input-group {
+
+    width: 25%;
+  }
+  @media screen and (max-width: 800px) {
+    .row .col-1{
+      width: 25%;
+
+    }
+    .row .col-7{
+      width: 75%;
+    }
+    .row .col-7 div  #mainImage{
+      height: 50vh;
+      width: 100%;
+    }
+    .row .col-4{
+      width: 100%;
+      transform: translate(39%,35px)
+    }
+    .tab-content .row .col-7{
+      width: 100%;
+    }
+    .tab-content .row .col-4{
+      transform: translate(0,0);
+    }
+    .tab-content .row .col-6,.tab-content .row .col-5{
+      width: 100%;
+    }
+    .tab-content .input-group {
+      width: 100%;
+    }
+    .revie{
+     padding-top: 25px;
+    }
+    .info-card{
+      display: none;
+    }
+    .arrow{
+      padding-bottom: 55px;
+    }
+  }

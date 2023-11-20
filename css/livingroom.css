@@ -399,4 +399,65 @@ font-weight: 400;
   font-weight: 400;
   line-height: normal;
     }
+
+    .file-item .material div{
+      display: flex;
+      justify-content: space-between;
+    }
+    @media screen and (max-width: 800px) {
+      .footer-home >.container-fluid{
+        padding: 0;
+        position: relative;
+    
+        left: -40px;
+      }
+    .sofas a{
+      display: none;
+    }
+    .row .col-5{
+      display: none;
+    }
+    .row .col-7 ,.cards-sofas .row .col-3 {
+      width: 100%;
+    }
+    .row .col-3,.row .col-9{
+      width: 50%;
+    }
+    .col-9 .sofa-nav{
+      display: none;
+    }
+    .carts-sofas .col-3{
+      width: 100%;
+    }
+    .filters > .row > .file-item {
+
+      height: auto
+    }
+    .carts-sofas .pagination  {
+      display: none;
+    }
+    .file-item  .checks input[type="checkbox"] {
+      width: 10px;
+      height: 10px;
+  }
+  .file-item  .checks .value-check {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 14px;
+}
+.file-item .seats .seat-checks{
+  margin-left: -37px;
+}
+.file-item .material div,.file-item > div  .checks .wandh{
+  display: block;
+}
+.file-item .shapes .seat-checks{
+  display: none;
+}
+.file-item .shapes h6{
+  font-size: 5px;
+}
+.file-item .checks {
+  display: block;
+}
   
+  }

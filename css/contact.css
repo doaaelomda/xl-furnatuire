@@ -278,3 +278,26 @@ line-height: normal;
 
 
 
+  @media screen and (max-width: 800px) {
+    .hr-before-after::before,
+    .hr-before-after::after {
+      display: none;
+    }
+    .footer-home >.container-fluid{
+      padding: 0;
+      position: relative;
+  
+      left: -40px;
+    }
+  .row .col-6{
+    width: 100%;
+  }
+  iframe{
+    display: none;
+  }
+  .content-us span{
+   font-size: 10px;
+   display: block;
+   
+  }
+}

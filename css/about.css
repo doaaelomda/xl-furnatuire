@@ -294,3 +294,27 @@ line-height: normal;
   .nav-home {
     background-color: #fff;
   }
+  @media screen and (max-width: 800px) {
+    .footer-home >.container-fluid{
+      padding: 0;
+      position: relative;
+  
+      left: -40px;
+    }
+    .row .col-6{
+      width: 100%;
+    }
+    .img-card{
+      right: -6px;
+    }
+    .img-card2{
+      position: relative;
+      right: -6px;
+    }
+    .images img{
+      display: none;
+    }
+    .card-empty{
+      display: none;
+    }
+  }

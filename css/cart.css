@@ -422,3 +422,55 @@ button > a{
   text-decoration: none;
 }
 
+
+@media screen and (max-width: 767px) {
+  .footer-home >.container-fluid{
+    padding: 0;
+    position: relative;
+
+    left: -40px;
+  }
+
+  .copon-card .row .col-7, .copon-card .row .col-5{
+    width: 100%;
+  }
+  .table-data .tdata  .col-2{
+    font-size: 12px;
+  }
+  .table-data .itemrow .col-2{
+    width: 100%;
+  }
+  .table-data .itemrow .size {
+    position: absolute;
+    right: 125px;
+  }
+  .table-data .itemrow .number{
+    position: absolute;
+    right: -60px;
+  }
+  .table-data .itemrow .clear{
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+  }
+  .table-data .itemrow .clear2{
+    position: absolute;
+    right: 0;
+    bottom: 8%;
+
+  }
+  .table-data .itemrow .clear3{
+    position: absolute;
+    right: 0;
+    bottom: -34%;
+
+  }
+  .table-data .itemrow .coloranddot{
+    position: relative;
+    right: -17px;
+  }
+  .table-data .itemrow .price{
+    margin-top: 42px;
+    margin-left: 147px;
+  }
+}
