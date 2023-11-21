@@ -455,7 +455,14 @@ line-height: normal;
 
     width: 25%;
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 767px)  {
+
+    .footer-home >.container-fluid{
+      padding: 0;
+      position: relative;
+  
+      left: -40px;
+    }
     .row .col-1{
       width: 25%;
 

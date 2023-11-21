@@ -155,7 +155,7 @@ nav ul li a:hover {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px) {
   .hr-before-after::before,
   .hr-before-after::after {
     display: none;
@@ -164,14 +164,13 @@ nav ul li a:hover {
     padding: 0;
     position: relative;
 
-    right: 70px;
+    right: 90px;
   }
   .footer-home>div>div{
     padding:0
   }
-  .footer-home{
- 
-  }
+
+
 }
 
 

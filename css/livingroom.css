@@ -404,13 +404,19 @@ font-weight: 400;
       display: flex;
       justify-content: space-between;
     }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 767px) {
       .footer-home >.container-fluid{
         padding: 0;
         position: relative;
     
         left: -40px;
       }
+        .footer-home >.container-fluid{
+          padding: 0;
+          position: relative;
+      
+          left: -40px;
+        }
     .sofas a{
       display: none;
     }
@@ -461,3 +467,95 @@ font-weight: 400;
 }
   
   }
+
+
+
+  
+
+
+  .price-field {
+
+    position: relative;
+    width: 100%;
+    height: 36px;
+    box-sizing: border-box;
+
+    padding-top: 15px;
+  
+    border-radius: 3px;
+  }
+  
+  .price-field input[type=range] {
+      position: absolute;
+  }
+  
+  /* Reset style for input range */
+  
+  .price-field input[type=range] {
+    width: 100%;
+    height: 10px;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    pointer-events: none;
+    /* -webkit-appearance: none; */
+    accent-color: rgba(113, 140, 89, 0.75);;
+  }
+  
+
+
+  .price-wrap {
+    margin-right: 9px;
+    display: flex;
+    justify-content: end;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.2em;
+    font-weight: 400;
+    margin-bottom: 7px;
+  }
+  
+  .price-wrap-1, 
+  .price-wrap-2 {
+    display: flex;
+  }
+  
+
+  .price-wrap_line {
+    margin: 0 10px;
+  }
+  
+  .price-wrap #one, 
+  .price-wrap #two{
+
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    margin-right: 2px;
+    background:  0;
+    border: 0;
+    outline: 0;
+    line-height: 2.2em;
+    color: rgba(0, 0, 0, 0.40);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .price-wrap label{
+    margin: 0;
+    padding: 0;
+    background:  0;
+    border: 0;
+    outline: 0;
+    font-size: 14px;
+    line-height: 2.2em;
+    color: rgba(0, 0, 0, 0.40);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+
+  }
+  
+
+

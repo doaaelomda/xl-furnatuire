@@ -965,7 +965,107 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
   }
+.informat .ph{
+  right: 128px;
+}
 
+.location .loaction-place{
+  width:75%;
+}
+.home_profile {
+  position: relative;
+  right: 50px;
+}
 
+  @media screen and (max-width: 767px)  {
+    .newcard-container .col-9{
+      padding: 1.2rem;
+    }
+    .footer-home >.container-fluid{
+      padding: 0;
+      position: relative;
+      right: -7px;
+    }
+    .footer-home >.foot-manage{
+      position: relative;
+      right: 31px;
 
-
+    }
+    .home_profile{
+      right: 0;
+    }
+  
+    .home-inst .row .col-3,.home-inst .row .col-9{
+      width: 100%;
+    }
+    .home-inst .category  .row .col-4{
+      width: 100%;
+    }
+    .informat  .col-6{
+      width: 100%;
+    }
+    .informat label{
+      right: 66px;
+    }
+    .informat .ph{
+      right: 38px;
+    }
+     .security> .row> .col-3, .security  .row .col-9{
+      width: 100%;
+    }
+    .security .password-confirm label {
+      margin-left: 36px;}
+      .home-inst .location .loaction-place .delete-container{
+        position: relative;
+    right: -44px;
+    top: 27px;
+      }
+      .home-inst .addnew{
+        width: 100%;
+      }
+      .home-inst table tbody .trow1,.trow2,.trow3,.trow4,.trow5{
+        display: grid;
+      }
+      table thead tr {
+        display: none;
+      }
+      .my-orders ul{
+        display: block;
+      }
+      .my-orders{
+        height: auto;
+      }
+      .returns-countainer .row .col-3 ,.returns-countainer .row .col-9{
+        width: 100%;
+      }
+      .my-wallest table{
+        width: 100%;
+      }
+      .my-wallest table tbody tr{
+        display: grid;
+      }
+      .my-wallest{
+        height: 100%;
+      }
+      .my-wallest .card{
+        display: none;
+      }
+      .my-wallest table tbody tr td:nth-child(5){
+        border-bottom: 1px solid #ddd;
+      }
+      .mywallet{
+        left: 0;
+      }
+      .location .loaction-place{
+        width: 100%;
+      }
+      .credit-card-name{
+        display: none;
+      }
+      .newcard-container .col-9 .my-payment{
+        padding: 0
+      }
+  }
+  .my-payment{
+    padding: 3rem;
+  }

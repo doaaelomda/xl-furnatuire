@@ -294,7 +294,7 @@ line-height: normal;
   .nav-home {
     background-color: #fff;
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 767px) {
     .footer-home >.container-fluid{
       padding: 0;
       position: relative;

@@ -332,7 +332,7 @@ svg {
 
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 767px){
     .sucess > .words-progress{
         display: none;
     }
@@ -342,6 +342,12 @@ svg {
      .sucess-content{
         padding: 0;
     }
+        .footer-home >.container-fluid{
+          padding: 0;
+          position: relative;
+      
+          left: -40px;
+        }
 }
 
 

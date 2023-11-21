@@ -278,7 +278,7 @@ line-height: normal;
 
 
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 767px) {
     .hr-before-after::before,
     .hr-before-after::after {
       display: none;
