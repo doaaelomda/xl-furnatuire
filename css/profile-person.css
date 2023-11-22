@@ -807,7 +807,8 @@ font-size: 18px;
 }
 .miniwar-card{
 
-  border-bottom: 1px solid rgba(0, 0, 0, 0.10);;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.10);
+
 }
 .img-delete{
   direction: rtl;
@@ -1068,4 +1069,55 @@ line-height: normal;
   }
   .my-payment{
     padding: 3rem;
+  }
+  .chair{
+    background: url(../assets/images/pages/profile/Rectangle\ 128.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+  }
+
+  .chair img{
+    transform: translate(10px,0px);
+  }
+  .chair img:hover{
+    animation: animName 1s linear  ;
+  }
+
+
+  .chair .card-photo{
+  transform: translate(20px, 10px);
+  }
+  @keyframes animName {
+    0%{
+       transform: rotateY(180deg);
+      }
+   
+   
+   }
+   .overlay button{
+    margin-top: 20px;
+    color:#fff;background-color: transparent;border: 1px solid #ddd;border-radius: 0;
+   }
+   .overlay button:hover{
+    background-color: #718C59;
+   }
+   .overlay .red-sock:hover{
+    background-color: red;
+   }
+   .overlay {
+    width: 75%;
+    top: 100%;
+    position: absolute;
+    transition: all .3s ease-out;
+    background: hsl(0, 0%, 0%, 0.5);
+    height: 100%;
+  
+  }
+  .products-card:hover .overlay {
+    top: 0;
+  }
+  .products-card {
+    position: relative;
+    overflow: hidden;
   }
