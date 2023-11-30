@@ -1,9 +1,9 @@
 @font-face {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     src: url('../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
   }
   @font-face {
-    font-family: 'Poppines';
+    font-family: 'Poppines', sans-serif;
     src: url('../assets/fonts/Poppins/Poppins-Regular.ttf');
   }
   *{
@@ -26,7 +26,7 @@ text-transform: capitalize;
 }
 #input-foot::placeholder{
   color: rgba(0, 0, 0, 0.35);
-font-family: Poppins;
+ 
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
@@ -40,14 +40,14 @@ box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.08);
 }
 .sofa-nav h5{
     color: #2E5F04;
-font-family: Poppins;
+ 
 font-size: 23px;
 font-weight: 400;
 
 }
 .sofa-nav .p-found{
     color: rgba(0, 0, 0, 0.60);
-font-family: Poppins;
+ 
 font-size: 23px;
 font-weight: 400;
 }
@@ -73,13 +73,13 @@ font-weight: 400;
 
 .img-card h3{
     color: rgba(0, 0, 0, 0.80);
-font-family: Montserrat;
+
 font-size: 16px;
 font-weight: 500;
 }
 .img-card span{
     color: rgba(113, 140, 89, 0.80);
-font-family: Poppins;
+ 
 font-size: 20px;
 font-weight: 500;
 }
@@ -122,7 +122,7 @@ font-weight: 500;
     width: 30px;
     height: 30px;
     color: #000;
-    font-family: Poppins;
+     
     font-size: 18px;
     font-weight: 400;
     margin: 10px
@@ -178,7 +178,7 @@ font-weight: 500;
 }
 .colors , .checks{
     color: rgba(0, 0, 0, 0.70);
-font-family: Montserrat;
+
 font-size: 14px;
 font-style: normal;
 font-weight: 500;
@@ -196,14 +196,14 @@ height: 18px;
 }
 .seat-checks sh6pan{
     color: rgba(0, 0, 0, 0.30);
-font-family: Montserrat;
+
 font-size: 14px;
 font-weight: 500;
 text-transform: capitalize;
 }
 .seats{
     color: rgba(0, 0, 0, 0.70);
-font-family: Montserrat;
+
 font-size: 14px;
 font-style: normal;
 font-weight: 500;
@@ -329,7 +329,7 @@ font-weight: 400;
 }
 .cart-content #input-foot::placeholder{
     color: rgba(0, 0, 0, 0.35);
-font-family: Poppins;
+ 
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
@@ -349,9 +349,7 @@ line-height: normal;
     color: rgba(0, 0, 0, 0.7);;
     font-size: 16px;
   }
-  .seats h6{
-    /* padding: 5px; */
-  }
+
   .seats  input[type="checkbox"] {
     width: 20px;
     height: 15px;
@@ -374,4 +372,10 @@ line-height: normal;
       position: relative;
   
       left: -40px;
-    }}
+    }
+    .navbar .nav-home .collapse:nth-last-child(1){
+      margin-left: 0;
+    }
+  .sofa-nav{
+    display: none;
+  }}

@@ -1,9 +1,9 @@
 @font-face {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat, sans-serif';
     src: url('../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
   }
   @font-face {
-    font-family: 'Poppines';
+    font-family: 'Poppines', sans-serif;
     src: url('../assets/fonts/Poppins/Poppins-Regular.ttf');
   }
   *{
@@ -72,7 +72,7 @@ cursor: pointer;
 .return a,.wishlist a,.wallest a,.payment a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.80);
-  font-family: Poppins;
+   
   font-size: 18px;
   font-weight: 500;
 }
@@ -127,7 +127,7 @@ font-weight: 700;
 }
 .returncard h5{
   color: #000;
-font-family: Poppins;
+ 
 font-size: 20px;
 font-weight: 500;
 }
@@ -138,7 +138,7 @@ font-weight: 400;
 }
 .returncard p{
   color: rgba(0, 0, 0, 0.25);
-font-family: Poppins;
+ 
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
@@ -152,7 +152,7 @@ left: 0;
 }
 .returncard >span{
   color: rgba(0, 0, 0, 0.80);
-font-family: Poppins;
+ 
 font-size: 14px;
 font-weight: 500;
 }
@@ -169,7 +169,7 @@ width: 93%;
 }
 .information p{
     color: #000;
-/* font-family: Poppins; */
+/*   */
 font-size: 22px;
 font-weight: 500;
 }
@@ -180,20 +180,20 @@ font-weight: 500;
 }
 .information h6{
     color: rgba(0, 0, 0, 0.50);
-/* font-family: Poppins; */
+/*   */
 font-size: 18px;
 font-weight: 500;
 }
 .information input::placeholder{
     color: rgba(0, 0, 0, 0.70);
-    font-family: Poppins;
+     
     font-size: 16px;
     font-weight: 400;
     text-transform: capitalize; 
 }
 .information button{
     color: rgba(0, 0, 0, 0.70);
-font-family: Poppins;
+ 
 font-size: 14px;
 font-weight: 400;
     width: 100%;
@@ -211,7 +211,7 @@ background:  rgba(113, 140, 89, 0.16);
 }
 .category p{
     color: rgba(0, 0, 0, 0.80);
-/* font-family: Poppins; */
+/*   */
 font-size: 17px;
 font-weight: 500;
 text-transform: capitalize;
@@ -262,7 +262,7 @@ text-transform: capitalize;
     top: 25px;
     right: 150px;;
     color: rgba(0, 0, 0, 0.30);
-font-family: Poppins;
+ 
 font-size: 16px;
 font-weight: 400;
 text-transform: capitalize;
@@ -274,7 +274,7 @@ text-transform: capitalize;
   }
   .password-confirm{
     margin: auto;
-    font-family: Poppins;
+     
   }
   .password-confirm label{
     display: flex;
@@ -338,7 +338,7 @@ border-radius: 0;
   }
   .informat p{
     color: rgba(0, 0, 0, 0.70);
-font-family: Poppins;
+ 
 font-size: 16px;
 font-weight: 400;
 text-transform: capitalize;
@@ -348,7 +348,7 @@ top: 10px;
   }
   .manage input::placeholder ,.manage select {
     color: rgba(0, 0, 0, 0.20);
-font-family: Poppins;
+ 
 font-size: 16px;
 font-weight: 400;
 
@@ -360,13 +360,13 @@ font-weight: 400;
   .location p{
     text-align: left;
     color: #000;
-font-family: Poppins;
+ 
 font-size: 22px;
 font-weight: 500;
   }
   .loaction-place{
     /* margin: auto; */
-    font-family: Poppins;
+     
     text-align: left;
     border: 1px solid rgba(0, 0, 0, 0.30);
   }
@@ -399,7 +399,7 @@ position: relative;
   }
   .loaction-place .delete{
     color: rgba(154, 0, 0, 0.50);
-font-family: Poppins;
+ 
 font-size: 12px;
 font-weight: 500;
 position: relative;
@@ -407,7 +407,7 @@ bottom: 26px;
   }
   .loaction-place .edit{
     color: #718C59;
-font-family: Poppins;
+ 
 font-size: 12px;
 font-weight: 500;
 position: relative;
@@ -418,7 +418,7 @@ bottom: 26px;
   }
   .loaction-place a> h7,span{
     color: rgba(0, 0, 0, 0.80);
-font-family: Poppins;
+ 
 font-size: 18px;
 font-style: normal;
 font-weight: 500;
@@ -457,7 +457,7 @@ line-height: normal;
   }
   #input-foot::placeholder{
     color: rgba(0, 0, 0, 0.35);
-font-family: Poppins;
+ 
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
@@ -470,7 +470,7 @@ font-weight: 400;
 
   }
   .my-orders{
-    font-family: Poppins;
+     
     padding-bottom: 50px;
     height: 85%;
   }
@@ -488,7 +488,7 @@ font-weight: 700;
   }
   .my-orders table tr th{
     color: rgba(0, 0, 0, 0.50);
-font-family: Poppins;
+ 
 font-size: 14px;
 font-weight: 400;
 padding: 14px;
@@ -498,7 +498,7 @@ padding: 14px;
     background-color: rgba(221, 64, 51, 0.08);
     padding: 14px;
     color: rgba(0, 0, 0, 0.80);
-font-family: Poppins;
+ 
 font-size: 14px;
 font-weight: 400;
   }
@@ -508,7 +508,7 @@ font-weight: 400;
   }
   .my-orders tbody tr td button{
     border: 0;
-font-family: Poppins;
+ 
 font-size: 14px;
 font-weight: 400;
 background-color:  rgba(248, 186, 186, 0.50);
@@ -564,6 +564,7 @@ table tbody .trow1{
 .trow2{
   position: relative;
   top: 20px;
+  background: rgba(140, 161, 122, 0.10)
 }
 .trow3{
   position: relative;
@@ -585,6 +586,7 @@ table  td  .drop{
  {
   border-bottom-color: #8CA17A;
 }
+
 .details-confirm{
   top: 53px;
     display: block;
@@ -595,8 +597,8 @@ table  td  .drop{
 }
 .itemdetails-confirm {
   color: rgba(0, 0, 0, 0.50);
-font-family: Poppins;
-font-size: 14px;
+ 
+font-size: 18px;
 font-weight: 400;
 border-bottom: 1px solid  rgba(0, 0, 0, 0.08);;
 }
@@ -614,7 +616,7 @@ border-bottom: 1px solid  rgba(0, 0, 0, 0.08);;
 .my-orders figcaption{
   text-align: center;
   color: rgba(0, 0, 0, 0.30);
-font-family: Poppins;
+ 
 font-size: 16px;
 
 font-weight: 500;
@@ -623,7 +625,7 @@ font-weight: 500;
   text-align: center;
   color: rgba(0, 0, 0, 0.80);
 
-font-family: Poppins;
+ 
 font-size: 18px;
 
 font-weight: 500;
@@ -632,7 +634,7 @@ font-weight: 500;
 .modal-body h6{
   color: rgba(18, 20, 24, 0.80);
 font-variant-numeric: lining-nums proportional-nums;
-font-family: Poppins;
+ 
 font-size: 18px;
 font-style: normal;
 font-weight: 500;
@@ -642,7 +644,7 @@ text-transform: capitalize;
 .modal-body p{
   color: rgba(0, 0, 0, 0.30);
 font-variant-numeric: lining-nums proportional-nums;
-font-family: Poppins;
+ 
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -661,7 +663,7 @@ left: 0;
 }
 .mywish h3{
   color: #000;
-  font-family: Poppins;
+   
   font-size: 22px;
   font-weight: 500;
 }
@@ -677,19 +679,19 @@ left: 0;
 }
 .mywallet .card h5{
   color: rgba(0, 0, 0, 0.80);
-font-family: Poppins;
+ 
 font-size: 16px;
 font-weight: 400;
 }
 .mywallet .card h6{
   color: #000;
-font-family: Poppins;
+ 
 font-size: 30px;
 
 font-weight: 500;}
 .mywallet h3{
   color: #000;
-  font-family: Poppins;
+   
   font-size: 25px;
   font-weight: 600;
 
@@ -710,7 +712,7 @@ left: 3px;
 }
 .loaction-place>h6{
   color: rgba(0, 0, 0, 0.80);
-  font-family: Poppins;
+   
   font-size: 21px;
   font-style: normal;
   font-weight: 500;
@@ -749,20 +751,20 @@ left: 3px;
 }
 .mywish h3:nth-last-child(1){
   color: rgba(0, 0, 0, 0.30);
-font-family: Poppins;
+ 
 font-size: 18px;
 font-weight: 400;
 }
 .wish-card> h5:nth-child(1){
   color: #000;
-font-family: Poppins;
+ 
 font-size: 18px;
 font-weight: 400;
 text-transform: capitalize;
 }
 .wish-card> h6{
   color: var(--baby-green, #718C59);
-  font-family: Poppins;
+   
   font-size: 12px;
   font-weight: 400;
   text-transform: capitalize;
@@ -770,13 +772,13 @@ text-transform: capitalize;
 }
 .wish-card >span{
   color: rgba(0, 0, 0, 0.50);
-  font-family: Poppins;
+   
   font-size: 14px;
   font-weight: 400;
 }
 .wish-card h4{
   color: #000;
-font-family: Poppins;
+ 
 font-size: 20px;
 font-weight: 400;
 
@@ -784,7 +786,7 @@ text-transform: capitalize;
 }
 .wish-card h4 >del{
   color: rgba(0, 0, 0, 0.50);
-font-family: Poppins;
+ 
 font-size: 14px;
 font-weight: 400;
 line-height: 33px; 
@@ -793,7 +795,7 @@ text-transform: capitalize;
 }
 .cas{
   color: rgba(0, 0, 0, 0.50);
-font-family: Poppins;
+ 
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
@@ -841,7 +843,7 @@ font-size: 18px;
 }
 .gotoshop a{
   color: #FFF;
-font-family: Poppins;
+ 
 font-size: 18px;
 font-weight: 400;
 text-decoration: none;
@@ -960,7 +962,7 @@ font-weight: 400;
 }
 .cart-content #input-foot::placeholder{
     color: rgba(0, 0, 0, 0.35);
-font-family: Poppins;
+ 
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
@@ -977,15 +979,16 @@ line-height: normal;
   position: relative;
   right: 50px;
 }
+.loaction-place{
+  width: 75%;
+}
 
   @media screen and (max-width: 767px)  {
     .newcard-container .col-9{
       padding: 1.2rem;
     }
-    .footer-home >.container-fluid{
-      padding: 0;
-      position: relative;
-      right: -7px;
+    .loaction-place{
+      width: 100%;
     }
     .footer-home >.foot-manage{
       position: relative;
@@ -1045,6 +1048,9 @@ line-height: normal;
       .my-wallest table tbody tr{
         display: grid;
       }
+      .love{
+        display: none;
+      }
       .my-wallest{
         height: 100%;
       }
@@ -1066,6 +1072,12 @@ line-height: normal;
       .newcard-container .col-9 .my-payment{
         padding: 0
       }
+      .navbar .nav-home .collapse:nth-last-child(1){
+        margin-left: 0;
+      }
+      .information .location >p{
+       display: none;
+      }
   }
   .my-payment{
     padding: 3rem;
@@ -1084,7 +1096,10 @@ line-height: normal;
     animation: animName 1s linear  ;
   }
 
-
+.details-confirm {
+  display: none;
+  padding: auto;
+}
   .chair .card-photo{
   transform: translate(20px, 10px);
   }

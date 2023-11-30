@@ -1,9 +1,9 @@
 @font-face {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat',sans-serif;
     src: url('../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
   }
   @font-face {
-    font-family: 'Poppines';
+    font-family: 'Poppines',sans-serif;
     src: url('../assets/fonts/Poppins/Poppins-Regular.ttf');
   }
 *{
@@ -25,7 +25,7 @@
   }
   #input-foot::placeholder{
     color: rgba(0, 0, 0, 0.35);
-font-family: Poppins;
+ 
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
@@ -266,7 +266,7 @@ font-weight: 500;
   }
   .cart-content #input-foot::placeholder{
       color: rgba(0, 0, 0, 0.35);
-  font-family: Poppins;
+   
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -287,6 +287,9 @@ font-weight: 500;
       }
       .row .col-6{
         width: 100%;
+      }
+      .navbar .nav-home .collapse:nth-last-child(1){
+        margin-left: 0;
       }
     }
 

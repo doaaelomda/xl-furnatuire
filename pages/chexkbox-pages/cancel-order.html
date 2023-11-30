@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cancel Order</title>
+  <link rel="stylesheet" href="../../css/tracking.css">
+ 
+  <link rel="stylesheet" href="../../assets/libraries/bootstrap/css/bootstrap.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid mt-0 nav-home" style="background-color: #fff;z-index: 100;">
+      <h1 class="logo navbar-brand px-4">Logo</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="list-one navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/shop.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/Inspiration.html">Inspiration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../../pages/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/contact.html">Contact</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <div id="searchWindow" class="search-window" style="display: none;">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+
+            </form>
+          </div>
+          <li class="nav-item" onclick="searchapper()">
+            <a class="nav-link" id="openSearchModal">
+              <img src="../../assets/images/pages/icons_Nav/searchicon.png" alt="">
+            </a>
+          </li>
+          <li class="nav-item" onclick="profileset()">
+            <a class="nav-link">
+              <img src="../../assets/images/pages/icons_Nav/humanicon.png" alt="">
+            </a>
+          </li>
+          <li class="nav-item" onclick="cart()">
+            <a class="nav-link">
+              <img src="../../assets/images/pages/icons_Nav/shoppingicon.png" alt="">
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+
+    </div>
+  </nav>
+  <div class="profile-page w-75">
+    <ul class="py-4 profile-list">
+      <p class="mt-5 ">
+        Jazmyne_Hahn@hotmail.com
+      </p>
+      <li><a href="../../pages/profile-person.html">My Profile</a></li>
+      <li><a href="../../pages/allorders.html">My Orders</a></li>
+      <li><a href="../../pages/security.html">Security</a></li>
+      <li><a href="../../pages/wish.html">My Wishlist</a></li>
+      <li><a href="../../pages/wallest.html">My Wallet</a></li>
+      <li><a href="">Sign Out</a></li>
+    </ul>
+  </div>
+  <div id="cartContent" class="cart-content " style="display: none;width: 444px;">
+    <header class="container my-4">
+      <p>My Cart</p>
+      <img id="closeCart" src="../../assets/images/pages/mycart/close-x-svgrepo-com (2) 1.png" alt="">
+    </header>
+    <section class="container">
+      <div class="row cart-item">
+        <img class="col-1" src="../../assets/images/pages/mycart/Rectangle 357.png" alt="">
+        <span class="col-2">
+          <p>Item Name</p>
+          <p class="qty px-4">Qty : 2</p>
+        </span>
+        <span class="col-2 right-cart">
+          <p>25 $</p>
+          <p class="col-1">
+            <img src="../../assets/images/pages/mycart/Vector.png" alt="">
+          </p>
+        </span>
+      </div>
+      <div class="row cart-item">
+        <img class="col-1" src="../../assets/images/pages/mycart/Rectangle 358.png" alt="">
+        <span class="col-2">
+          <p>Item Name</p>
+          <p class="qty ">Qty : 2</p>
+        </span>
+        <span class="col-2 right-cart">
+          <p>25 $</p>
+          <p class="col-1">
+            <img src="../../assets/images/pages/mycart/Vector.png" alt="">
+          </p>
+        </span>
+      </div>
+      <div class="row cart-item3 ">
+        <img class="col-1" src="../../assets/images/pages/mycart/Rectangle 359.png" alt="">
+        <span class="col-2">
+          <p>Item Name</p>
+          <p class="qty ">Qty : 2</p>
+        </span>
+        <span class="col-2 right-cart">
+          <p>25 $</p>
+          <p class="col-1">
+            <img src="../../assets/images/pages/mycart/Vector.png" alt="">
+          </p>
+        </span>
+      </div>
+
+    </section>
+    <div class="container">
+      <div class="foot-cart py-2">
+        <p>SubTotal </p>
+        <p>185 $</p>
+      </div>
+      <button class="create py-3">
+        <a href="cart.html">View Cart</a>
+      </button>
+    </div>
+  </div>
+  <div class=" p-5  home-inst">
+    <div class="">
+      <div class="mt-4 p-3 home-checkbox">
+        <span class="home">
+          <a href="../../index.html"> Home |</a>
+          
+        
+        </span>
+        <span class="home">
+          <a href="../cart.html"> Cart</a>
+          
+         </span>
+         <span class="cart">
+         <a href="../chexkbox-pages/checkbox.html">
+          | Checkbox
+         </a> </span>
+      </div>
+    </div>
+    <div class=" notes p-3 " id="orderMessage">
+        <img class="px-4" src="../../assets/images/pages/checkbox/tracking-order/Group 190.png" alt="">
+        You Order is Canelled
+      </div>
+    <div class="">
+        <div class="row gx-0">
+            <div class="col-lg-4 col-12">
+                <div class=" py-2 mx-4  cust-details ">
+                    <h5 class="py-2">Customer Details</h5>
+                    <ul class="px-4">
+                        <li class="pt-2">Customer name</li>
+                        <li >Mr. Anita Pouros</li>
+                        <li class="pt-2">Customer Contact</li>
+                        <li >+ 02 | 725-725-7413</li>
+                        <li class="pt-2">Delivery Address</li>
+                        <li class="">201 North plaza , Zagazaig , El Sharqia ,Egypt Ahmad abaad 305</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-lg-8 col-12">
+                <div class=" py-2 mx-4  cust-details ">
+                    <div class="container tracking-num py-3" >
+                    <div class="px-5 py-3 car m-3 ">
+                        <div >
+                        <h6 class="py-2" >Tracking no  <span class="px-5">#256644223</span></h6>
+                        <h4>
+                            Your Order is
+                            <b>Delivered</b>
+                            <span>as on 27 June , 2023 Friday</span>
+                        </h4>
+                    </div>
+                    <div >
+                        <a href="">
+                            <img src="../../assets/images/pages/checkbox/tracking-order/exchange-horizontal-svgrepo-com 1.png" alt="Exchange Item ">
+                            Exchange  Item
+                        </a>
+                        <a href="">
+                            <img src="../../assets/images/pages/checkbox/tracking-order/return-svgrepo-com 1.png" alt="Exchange Item ">
+                            Ruturn Order
+                        </a>
+                    </div>
+                    </div>
+                </div>
+
+                <div>
+                   
+                    <div class="history row gx-5">
+                      <p class="m-3 header-trak">Tracking History</p>
+                   <div class=" col-lg-6 col-12 my-4 ">
+                    <h6 class="">on 27 June , 2023 Friday At 2 : 30 pm</h6>
+                    <h6 class=" ">on 27 June , 2023 Friday At 2 : 30 pm</h6>
+                    <h6 class="">on 27 June , 2023 Friday At 2 : 30 pm</h6>
+                    <h6 class="">on 27 June , 2023 Friday At 2 : 30 pm</h6>
+                    <h6 class="">on 27 June , 2023 Friday At 2 : 30 pm</h6>
+                   </div>
+                    <ul class="stepper col-lg-6 col-12 mt-2">
+                        <li class="stepper-item complete">
+                            <span class="stepper-counter"></span>
+                            <a href="#" class="stepper-link">
+                                <span>Delivered</span>
+                            </a>
+                            <span class="stepper-line"></span>
+                        </li>
+                    
+                        <li class="stepper-item complete">
+                            <span class="stepper-counter"></span>
+                            <a href="#" class="stepper-link">
+                                <span>Out For Delivered</span>
+                            </a>
+                            <span class="stepper-line"></span>
+                        </li>
+                        <li class="stepper-item complete ">
+                            <span class="stepper-counter"></span>
+                            <a href="#" class="stepper-link">
+                                <span> In Transit</span>
+                            </a>
+                            <span class="stepper-line"></span>
+                        </li>
+                        <li class="stepper-item complete">
+                            <span class="stepper-counter"></span>
+                            <a href="#" class="stepper-link">
+                                <span>Order picked up</span>
+                            </a>
+                            <span class="stepper-line"></span>
+                        </li>
+                        <li class="stepper-item complete">
+                            <span class="stepper-counter"></span>
+                            <a href="#" class="stepper-link">
+                                <span>Order Recieved</span>
+                            </a>
+                            <span class="stepper-line"></span>
+                        </li>
+                    </ul>
+            </div>
+                </div>
+            </div>
+                
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="mt-3 footer-home">
+    <div class="  container-fluid py-3 px-5">
+      <div class="row pt-5">
+        <div class="col-md-3">
+          <h4 class="px-5">Logo</h4>
+          <span class="foot-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ipsam
+            expedita!</span>
+          <h4 class="pt-5">Follow Us</h4>
+          <div>
+            <img src="../../assets/images/pages/footer/facebook-svgrepo-com 3.png" alt="">
+            <img src="../../assets/images/pages/footer/twitter-svgrepo-com (1) 2.png" alt="">
+            <img src="../../assets/images/pages/footer/call-communication-device-svgrepo-com 2.png" alt="">
+            <img src="../../assets/images/pages/footer/instagram-svgrepo-com 2.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-2">
+          <h4 class="cs">Customer Services</h4>
+          <h6 class="later">Help & Contact Us</h6>
+          <h6 class="later">Online Store</h6>
+          <h6 class="later">Terms & Conditions</h6>
+        </div>
+        <div class="col-md-2">
+          <h4 class="cs">Quick lines</h4>
+          <h6 class="later">Home</h6>
+          <h6 class="later">Projects</h6>
+          <h6 class="later">About us</h6>
+          <h6 class="later">Reviews</h6>
+          <h6 class="later">Services</h6>
+        </div>
+        <div class="col-md-2">
+          <h4 class="cs">Products</h4>
+          <h6 class="later">Furniture</h6>
+          <h6 class="later">Home decor</h6>
+          <h6 class="later">Lamps</h6>
+          <h6 class="later">Lounge chair</h6>
+        </div>
+        <div class="col-md-3">
+          <h4 class="cs">Subscribe us</h4>
+          <span class="foot-span">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, ipsam
+            expedita!</span>
+          <div class="input-group flex-nowrap mt-3">
+            <input type="text" class="form-control" id="input-foot" placeholder="Enter your email"
+              aria-label="Username" aria-describedby="addon-wrapping">
+            <span class="input-group-text" id="addon-wrapping">
+              <img src="../../assets/images/pages/footer/send-svgrepo-com (2) 1.png" alt="">
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p id="end" class="pt-3">
+      &copy; All Right reserved 2022
+    </p>
+
+  </div>
+</body>
+<script src="../../js/chexkbox.js"></script>
+<script src="../../index.js"></script>
+<script src="../../assets/libraries/bootstrap/js/bootstrap.min.js"></script>
+
+</html>

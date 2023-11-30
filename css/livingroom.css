@@ -3,11 +3,11 @@
     text-decoration: none;
   }
   @font-face {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat',sans-serif;
     src: url('../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
   }
   @font-face {
-    font-family: 'Poppines';
+    font-family: 'Poppines',sans-serif;
     src: url('../assets/fonts/Poppins/Poppins-Regular.ttf');
   }
   *{
@@ -25,7 +25,7 @@
   }
   #input-foot::placeholder{
     color: rgba(0, 0, 0, 0.35);
-font-family: Poppins;
+ 
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
@@ -70,15 +70,13 @@ line-height: normal;
 } 
 .home-inst p{
     color: rgba(0, 0, 0, 0.80);
-
-font-family: Montserrat;
 font-size: 26px;
 font-style: normal;
 font-weight: 500;
 } 
 .sofas a {
     color: #000;
-    font-family: Poppins;
+     
     font-size: 18px;
     font-weight: 400;
     text-transform: capitalize;
@@ -97,19 +95,19 @@ font-weight: 500;
 }
 .off p:nth-child(1){
     color:  #718C59;
-font-family: Poppins;
+ 
 font-size: 40px;
 font-weight: 600;
 }
 .off p:nth-child(2){
     color: rgba(0, 0, 0, 0.70);
-font-family: Poppins;
+ 
 font-size: 30px;
 font-weight: 400;
 }
 .off p:nth-child(3){
     color: rgba(0, 0, 0, 0.50);
-font-family: Poppins;
+ 
 font-size: 14px;
 font-weight: 400;
 
@@ -161,13 +159,13 @@ font-weight: 400;
   }
 .product-card .p1{
     color: rgba(0, 0, 0, 0.80);
-font-family: Poppins;
+ 
 font-size: 16px;
 
   }
 .product-card .p2{
     color:  #718C59;
-font-family: Poppins;
+ 
 font-size: 18px;
 font-weight: 500;
     
@@ -178,7 +176,7 @@ font-weight: 500;
   }
   .itemname span{
     color: rgba(0, 0, 0, 0.30);
-font-family: Poppins;
+ 
 font-size: 16px;
 font-weight: 400;
   }
@@ -238,7 +236,7 @@ font-weight: 400;
   } 
   .page-item .page-link{
     color: #000;
-    font-family: Poppins;
+     
     font-size: 17px;
     font-weight: 400;
  
@@ -393,7 +391,7 @@ font-weight: 400;
   }
   .cart-content #input-foot::placeholder{
       color: rgba(0, 0, 0, 0.35);
-  font-family: Poppins;
+   
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -416,6 +414,9 @@ font-weight: 400;
           position: relative;
       
           left: -40px;
+        }
+        .navbar .nav-home .collapse:nth-last-child(1){
+          margin-left: 0;
         }
     .sofas a{
       display: none;
@@ -538,7 +539,7 @@ font-weight: 400;
     outline: 0;
     line-height: 2.2em;
     color: rgba(0, 0, 0, 0.40);
-    font-family: Montserrat;
+
     font-size: 16px;
     font-weight: 500;
   }
@@ -551,7 +552,7 @@ font-weight: 400;
     font-size: 14px;
     line-height: 2.2em;
     color: rgba(0, 0, 0, 0.40);
-    font-family: Montserrat;
+
     font-size: 16px;
     font-weight: 500;
 

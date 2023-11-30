@@ -29,7 +29,13 @@ function signin() {
         signword.textContent = "Sign In";
     }
 }
+
 $("button").click(function () {
+
+
+
+
+
     $(".check-icon").hide();
     setTimeout(function () {
       $(".check-icon").show();

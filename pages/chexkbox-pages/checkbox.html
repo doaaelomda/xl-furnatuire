@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CheckBox</title>
-  <link rel="stylesheet" href="../../css/cart.css">
+
   <link rel="stylesheet" href="../../css/checkbox.css">
   <link rel="stylesheet" href="../../assets/libraries/bootstrap/css/bootstrap.min.css">
 
@@ -38,7 +38,7 @@
             <a class="nav-link" href="../../pages/contact.html">Contact</a>
           </li>
         </ul>
-        <ul class="navbar-nav ml-auto mx-5">
+        <ul class="navbar-nav ml-auto">
           <div id="searchWindow" class="search-window" style="display: none;">
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -137,16 +137,26 @@
       </button>
     </div>
   </div>
-  <div class=" p-5  home-inst container-fluid">
+  <div class="  home-inst container-fluid">
     <div class="">
-      <div class="mt-4 p-3 home-checkbox">
-        <span class="home">Home |</span>
-        <span class="home">Cart </span>
-        <span class="cart active"> | Checkbox </span>
+      <div class="mt-4 p-3 p-5 home-checkbox">
+        <span class="home">
+          <a href="../../index.html"> Home |</a>
+          
+        
+        </span>
+        <span class="home">
+          <a href="../cart.html"> Cart</a>
+          
+         </span>
+         <span class="cart">
+         <a href="../chexkbox-pages/checkbox.html">
+          | Checkbox
+         </a> </span>
       </div>
     </div>
     <div class="container-fluid">
-      <div class="w-75" style="margin: auto;">
+      <div class="checkes-container" >
         <div class="progress-container">
           <div class="progress" id="progress"></div>
           <div class="circle active">
@@ -166,36 +176,36 @@
             <img src="../../assets/images/pages/checkbox/goal-svgrepo-com (1) 1.png" alt="">
           </div>
         </div>
-        <div class="d-flex justify-content-between words-progress">
+        <div class="d-flex justify-content-between words-progress pb-5">
           <h6>Shipping</h6>
           <h6>Payment</h6>
           <h6>Summary</h6>
           <h6>Success</h6>
         </div>
-        <section class="shapping py-5">
-          <div class="info p-5">
+        <section class="shapping py-3 px-4">
+          <div class="info ">
             <h3 class="px-5">Shopping Information</h3>
 
             <div class=" gx-5 gy-1 row p-5 informat">
-              <div class="col-6">
+              <div class="col-lg-6 col-12">
                 <p>First Name</p>
                 <input type="text" class="py-2 form-control " id="exampleFormControlInput1"
                   placeholder="Enter Your First Name" style="border-radius: 0;background-color: transparent;"
                   fdprocessedid="iifqvh">
               </div>
-              <div class="col-6">
+              <div class="col-lg-6 col-12">
                 <p>Last Name</p>
                 <input type="text" class="py-2 form-control " id="exampleFormControlInput1"
                   placeholder="Enter Your Last Name" style="border-radius: 0;background-color: transparent;"
                   fdprocessedid="91dyng">
               </div>
-              <div class="col-6">
+              <div class="col-lg-6 col-12">
                 <p>Email Address</p>
                 <input type="text" class="py-2 form-control " id="exampleFormControlInput1"
                   placeholder="Enter Your Email Address" style="border-radius: 0;background-color: transparent;"
                   fdprocessedid="kki9a">
               </div>
-              <div class="col-6">
+              <div class="col-lg-6 col-12">
                 <p>Phone Number</p>
                 <input type="number" class="py-2 form-control " id="exampleFormControlInput1" placeholder="+02 | "
                   style="border-radius: 0;background-color: transparent;" fdprocessedid="0hvyif">
@@ -208,8 +218,8 @@
 
             <h3 class="px-5 pt-5">Shopping Address</h3>
 
-            <div class=" gx-5 gy-1 row p-5 informat">
-              <div class="col-6">
+            <div class=" gx-5 gy-3 row px-5 py-3 pb-4 informat">
+              <div class="col-lg-6 col-12">
                 <p for="Name ">Address</p>
                 <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback"
                   required="" fdprocessedid="7d4onq">
@@ -217,20 +227,20 @@
 
                 </select>
               </div>
-              <div class="col-6">
+              <div class="col-lg-6 col-12">
                 <p for="Name ">City</p>
                 <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback"
                   required="" fdprocessedid="7d4onq">
                   <option selected="" disabled="" value="">City Name</option>
                 </select>
               </div>
-              <div class="col-6">
+              <div class="col-lg-6 col-12">
                 <p>Street Address</p>
                 <input type="text" class="py-2 form-control " id="exampleFormControlInput1"
                   placeholder="Street name , house num , suite .."
                   style="border-radius: 0;background-color: transparent;" fdprocessedid="kki9a">
               </div>
-              <div class="col-6">
+              <div class="col-lg-6 col-12">
                 <p>Building Number /Flat No.</p>
                 <input type="number" class="py-2 form-control " id="exampleFormControlInput1" placeholder="* "
                   style="border-radius: 0;background-color: transparent;" fdprocessedid="0hvyif">
@@ -255,26 +265,27 @@
 
           </div>
         </section>
-        <section class="paymentchechbox py-5">
-          <div class="info p-5">
-            <div class="content">
+        <section class="paymentchechbox py-3 px-4">
+          <div class="info ">
+            <div class="">
               <h3 class="px-5 py-3">Payment Methods</h3>
-              <div class=" px-5 d-flex justify-content-between ">
-                <div class="card py-4 active ">
+              <div class=" px-5 py-3 d-flex justify-content-between row ">
+                <div class="card col-lg-4 col-12 py-4 card1 " onclick="visashow()">
                   <img src="../../assets/images/pages/checkbox/paynent-check/credit-card-svgrepo-com (1) 1.png" alt="">
                   <span class="px-3 active">Credit Cart</span>
                 </div>
-                <div class="card py-4  ">
+                <div class="card  col-lg-4 col-12 py-4 card2" onclick="clickwallet()">
                   <img src="../../assets/images/pages/checkbox/paynent-check/wallet-svgrepo-com (1) 1.png" alt="">
                   <span class="px-3">Wallet</span>
                 </div>
-                <div class="card py-4  ">
+                <div class="card col-lg-4 col-12 py-4  ">
                   <img src="../../assets/images/pages/checkbox/paynent-check/paypal-svgrepo-com 1.png" alt="">
                   <span class="px-3">PayPal</span>
                 </div>
 
               </div>
-              <div class=" visa py-3 my-5 d-flex justify-content-around ">
+              <div class="visacontainer">
+              <div class=" visa py-3 mt-5  ">
 
                 <div class="d-flex">
                   <input type="radio" name="" id="">
@@ -294,29 +305,26 @@
                 </div>
 
               </div>
-
-            </div>
-
             <div class=" gx-5 gy-1 row p-5 informat" style="border: none;">
 
-              <div class="col-6">
+              <div class="col-lg-6 col-12 ">
                 <p>Name Of Card</p>
                 <input type="text" class="py-2 form-control " id="exampleFormControlInput1"
-                  placeholder="enter your name" style="border-radius: 0;background-color: transparent;"
+                  placeholder="Enter your name" style="border-radius: 0;background-color: transparent;"
                   fdprocessedid="kki9a">
               </div>
-              <div class="col-6">
+              <div class="col-lg-6 col-12 ">
                 <p>Card Number</p>
                 <input type="number" class="py-2 form-control " id="exampleFormControlInput1"
                   placeholder="0000-0000-0000-0000" style="border-radius: 0;background-color: transparent;"
                   fdprocessedid="0hvyif">
               </div>
-              <div class="col-6">
+              <div class="col-lg-6 col-12 ">
                 <p>Expiry Date</p>
                 <input type="text" class="py-2 form-control " id="exampleFormControlInput1" placeholder="MM//YY"
                   style="border-radius: 0;background-color: transparent;" fdprocessedid="kki9a">
               </div>
-              <div class="col-6">
+              <div class="col-lg-6 col-12 ">
                 <p>CVV</p>
                 <input type="number" class="py-2 form-control " id="exampleFormControlInput1" placeholder="# "
                   style="border-radius: 0;background-color: transparent;" fdprocessedid="0hvyif">
@@ -326,18 +334,31 @@
 
 
             </div>
-            <div class="d-flex justify-content-between">
-
-
+          </div>
+         
+          </div>
+          <div class="wallest-show px-5 py-3 " style="display: none;">
+            <h6 class="py-2">Amount Balance</h6>
+            <div class=" p-4 px-3 d-flex justify-content-between" >
+              <span>$ 0.00</span>
+              <img src="../../assets/images/pages/profile/arrow.png" alt="">
             </div>
+            <button class="   py-2 my-4 px-5 next"  >
+              <a class="">
+                Apply
+              </a>
+            </button>
+          </div>
+          </div>
+          
         </section>
         <section class="summary py-5">
-          <div class=" p-5">
-            <div class="content">
+          <div class=" info">
+            <div class="">
               <h3 class="px-5 py-3">Review Order</h3>
-              <div class="orders p-5 ">
+              <div class="orders py-5 px-3 ">
 
-                <div class="d-flex justify-content-between px-5">
+                <div class="d-flex justify-content-between px-3">
                   <h6>Cart</h6>
                   <p>
                     <img src="../../assets/images/pages/checkbox/summary/edit-02-svgrepo-com 1.png" alt="">
@@ -345,7 +366,7 @@
                   </p>
                 </div>
                 <div class="container">
-                  <div class="row card-order px-5 py-3">
+                  <div class="row card-order px-2 py-3">
                     <div class="col-2">
                       <img src="../../assets/images/pages/checkbox/summary/Rectangle 172.png" alt="">
                     </div>
@@ -354,7 +375,7 @@
                       <h6>$60</h6>
                     </div>
                   </div>
-                  <div class="row card-order px-5 py-3">
+                  <div class="row card-order px-2  py-3">
                     <div class="col-2">
                       <img src="../../assets/images/pages/checkbox/summary/Rectangle 372.png" alt="">
                     </div>
@@ -363,7 +384,7 @@
                       <h6>$200</h6>
                     </div>
                   </div>
-                  <div class="row px-5 py-3">
+                  <div class="row card-order px-2  py-3">
                     <div class="col-2">
                       <img src="../../assets/images/pages/checkbox/summary/Rectangle 373.png" alt="">
                     </div>
@@ -376,7 +397,7 @@
 
 
               </div>
-              <div class="card px-5 py-3 mt-4 information-card">
+              <div class="card px-4 py-3 mt-4 information-card">
                 <div class="d-flex justify-content-between ">
                   <h5 class="py-2">Your Information</h5>
                   <p>
@@ -399,7 +420,7 @@
                 </div>
               </div>
 
-              <div class="card px-5 py-2 mt-4 information-card">
+              <div class="card px-4 py-1 mt-4 information-card">
                 <div class="d-flex justify-content-between ">
                   <h5 class="py-2">Delivary Methods</h5>
                   <p>
@@ -408,13 +429,13 @@
                   </p>
                 </div>
 
-                <div class="loaction-place my-3 py-3 ">
+                <div class="loaction-place my-2 py-3 ">
                   <input type="radio" class="m-2" name="location" value="home">
                   <span>Ship</span>
                 </div>
               </div>
 
-              <div class="card px-5 py-2 mt-4 information-card">
+              <div class="card px-4 py-1 mt-4 information-card">
                 <div class="d-flex justify-content-between ">
                   <h5 class="py-2">Payment</h5>
                   <p>
@@ -422,7 +443,7 @@
                     <span>Edit</span>
                   </p>
                 </div>
-                <div class="d-flex visa-card py-4">
+                <div class="d-flex visa-card p-3">
                   <img src="../../assets/images/pages/checkbox/paynent-check/credit-card-svgrepo-com (1) 1.png" alt="">
                   <h6 class="px-3">Visa xxxxx-xxxx-xxxx-7456</h6>
                 </div>
@@ -430,16 +451,11 @@
 
             </div>
 
-              <!--<button onclick="successshow()" class="next" class=" w-25 btn py-1" id="next">
-    <a  class="">
-    Confirm order
-  </a>
-     </button>
-    </div> -->
+        
             </div>
         </section>
         <section class="sucess ">
-          <div class=" p-5 sucess-content">
+          <div class="  sucess-content">
             <div class="content">
 
               <svg viewBox="0 0 26 26" >
@@ -451,23 +467,29 @@
              <p>Your Order Placed Successfully </p>
 
              <div class="d-flex justify-content-around">
-              <button class="btn py-3">Continue Shopping</button>
+              
+              <button class="btn py-3">
+                Continue Shopping
+              
+              </button>
+            
               <!-- Track My order -->
-              <button class="btn py-3 track" style="background-color: #8CA17A;color: #fff;">Track My order</button>
-
+              
+              <button class="btn py-3 track" style="background-color: #8CA17A;">
+                <a style="color: #fff;"  href="../chexkbox-pages/tracking-order.html">Track My order</a></button>
              </div>
 
             </div>
 
         </section>
-        <div class="d-flex justify-content-around   buttons  ">
+        <div class="d-flex justify-content-around pt-4  buttons  ">
 
-          <button  class=" back btn py-2 px-4" id="back">
+          <button  class=" back  py-2 px-4" id="back">
             <a class="">
               &larr; Back
             </a>
           </button>
-          <button class=" nextofship btn py-2 px-4 next"  id="next">
+          <button class=" nextofship  py-2 px-4 next"  id="next">
             <a class="">
               Next Steps
               &rarr;
@@ -527,12 +549,13 @@
         </div>
       </div>
     </div>
+    <p id="end" class="pt-3">
+      &copy; All Right reserved 2022
+    </p>
 
 
   </div>
-  <p id="end" class="pt-3">
-    &copy; All Right reserved 2022
-  </p>
+ 
 
 
 
@@ -541,5 +564,7 @@
 </body>
 <script src="../../js/chexkbox.js"></script>
 <script src="../../index.js"></script>
+
+<script src="../../assets/libraries/bootstrap/js/bootstrap.min.js"></script>
 
 </html>

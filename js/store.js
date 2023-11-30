@@ -21,6 +21,24 @@ function showmore() {
     mainImage.src = clickedImage.src;
   }
 
+  // Open Serch Window in NavBar 
+function searchapper(){
+  search=document.querySelector('.search-window');
+  search.style.display =search.style.display === 'block' ? 'none' : 'block';
+}
+
+// Open Profile-Page  Setting In Nav Bar
+function profileset() {
+  var profilePage = document.querySelector('.profile-page');
+  profilePage.style.display = profilePage.style.display === 'block' ? 'none' : 'block';
+}
+
+
+// Open Cart-Content Settings In Nav Bar
+function cart() {
+  var cart = document.querySelector('.cart-content');
+  cart.style.display = cart.style.display === 'block' ? 'none' : 'block';
+}
 
 //Slide Of Store Living 
   const nextButton = document.getElementById('nextButton');

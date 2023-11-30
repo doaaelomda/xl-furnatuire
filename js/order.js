@@ -39,3 +39,13 @@ checkboxes.style.display = checkboxes.style.display === 'block' ? 'none' : 'bloc
 
 }
 
+//open confirm details 
+function toggleDetailsConfirm() {
+  var detailsConfirm = document.querySelector('.details-confirm');
+  detailsConfirm.style.display = detailsConfirm.style.display === 'block' ? 'none' : 'block';
+
+  var trow2 = document.querySelector('.trow2');
+trow2.style.height = trow2.style.height === '100vh' ? '0' : '100vh';
+}
+
+

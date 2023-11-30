@@ -1,9 +1,9 @@
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   src: url('../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
 }
 @font-face {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif; 
   src: url('../assets/fonts/Poppins/Poppins-Regular.ttf');
 }
 *{
@@ -27,7 +27,7 @@
 }
 #input-foot::placeholder{
   color: rgba(0, 0, 0, 0.35);
-font-family: Poppins;
+ 
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
@@ -409,7 +409,7 @@ font-weight: 400;
 }
 .cart-content #input-foot::placeholder{
     color: rgba(0, 0, 0, 0.35);
-font-family: Poppins;
+ 
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
@@ -440,37 +440,33 @@ button > a{
   .table-data .itemrow .col-2{
     width: 100%;
   }
-  .table-data .itemrow .size {
-    position: absolute;
-    right: 125px;
-  }
+
   .table-data .itemrow .number{
     position: absolute;
-    right: -60px;
+    right: 40px;
   }
-  .table-data .itemrow .clear{
-    position: absolute;
-    bottom: 50%;
-    right: 0;
-  }
-  .table-data .itemrow .clear2{
-    position: absolute;
-    right: 0;
-    bottom: 8%;
 
-  }
-  .table-data .itemrow .clear3{
-    position: absolute;
-    right: 0;
-    bottom: -34%;
 
-  }
   .table-data .itemrow .coloranddot{
     position: relative;
-    right: -17px;
+    right: 30px;
   }
   .table-data .itemrow .price{
     margin-top: 42px;
-    margin-left: 147px;
+    margin-left: -25px;
+  }
+  .size{
+    margin-left: 0;
+  }
+  .navbar .nav-home .collapse:nth-last-child(1){
+    margin-left: 0;
   }
 }
+
+
+
+
+
+
+
+
