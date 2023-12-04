@@ -39,13 +39,13 @@ function updatenext() {
    
     if (currentActive === 2) {
         hiddenshapping()
-        next.textContent="Next Steps";
+        // next.textContent="Next Steps  →";
         next.style.color="#fff";
         back.style.visibility="visible";
 
     } else if (currentActive === 3) {
         summaryshow()
-        next.textContent='Continue Order';
+        next.textContent='Continue Order →';
         next.style.color="#fff"
         back.style.visibility="visible";
     } 
@@ -80,7 +80,7 @@ function updateback() {
 
     else if(currentActive === 2) {
         hiddensummary()
-        next.textContent=' Next Steps ';
+        next.textContent=' Next Steps → ';
         next.style.color="#fff";
         back.style.visibility="visible";
     }

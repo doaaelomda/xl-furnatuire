@@ -6,7 +6,7 @@
     font-family: 'Poppines', sans-serif;
     src: url('../assets/fonts/Poppins/Poppins-Regular.ttf');
   }
-  *{
+  .main {
     font-family: 'Montserrat', sans-serif;
     cursor: context-menu;
   }

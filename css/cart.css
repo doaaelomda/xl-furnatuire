@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;;
   src: url('../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
 }
 @font-face {
   font-family: 'Poppins', sans-serif; 
   src: url('../assets/fonts/Poppins/Poppins-Regular.ttf');
 }
-*{
+.main {
   font-family: 'Montserrat', sans-serif;
   cursor: context-menu;
 }
@@ -35,7 +35,7 @@ line-height: normal;
 }
 ul li {
   color: rgba(0, 0, 0, 0.70);
-  font-size: 18px;
+  font-size: 13px;
   font-weight: 500;
 }
 ul li a img{

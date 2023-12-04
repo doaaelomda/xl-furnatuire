@@ -13,7 +13,7 @@
     font-family: 'Poppines', sans-serif;
     src: url('../assets/fonts/Poppins/Poppins-Medium.ttf');
   }
-  *{
+  .main {
     font-family: 'Montserrat', sans-serif;
     cursor: context-menu;
   }

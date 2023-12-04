@@ -8,7 +8,7 @@
   src: url('assets/fonts/Poppins/Poppins-Medium.ttf');
 }
 
-* {
+.main {
   font-family: 'Montserrat', sans-serif;
   cursor: context-menu;
 }
@@ -74,7 +74,7 @@ nav>div>h1:hover {
 .header-nav {
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-image: url(../assets/images/pages/Rectangle\ 387.png);
+  background-image: url(assets/images/pages/Rectangle\ 387.png);
   height: 100vh;
 
 }
@@ -160,12 +160,13 @@ nav ul li a:hover {
   .hr-before-after::after {
     display: none;
   }
-  .footer-home >.container-fluid{
-    padding: 0;
-    position: relative;
 
-    right: 90px;
-  }
+    .footer-home >.container-fluid{
+      padding: 0;
+      position: relative;
+  
+      left: -70px;
+    }
   .footer-home>div>div{
     padding:0
   }
@@ -352,6 +353,7 @@ main p {
 .Sales-img:hover {
   background-color: white;
   box-shadow: 0px 4px 52px 0px rgba(0, 0, 0, 0.15);
+  height: 315px;
 }
 
 .desc {
@@ -450,9 +452,11 @@ h4 {
   overflow: hidden;
 }
 .prod-card{
-  background-image: url(../assets/images/pages/sales/background.png);
+  background-image: url(assets/images/pages/sales/background.png);
   position: relative;
 }
+
+
 
 .overlay {
   top: 100%;

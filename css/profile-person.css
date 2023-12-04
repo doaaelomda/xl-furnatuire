@@ -6,9 +6,8 @@
     font-family: 'Poppines', sans-serif;
     src: url('../assets/fonts/Poppins/Poppins-Regular.ttf');
   }
-  *{
+  .main {
     font-family: 'Montserrat', sans-serif;
-
     cursor: context-menu;
   }
   .navbar{
@@ -984,6 +983,12 @@ line-height: normal;
 }
 
   @media screen and (max-width: 767px)  {
+    .home_profile:nth-child(1) >div{
+      right: 0;
+    }
+    .trow2 .drop{
+      display: none;
+    }
     .newcard-container .col-9{
       padding: 1.2rem;
     }
