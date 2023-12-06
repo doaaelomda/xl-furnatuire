@@ -40,7 +40,7 @@ nav{
   }
   ul li {
     color: rgba(0, 0, 0, 0.70);
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 500;
   }
   ul li a img{
@@ -50,6 +50,7 @@ nav{
   nav ul li a:hover {
     cursor: pointer;
   }
+
   ul li {
     cursor: pointer;
   }
@@ -483,7 +484,29 @@ nav{
       margin-top: 42px;
       margin-left: 147px;
     }
-  }
+    .logo{
+      display: none;
+      padding-left: 0rem!important;
+    
+    }
+    nav #logo-image{
+      display: block;
+    
+      width: 44%;
+    }
+    .nav-home{
+      padding: 20px;
+      box-shadow: 0px 4px 52px 0px rgba(0, 0, 0, 0.15);
+    }
+    .navbar .nav-home .collapse:nth-last-child(1) {
+      margin-top: 10px;
+    
+    }
+      }
+    
+      #logo-image{
+        display: none;
+      }
   
   
   
@@ -837,7 +860,7 @@ svg {
         display: none;
     }
     .sucess{
-        padding: 0;
+        padding: 20px;
     }
      .sucess-content{
         padding: 0;
@@ -874,6 +897,11 @@ svg {
         }
         .orders .card-order >div{
           margin-left: 70px;
+
+        }
+        .wallest-show button{
+          position: relative;
+          bottom: 10px;
 
         }
 }

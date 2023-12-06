@@ -24,6 +24,7 @@
   .container-fluid >.navbar-brand:hover{
     color: #718C59;
   }
+
   ul li {
     color: rgba(0, 0, 0, 0.70);
     font-size: 18px;
@@ -109,7 +110,7 @@ p{
 }
 ul li{
   color: rgba(0, 0, 0, 0.35);
-  font-size: 12px;
+  font-size: 15px;
 }
 .ourteam p{
   color: rgba(0, 0, 0, 0.35);
@@ -327,4 +328,26 @@ line-height: normal;
     .img-card2{
       display: none;
     }
-  }
+    .logo{
+      display: none;
+      padding-left: 0rem!important;
+    
+    }
+    nav #logo-image{
+      display: block;
+    
+      width: 44%;
+    }
+    .nav-home{
+      padding: 20px;
+      box-shadow: 0px 4px 52px 0px rgba(0, 0, 0, 0.15);
+    }
+    .navbar .nav-home .collapse:nth-last-child(1) {
+      margin-top: 10px;
+    
+    }
+      }
+    
+      #logo-image{
+        display: none;
+      }

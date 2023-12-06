@@ -23,6 +23,7 @@
     font-weight: 700;
     line-height: 58px; 
   }
+
   #input-foot::placeholder{
     color: rgba(0, 0, 0, 0.35);
  
@@ -41,7 +42,7 @@ line-height: normal;
   }
   ul li {
     color: rgba(0, 0, 0, 0.70);
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 500;
   }
   ul li a img{
@@ -466,9 +467,37 @@ font-weight: 400;
 .file-item .checks {
   display: block;
 }
-  
-  }
+.logo{
+  display: none;
+  padding-left: 0rem!important;
 
+}
+nav #logo-image{
+  display: block;
+
+  width: 44%;
+}
+.nav-home{
+  padding: 20px;
+  box-shadow: 0px 4px 52px 0px rgba(0, 0, 0, 0.15);
+}
+.navbar .nav-home .collapse:nth-last-child(1) {
+  margin-top: 10px;
+
+}
+.item-name{
+  padding-right: 1.5rem!important;
+  padding-left: 1.5rem!important
+}
+
+  }
+  .item-name{
+    padding-right: .5rem;
+    padding-left: .5rem
+  }
+  #logo-image{
+    display: none;
+  }
 
 
   

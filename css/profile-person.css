@@ -18,7 +18,7 @@
     font-size: 26px;
     font-weight: 700;
     line-height: 58px; 
-  }
+    }
   .nav-home{
     position: fixed;
     top: -10px;
@@ -29,7 +29,7 @@
   }
   nav ul li {
     color: rgba(0, 0, 0, 0.70);
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 500;
   }
   ul li a img{
@@ -440,6 +440,9 @@ line-height: normal;
     color:#718C59;
     font-size: 22px;
     font-weight: 500;
+  }
+  #logo-image{
+    display: none;
   }
   .loaction-place a{
     text-decoration: none;
@@ -1083,6 +1086,31 @@ line-height: normal;
       .information .location >p{
        display: none;
       }
+      .logo{
+        display: none;
+        padding-left: 0rem!important;
+    
+      }
+      nav #logo-image{
+        display: block;
+  
+        width: 44%;
+      }
+      .nav-home{
+        padding: 20px;
+        box-shadow: 0px 4px 52px 0px rgba(0, 0, 0, 0.15);
+      }
+      .navbar .nav-home .collapse:nth-last-child(1) {
+        margin-top: 10px;
+ 
+      }
+      main .hand{
+        right: 0;
+        top: 20px;
+      }
+  }
+  .hand{
+    position: relative;right: 90px;
   }
   .my-payment{
     padding: 3rem;

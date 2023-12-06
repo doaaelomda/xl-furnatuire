@@ -27,6 +27,9 @@
 
     background: rgba(0, 0, 0, 0.30);
 }
+.nav-home {
+    box-shadow: 0px 4px 52px 0px rgba(0, 0, 0, 0.15);
+  }
 
 .center-card h5{
     color: #FFF;
@@ -184,7 +187,7 @@ button{
 }
 .confirm{
     color: rgba(0, 0, 0, 0.40);
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 400;
 
 }
@@ -369,7 +372,9 @@ a:hover{
   line-height: normal;
     }
 
-
+    .sign .login-container{
+        width: 75%;
+    }
     @media screen and (max-width: 767px)  {
         .hr-before-after::before,
         .hr-before-after::after {
@@ -384,9 +389,17 @@ a:hover{
         .signup> .background{
             display: none;
         }
+        .login-now-correct
+        {
+            width: 83%;
+        }
+        
         .signup .sign{
-            width: 100%;
+           
             height: 100vh;
+        }
+        .sign .login-container{
+            width: 61%;
         }
         .signup .sign .verifycode{
             width: 100%;
@@ -402,7 +415,7 @@ a:hover{
         }
         .sign .loginnow{
             position: relative;
-            right: 51px;
+            right: 30px;
         }
         .navbar .nav-home .collapse:nth-last-child(1){
             margin-left: 0;

@@ -23,7 +23,7 @@ ul li {
     list-style-type: none;
     padding: 25px;
 }
-ul li a{
+  ul li a{
     display: flex;
     padding-bottom: 0px;
 

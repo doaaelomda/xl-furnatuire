@@ -35,7 +35,6 @@ function updatenext() {
 
     progress.style.width = accumulatedPercentage + '%';
     progress.style.backgroundColor = "#8CA17A";
-    console.log( progress.style.width)
    
     if (currentActive === 2) {
         hiddenshapping()
@@ -68,8 +67,6 @@ function updateback() {
 
     progress.style.width = accumulatedPercentage + '%';
     progress.style.backgroundColor = "#8CA17A";
-    console.log( progress.style.width)
-
     
      if (currentActive === 1) {
         hiddenpayment()
@@ -144,10 +141,7 @@ function  hiddensucess(){
    sucess.style.display="none"
 
 }
-setTimeout(function() {
-    var orderMessage = document.getElementById("orderMessage");
-    orderMessage.style.display = "none";
-}, 2000);
+
 
 function clickwallet(){
     var visacontainer= document.querySelector('.visacontainer')

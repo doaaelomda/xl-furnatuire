@@ -38,6 +38,4 @@ prevButton.addEventListener('click', () => {
 
 
 
-
-
     
