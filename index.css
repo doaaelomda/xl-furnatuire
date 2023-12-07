@@ -682,3 +682,8 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
   }
+  .testimonial-section {
+    display: flex;
+    overflow: hidden;
+  }
+  

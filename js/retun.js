@@ -16,8 +16,8 @@ function Returns() {
   Returns.style.backgroundColor = Returns.style.backgroundColor === 'rgba(113, 140, 89, 0.12)' ? 'none' : 'rgba(113, 140, 89, 0.12)';
 var returnhidden=document.querySelector('.returnhidden')
 returnhidden.style.display = returnhidden.style.display === 'block' ? 'none' : 'block';
-var myorders=document.querySelector('.my-orders');
-myorders.style.display=myorders.style.display === 'none' ? 'block' : 'none';
+// var myorders=document.querySelector('.my-orders');
+// myorders.style.display=myorders.style.display === 'none' ? 'block' : 'none';
 
 }
 //open the wishlistes option

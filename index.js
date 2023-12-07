@@ -35,7 +35,3 @@ prevButton.addEventListener('click', () => {
     const lastItem = row.querySelector('.col-2:last-child');
     row.insertBefore(lastItem, row.firstChild);
 });
-
-
-
-    
