@@ -35,3 +35,21 @@ prevButton.addEventListener('click', () => {
     const lastItem = row.querySelector('.col-2:last-child');
     row.insertBefore(lastItem, row.firstChild);
 });
+
+
+
+
+function nextslider(){ 
+    var test1 = document.querySelector('.test1');
+    test1.style.display = 'none'
+    var test2Element = document.querySelector('.test2');
+    test2Element.style.display = 'block'
+
+}
+function backslider(){ 
+    var test2 = document.querySelector('.test2');
+    test2.style.display = 'none'
+    var test1Element = document.querySelector('.test1');
+    test1Element.style.display = (test1Element.style.display === 'none' || test2Element.style.display === '') ? 'block' : 'none';
+
+}

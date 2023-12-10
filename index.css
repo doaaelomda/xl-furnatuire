@@ -31,6 +31,7 @@
   width: 100%;
 }
 
+
 .container-fluid>.navbar-brand:hover {
   color: #718C59;
 }
@@ -687,3 +688,7 @@ line-height: normal;
     overflow: hidden;
   }
   
+
+  .test2, .test11 {
+    display: none;
+  }
