@@ -216,11 +216,6 @@ nav ul li a:hover {
     padding: 20px;
     box-shadow: 0px 4px 52px 0px rgba(0, 0, 0, 0.15);
   }
-  .navbar .nav-home .collapse:nth-last-child(1) {
-    margin-top: 10px;
-    margin-left: -16px
-  }
-
 
 }
 
@@ -691,4 +686,10 @@ line-height: normal;
 
   .test2, .test11 {
     display: none;
+  }
+  .flower{
+    position: relative;
+    max-height: 100px;
+    top: 163px;
+    left: 60px;
   }

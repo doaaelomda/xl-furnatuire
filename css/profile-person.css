@@ -1106,15 +1106,19 @@ line-height: normal;
         padding: 20px;
         box-shadow: 0px 4px 52px 0px rgba(0, 0, 0, 0.15);
       }
-      .navbar .nav-home .collapse:nth-last-child(1) {
-        margin-top: 10px;
- 
-      }
+   
       main .hand{
         right: 0;
         top: 20px;
       }
+      .header-navber{
+        left: 0px;
+        top: 25px;
+      }
      
+  }
+  .header-navber{
+    position: relative;right: 90px;
   }
   .hand{
     position: relative;right: 90px;

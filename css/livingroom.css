@@ -481,10 +481,7 @@ nav #logo-image{
   padding: 20px;
   box-shadow: 0px 4px 52px 0px rgba(0, 0, 0, 0.15);
 }
-.navbar .nav-home .collapse:nth-last-child(1) {
-  margin-top: 10px;
 
-}
 .item-name{
   padding-right: 1.5rem!important;
   padding-left: 1.5rem!important
