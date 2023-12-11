@@ -493,18 +493,18 @@ h4 {
 
 }
 
-.arrow img:nth-child(2):hover ,.left-arrow:hover {
+.left-arrow:hover {
   -webkit-transform: translateX(20px);
   transform: translateX(20px);
   -webkit-transition: transform 2s; 
   transition: transform 2s;
 }
-.arrow img:nth-child(1):hover {
+/* .arrow img:nth-child(1):hover {
   -webkit-transform: translateX(-20px); 
   transform: translateX(-20px);
   -webkit-transition: transform 2s; 
   transition: transform 2s;
-}
+} */
 .products-card:hover .overlay {
   top: 0;
 }

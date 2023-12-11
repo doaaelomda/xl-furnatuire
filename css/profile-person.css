@@ -259,7 +259,7 @@ text-transform: capitalize;
     
     position: relative;
     top: 25px;
-    right: 150px;;
+    right: 162px;;
     color: rgba(0, 0, 0, 0.30);
  
 font-size: 16px;
@@ -277,7 +277,7 @@ text-transform: capitalize;
   }
   .password-confirm label{
     display: flex;
-    margin-left: 107px;
+    margin-left: 117px;
     color: rgba(0, 0, 0, 0.70);
 font-size: 16px;
 font-weight: 400;
