@@ -179,7 +179,12 @@ function visashow(){
 }
 
 
+var orderMessage = document.getElementById('orderMessage');
+function hideOrderMessage() {
+    orderMessage.style.display = 'none';
+}
 
+setTimeout(hideOrderMessage, 5000);
 
 
 

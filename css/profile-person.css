@@ -1118,10 +1118,12 @@ line-height: normal;
      
   }
   .header-navber{
-    position: relative;right: 90px;
+    position: relative;
+    right: 90px;top:20px
   }
   .hand{
     position: relative;right: 90px;
+    top: 20px;
   }
   .my-payment{
     padding: 3rem;
