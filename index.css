@@ -86,12 +86,13 @@ nav ul li a:hover {
 }
 
 .btn2 {
-  width: 200px;
+  width: 180px;
   height: 47px;
   border: 1px solid #ddd;
   color: #718C59;
   font-size: 17px;
   font-weight: 400;
+  transition: all .3s ease-out
 }
 
 .btn2:hover {
@@ -109,12 +110,13 @@ nav ul li a:hover {
 .btn1 {
   opacity: 0.5;
   background-color: #718C59;
-  width: 200px;
+  width: 180px;
   height: 47px;
   border: 1px solid #ddd;
   color: #ffff;
   font-size: 17px;
   font-weight: 400;
+  transition: all .3s ease-out
 }
 
 .btn1:hover {
@@ -375,11 +377,14 @@ main p {
   font-size: 21px;
   font-weight: 500;
 }
+.Sales-img{
+  transition: all .3s ease-out;
+}
 
 .Sales-img:hover {
   background-color: white;
   box-shadow: 0px 4px 52px 0px rgba(0, 0, 0, 0.15);
-  height: 315px;
+  
 }
 
 .desc {
@@ -480,6 +485,7 @@ h4 {
 .prod-card{
   background-image: url(assets/images/pages/sales/background.png);
   position: relative;
+  
 }
 
 

@@ -515,8 +515,8 @@ nav{
   
 
 .home-checkbox{
-    position: relative;
-    right: 34px;
+    /* position: relative;
+    right: 20px; */
 }
 .home-checkbox  span:hover{
     cursor: pointer;
