@@ -5,6 +5,7 @@
     text-decoration: none;
     cursor: pointer;
   }
+
   @font-face {
     font-family: 'Montserrat', sans-serif;;
     src: url('../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf');
